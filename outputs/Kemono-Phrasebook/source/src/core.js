@@ -12,7 +12,7 @@ function allData(base,state){
 }
 function search(data,filters,state){
  const q=norm(filters.q||''), fav=new Set(state.favorites),recent=new Map(state.recent.map((r,i)=>[r.id,i]));
- const result=data.phrases.filter(p=>(!filters.category||p.categoryId===filters.category)&&(!filters.grammar||p.grammarIds.includes(filters.grammar))&&(!filters.difficulty||p.difficulty===Number(filters.difficulty))&&(filters.scope!=='favorites'||fav.has(p.id))&&(filters.scope!=='common'||p.common)&&(filters.scope!=='recent'||recent.has(p.id))&&(!q||norm([...Object.values(p.texts),...Object.values(p.readings),...p.tags,data.categories.find(c=>c.id===p.categoryId)?.name||''].join(' ')).includes(q)));
+ const result=data.phrases.filter(p=>(!filters.kind||(p.kind||'phrase')===filters.kind)&&(!filters.category||p.categoryId===filters.category)&&(!filters.grammar||p.grammarIds.includes(filters.grammar))&&(!filters.difficulty||p.difficulty===Number(filters.difficulty))&&(filters.scope!=='favorites'||fav.has(p.id))&&(filters.scope!=='common'||p.common)&&(filters.scope!=='recent'||recent.has(p.id))&&(!q||norm([...Object.values(p.texts),...Object.values(p.readings),...p.tags,p.usageNote||'',data.categories.find(c=>c.id===p.categoryId)?.name||''].join(' ')).includes(q)));
  if(filters.scope==='recent')result.sort((a,b)=>recent.get(a.id)-recent.get(b.id));
  return result;
 }
@@ -40,6 +40,8 @@ function validateBundle(raw,base){
   if(Array.isArray(p.grammarIds)&&p.grammarIds.some(g=>!gIds.has(g)))errors.push(pre+'有不存在的文法 ID。');
   for(const k of ['relatedIds','followUpIds'])if(Array.isArray(p[k])&&p[k].some(x=>!refIds.has(x)))errors.push(pre+k+' 有不存在的句子 ID。');
   if(![1,2,3].includes(p.difficulty))errors.push(pre+'difficulty 必須是 1、2 或 3。');
+  if(p.kind!==undefined&&!['phrase','word'].includes(p.kind))errors.push(pre+'kind 必須是 phrase 或 word。');
+  if(p.usageNote!==undefined&&(typeof p.usageNote!=='string'||p.usageNote.length>1000))errors.push(pre+'usageNote 必須是文字，最多 1,000 字。');
   if(typeof p.common!=='boolean')errors.push(pre+'common 必須是 true 或 false。');
   if(!textValid(p.semanticGroup,100))errors.push(pre+'semanticGroup 不可空白。');
   if(p.audioUrl!==null&&p.audioUrl!==undefined&&(typeof p.audioUrl!=='string'||p.audioUrl.length>1000||!/^((\.\/)?audio\/[\w./%-]+|https:\/\/[^\s<>]+)$/.test(p.audioUrl)))errors.push(pre+'audioUrl 只接受 audio/ 相對路徑或 HTTPS URL。');

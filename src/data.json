@@ -46,8 +46,8 @@
     },
     {
       "id": "care",
-      "name": "界線與協助",
-      "description": "尊重界線，也照顧彼此"
+      "name": "界限與協助",
+      "description": "尊重界限，也照顧彼此"
     },
     {
       "id": "travel",
@@ -58,6 +58,31 @@
       "id": "farewell",
       "name": "感謝道別",
       "description": "把今天的心意說出口"
+    },
+    {
+      "id": "parade",
+      "name": "遊行",
+      "description": "集合、整列、行進與中途休息。"
+    },
+    {
+      "id": "private",
+      "name": "私下邀約",
+      "description": "辨認邀約目的，選擇見面的方式與地點。"
+    },
+    {
+      "id": "room",
+      "name": "回房間",
+      "description": "確認房間邀約、住宿安排與離開的界限。進房間不等於同意親密行為。"
+    },
+    {
+      "id": "intimacy",
+      "name": "親密互動",
+      "description": "確認擁抱、牽手、親吻等互動的意願與範圍；隨時可以改變心意。"
+    },
+    {
+      "id": "sexual",
+      "name": "性暗示與回應",
+      "description": "成人溝通用語：理解性邀約、確認意思、表達意願或拒絕。私下見面、回房與沉默都不代表同意性行為。"
     }
   ],
   "grammars": [
@@ -108,7 +133,7 @@
     {
       "id": "g-request",
       "title": "請對方做某事",
-      "group": "請求與界線",
+      "group": "請求與界限",
       "pattern": "動詞て形 ＋ ください",
       "explanation": "請對方採取行動。對陌生人提出較費心的請求時，可改用「〜てもらえますか」。",
       "conjugations": [
@@ -131,7 +156,7 @@
     {
       "id": "g-permission",
       "title": "先詢問許可",
-      "group": "請求與界線",
+      "group": "請求與界限",
       "pattern": "動詞て形 ＋ もいいですか",
       "explanation": "詢問自己能否進行某個行為。拍照、擁抱、觸摸獸裝與公開照片都應分別取得同意。",
       "conjugations": [
@@ -154,7 +179,7 @@
     {
       "id": "g-polite",
       "title": "請你幫個忙",
-      "group": "請求與界線",
+      "group": "請求與界限",
       "pattern": "動詞て形 ＋ もらえますか",
       "explanation": "禮貌地請對方為自己做一件事；「すみませんが」可放在前面作為開場。",
       "conjugations": [
@@ -175,7 +200,7 @@
     {
       "id": "g-negative",
       "title": "請不要這樣做",
-      "group": "請求與界線",
+      "group": "請求與界限",
       "pattern": "動詞ない形 ＋ でください",
       "explanation": "清楚表達不希望對方做的動作。這裡使用「ないで」，不是「なくて」。",
       "conjugations": [
@@ -2161,7 +2186,7 @@
         "ja-Hira": "はぐしてもいいですか。"
       },
       "tags": [
-        "界線與協助"
+        "界限與協助"
       ],
       "grammarIds": [
         "g-permission"
@@ -2190,7 +2215,7 @@
         "ja-Hira": "あたまをさわらないでください。"
       },
       "tags": [
-        "界線與協助"
+        "界限與協助"
       ],
       "grammarIds": [
         "g-negative"
@@ -2216,7 +2241,7 @@
         "ja-Hira": "しっぽをひっぱらないでください。"
       },
       "tags": [
-        "界線與協助"
+        "界限與協助"
       ],
       "grammarIds": [
         "g-negative"
@@ -2242,7 +2267,7 @@
         "ja-Hira": "だいじょうぶですか。"
       },
       "tags": [
-        "界線與協助"
+        "界限與協助"
       ],
       "grammarIds": [
         "g-question"
@@ -2271,7 +2296,7 @@
         "ja-Hira": "なにかおてつだいしましょうか。"
       },
       "tags": [
-        "界線與協助"
+        "界限與協助"
       ],
       "grammarIds": [
         "g-invite"
@@ -2297,7 +2322,7 @@
         "ja-Hira": "すたっふをよんできます。"
       },
       "tags": [
-        "界線與協助"
+        "界限與協助"
       ],
       "grammarIds": [
         "g-basic"
@@ -2323,7 +2348,7 @@
         "ja-Hira": "すこしやすみたいです。"
       },
       "tags": [
-        "界線與協助"
+        "界限與協助"
       ],
       "grammarIds": [
         "g-want"
@@ -2349,7 +2374,7 @@
         "ja-Hira": "つうろをあけてください。"
       },
       "tags": [
-        "界線與協助"
+        "界限與協助"
       ],
       "grammarIds": [
         "g-request"
@@ -2375,7 +2400,7 @@
         "ja-Hira": "ともだちをさがしています。"
       },
       "tags": [
-        "界線與協助"
+        "界限與協助"
       ],
       "grammarIds": [
         "g-ongoing"
@@ -2401,7 +2426,7 @@
         "ja-Hira": "けいたいでんわをなくしました。"
       },
       "tags": [
-        "界線與協助"
+        "界限與協助"
       ],
       "grammarIds": [
         "g-past"
@@ -2938,6 +2963,4427 @@
         "kp-092"
       ],
       "followUpIds": []
+    },
+    {
+      "id": "kp-101",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "遊行的集合地點在哪裡？",
+        "ja-JP": "パレードの集合場所はどこですか。"
+      },
+      "readings": {
+        "ja-Hira": "ぱれーどのしゅうごうばしょはどこですか。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "parade-location-question",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051"
+      ],
+      "followUpIds": [
+        "kp-102",
+        "kp-103"
+      ]
+    },
+    {
+      "id": "kp-102",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "幾點要集合？",
+        "ja-JP": "何時に集合すればいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "なんじにしゅうごうすればいいですか。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-102",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051",
+        "kv-052"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-103",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "可以參加遊行嗎？",
+        "ja-JP": "パレードに参加してもいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "ぱれーどにさんかしてもいいですか。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-permission"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-103",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-104",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "這裡是隊伍最後面嗎？",
+        "ja-JP": "ここが最後尾ですか。"
+      },
+      "readings": {
+        "ja-Hira": "ここがさいこうびですか。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "parade-location-question",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051",
+        "kv-052"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-105",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "沒有穿獸裝也可以參加嗎？",
+        "ja-JP": "着ぐるみを着ていなくても参加できますか。"
+      },
+      "readings": {
+        "ja-Hira": "きぐるみをきていなくてもさんかできますか。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-105",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051",
+        "kv-052"
+      ],
+      "followUpIds": [
+        "kp-103",
+        "kp-106"
+      ],
+      "usageNote": "參加資格依各活動規定，先詢問工作人員。"
+    },
+    {
+      "id": "kp-106",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "請告訴我遊行路線。",
+        "ja-JP": "パレードのルートを教えてください。"
+      },
+      "readings": {
+        "ja-Hira": "ぱれーどのるーとをおしえてください。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-106",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-107",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "可以請你稍微走慢一點嗎？",
+        "ja-JP": "歩く速さを少し落としてもらえますか。"
+      },
+      "readings": {
+        "ja-Hira": "あるくはやさをすこしおとしてもらえますか。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-polite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-107",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051",
+        "kv-052"
+      ],
+      "followUpIds": [
+        "kp-109"
+      ]
+    },
+    {
+      "id": "kp-108",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "可以中途離開隊伍嗎？",
+        "ja-JP": "途中で列を抜けてもいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "とちゅうでれつをぬけてもいいですか。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-permission"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-108",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051",
+        "kv-052"
+      ],
+      "followUpIds": [
+        "kp-109",
+        "kp-112"
+      ]
+    },
+    {
+      "id": "kp-109",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "我身體不舒服，要休息一下。",
+        "ja-JP": "体調が悪いので、少し休みます。"
+      },
+      "readings": {
+        "ja-Hira": "たいちょうがわるいので、すこしやすみます。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-109",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051",
+        "kv-052"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-110",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "請遵從工作人員的指示。",
+        "ja-JP": "スタッフの指示に従ってください。"
+      },
+      "readings": {
+        "ja-Hira": "すたっふのしじにしたがってください。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-110",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051",
+        "kv-052"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-111",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "要不要走在我旁邊？",
+        "ja-JP": "私の隣を歩きませんか。"
+      },
+      "readings": {
+        "ja-Hira": "わたしのとなりをあるきませんか。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-invite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-111",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051",
+        "kv-052"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-112",
+      "kind": "phrase",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "遊行結束後再碰面吧。",
+        "ja-JP": "パレードの後で合流しましょう。"
+      },
+      "readings": {
+        "ja-Hira": "ぱれーどのあとでごうりゅうしましょう。"
+      },
+      "tags": [
+        "遊行",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-invite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-112",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-051"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-113",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "之後要不要兩個人聊聊？",
+        "ja-JP": "後で二人で話しませんか。"
+      },
+      "readings": {
+        "ja-Hira": "あとでふたりではなしませんか。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "可能聽到"
+      ],
+      "grammarIds": [
+        "g-invite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-113",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-061",
+        "kv-062"
+      ],
+      "followUpIds": [
+        "kp-116",
+        "kp-117",
+        "kp-118",
+        "kp-120",
+        "kp-121"
+      ],
+      "usageNote": "可能聽到的邀約。單獨聊天不直接表示約會或性邀約，可先確認目的。"
+    },
+    {
+      "id": "kp-114",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "你今晚有空嗎？",
+        "ja-JP": "今夜、空いていますか。"
+      },
+      "readings": {
+        "ja-Hira": "こんや、あいていますか。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "可能聽到"
+      ],
+      "grammarIds": [
+        "g-ongoing"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-114",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-061",
+        "kv-062"
+      ],
+      "followUpIds": [
+        "kp-117",
+        "kp-122",
+        "kp-123"
+      ],
+      "usageNote": "可能聽到的探詢行程；先問對方想做什麼，不必直接猜測目的。"
+    },
+    {
+      "id": "kp-115",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我想單獨和你見面。",
+        "ja-JP": "二人きりで会いたいです。"
+      },
+      "readings": {
+        "ja-Hira": "ふたりきりであいたいです。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "可能聽到"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-115",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-061"
+      ],
+      "followUpIds": [
+        "kp-116",
+        "kp-118",
+        "kp-123"
+      ],
+      "usageNote": "可能聽到的私下邀約；可詢問是朋友見面、約會或其他意思。"
+    },
+    {
+      "id": "kp-116",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "這是在邀我約會嗎？",
+        "ja-JP": "これはデートのお誘いですか。"
+      },
+      "readings": {
+        "ja-Hira": "これはでーとのおさそいですか。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-116",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-062"
+      ],
+      "followUpIds": [
+        "kp-120",
+        "kp-121"
+      ],
+      "usageNote": "用來確認對方是否以約會的意思邀請。"
+    },
+    {
+      "id": "kp-117",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "你的意思是以朋友身分見面嗎？",
+        "ja-JP": "友達として会うという意味ですか。"
+      },
+      "readings": {
+        "ja-Hira": "ともだちとしてあうといういみですか。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-117",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-061",
+        "kv-062"
+      ],
+      "followUpIds": [],
+      "usageNote": "用來確認關係和見面目的。"
+    },
+    {
+      "id": "kp-118",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我想先在有其他人的地方聊聊。",
+        "ja-JP": "まずは人のいる場所で話したいです。"
+      },
+      "readings": {
+        "ja-Hira": "まずはひとのいるばしょではなしたいです。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-118",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-061",
+        "kv-062"
+      ],
+      "followUpIds": [],
+      "usageNote": "可以接受聊天，同時提出自己舒服的地點。"
+    },
+    {
+      "id": "kp-119",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我可以也邀其他朋友嗎？",
+        "ja-JP": "ほかの友達も誘っていいですか。"
+      },
+      "readings": {
+        "ja-Hira": "ほかのともだちもさそっていいですか。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-permission"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-119",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-061",
+        "kv-062"
+      ],
+      "followUpIds": [],
+      "usageNote": "「誘っていいですか」是「誘ってもいいですか」的常見口語說法。"
+    },
+    {
+      "id": "kp-120",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "兩個人聊天是可以的。",
+        "ja-JP": "二人で話すのは大丈夫です。"
+      },
+      "readings": {
+        "ja-Hira": "ふたりではなすのはだいじょうぶです。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-120",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-061",
+        "kv-062"
+      ],
+      "followUpIds": [],
+      "usageNote": "這裡的接受只限「兩個人聊天」，不包含其他活動或接觸。"
+    },
+    {
+      "id": "kp-121",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "謝謝你邀我，不過今天我就先婉拒了。",
+        "ja-JP": "誘ってくれてうれしいですが、今日は遠慮します。"
+      },
+      "readings": {
+        "ja-Hira": "さそってくれてうれしいですが、きょうはえんりょします。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "private-decline",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-061",
+        "kv-062"
+      ],
+      "followUpIds": [],
+      "usageNote": "有禮貌但明確地拒絕邀約。"
+    },
+    {
+      "id": "kp-122",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我今天有安排，下次再約吧。",
+        "ja-JP": "今日は予定があるので、また今度お願いします。"
+      },
+      "readings": {
+        "ja-Hira": "きょうはよていがあるので、またこんどおねがいします。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "private-decline",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-065"
+      ],
+      "followUpIds": [],
+      "usageNote": "只在確實願意之後再約時使用；不想再約可改說「今日は遠慮します」。"
+    },
+    {
+      "id": "kp-123",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我現在不想單獨見面。",
+        "ja-JP": "今は二人きりでは会いたくありません。"
+      },
+      "readings": {
+        "ja-Hira": "いまはふたりきりではあいたくありません。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "private-decline",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-061"
+      ],
+      "followUpIds": [],
+      "usageNote": "明確表達不接受單獨見面。"
+    },
+    {
+      "id": "kp-124",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我們只在大廳聊三十分鐘吧。",
+        "ja-JP": "ロビーで三十分だけ話しましょう。"
+      },
+      "readings": {
+        "ja-Hira": "ろびーでさんじゅっぷんだけはなしましょう。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-invite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-124",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-061",
+        "kv-062"
+      ],
+      "followUpIds": [],
+      "usageNote": "同時說明地點、活動和時間範圍。"
+    },
+    {
+      "id": "kp-125",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "要不要去房間休息一下？",
+        "ja-JP": "部屋で少し休みませんか。"
+      },
+      "readings": {
+        "ja-Hira": "へやですこしやすみませんか。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "可能聽到"
+      ],
+      "grammarIds": [
+        "g-invite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-125",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-071"
+      ],
+      "followUpIds": [
+        "kp-127",
+        "kp-128",
+        "kp-130",
+        "kp-131",
+        "kp-132"
+      ],
+      "usageNote": "可能聽到的房間邀約。可能只是休息，也可能有其他意圖，先問清楚；進房不等於同意親密行為。"
+    },
+    {
+      "id": "kp-126",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我現在要回自己的房間。",
+        "ja-JP": "これから自分の部屋に戻ります。"
+      },
+      "readings": {
+        "ja-Hira": "これからじぶんのへやにもどります。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-126",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-071"
+      ],
+      "followUpIds": [],
+      "usageNote": "表達自己的行程，不是在邀對方一起回房。"
+    },
+    {
+      "id": "kp-127",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "你的意思是要去你的房間嗎？",
+        "ja-JP": "あなたの部屋に行くということですか。"
+      },
+      "readings": {
+        "ja-Hira": "あなたのへやにいくということですか。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-127",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-071"
+      ],
+      "followUpIds": [
+        "kp-128",
+        "kp-129"
+      ],
+      "usageNote": "先確認是誰的房間，避免理解錯誤。"
+    },
+    {
+      "id": "kp-128",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "房間裡還有其他人嗎？",
+        "ja-JP": "部屋にはほかに誰かいますか。"
+      },
+      "readings": {
+        "ja-Hira": "へやにはほかにだれかいますか。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-exist"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-128",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-071"
+      ],
+      "followUpIds": [],
+      "usageNote": "確認是否單獨見面與房間安排。"
+    },
+    {
+      "id": "kp-129",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "請先向室友確認是否可以讓我拜訪。",
+        "ja-JP": "訪問してもいいか、同室の人に確認してください。"
+      },
+      "readings": {
+        "ja-Hira": "ほうもんしてもいいか、どうしつのひとにかくにんしてください。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-129",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-076"
+      ],
+      "followUpIds": [],
+      "usageNote": "共同住宿時，拜訪也需考慮室友與住宿規定。"
+    },
+    {
+      "id": "kp-130",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "就算去房間，我也沒有要做性相關的事。",
+        "ja-JP": "部屋に行っても、性的なことをするつもりはありません。"
+      },
+      "readings": {
+        "ja-Hira": "へやにいっても、せいてきなことをするつもりはありません。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-130",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-071"
+      ],
+      "followUpIds": [
+        "kp-132",
+        "kp-134",
+        "kp-157"
+      ],
+      "usageNote": "直接區分「去房間」和「同意性行為」。"
+    },
+    {
+      "id": "kp-131",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "如果只是聊天，我可以短暫打擾一下。",
+        "ja-JP": "話すだけなら、少しだけお邪魔します。"
+      },
+      "readings": {
+        "ja-Hira": "はなすだけなら、すこしだけおじゃまします。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-131",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-071",
+        "kv-072"
+      ],
+      "followUpIds": [
+        "kp-133",
+        "kp-134"
+      ],
+      "usageNote": "只接受短暫聊天，沒有接受其他活動。"
+    },
+    {
+      "id": "kp-132",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我不去房間，想在大廳聊。",
+        "ja-JP": "部屋には行かず、ロビーで話したいです。"
+      },
+      "readings": {
+        "ja-Hira": "へやにはいかず、ろびーではなしたいです。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-132",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-071",
+        "kv-073"
+      ],
+      "followUpIds": [],
+      "usageNote": "拒絕進房並提出替代地點。"
+    },
+    {
+      "id": "kp-133",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我最晚需要幾點離開？",
+        "ja-JP": "何時までに帰ればいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "なんじまでにかえればいいですか。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-133",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-071",
+        "kv-072"
+      ],
+      "followUpIds": [],
+      "usageNote": "可先確認訪客能停留的時間。"
+    },
+    {
+      "id": "kp-134",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我今天不留下過夜，要回自己的房間。",
+        "ja-JP": "今日は泊まらず、自分の部屋に帰ります。"
+      },
+      "readings": {
+        "ja-Hira": "きょうはとまらず、じぶんのへやにかえります。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-134",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-071"
+      ],
+      "followUpIds": [],
+      "usageNote": "明確拒絕過夜。"
+    },
+    {
+      "id": "kp-135",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我想離開了，請把門打開。",
+        "ja-JP": "もう帰りたいので、ドアを開けてください。"
+      },
+      "readings": {
+        "ja-Hira": "もうかえりたいので、どあをあけてください。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-135",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-071",
+        "kv-072"
+      ],
+      "followUpIds": [
+        "kp-136",
+        "kp-076"
+      ],
+      "usageNote": "需要離開時可直接表達，不必先解釋原因。"
+    },
+    {
+      "id": "kp-136",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我從這裡自己回去。",
+        "ja-JP": "ここから一人で戻ります。"
+      },
+      "readings": {
+        "ja-Hira": "ここからひとりでもどります。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-136",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-079"
+      ],
+      "followUpIds": [],
+      "usageNote": "表達自己回去，不需要對方陪同。"
+    },
+    {
+      "id": "kp-137",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "可以牽你的手嗎？",
+        "ja-JP": "手をつないでもいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "てをつないでもいいですか。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-permission"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-137",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-081",
+        "kv-082"
+      ],
+      "followUpIds": [
+        "kp-143",
+        "kp-147"
+      ],
+      "usageNote": "先詢問這個具體動作；接受牽手不代表接受其他接觸。"
+    },
+    {
+      "id": "kp-138",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "可以親吻你嗎？",
+        "ja-JP": "キスしてもいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "きすしてもいいですか。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-permission"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-138",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-082"
+      ],
+      "followUpIds": [
+        "kp-141",
+        "kp-142",
+        "kp-145"
+      ],
+      "usageNote": "親吻也需分別確認對方的意願。"
+    },
+    {
+      "id": "kp-139",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "你能接受到什麼程度？",
+        "ja-JP": "どこまでなら大丈夫ですか。"
+      },
+      "readings": {
+        "ja-Hira": "どこまでならだいじょうぶですか。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-139",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-081",
+        "kv-082"
+      ],
+      "followUpIds": [
+        "kp-141",
+        "kp-142",
+        "kp-143"
+      ],
+      "usageNote": "請用具體動作回答；沒有明確回答時不要自行推測。"
+    },
+    {
+      "id": "kp-140",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "碰我之前，請一定先問。",
+        "ja-JP": "触る前に、必ず聞いてください。"
+      },
+      "readings": {
+        "ja-Hira": "さわるまえに、かならずきいてください。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-140",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-081",
+        "kv-082"
+      ],
+      "followUpIds": [
+        "kp-148"
+      ],
+      "usageNote": "把「先詢問再接觸」說清楚。"
+    },
+    {
+      "id": "kp-141",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "擁抱可以，但我不想接吻。",
+        "ja-JP": "ハグはいいですが、キスはしたくありません。"
+      },
+      "readings": {
+        "ja-Hira": "はぐはいいですが、きすはしたくありません。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "intimacy-limits",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-081",
+        "kv-082"
+      ],
+      "followUpIds": [],
+      "usageNote": "清楚說明接受與拒絕的動作。"
+    },
+    {
+      "id": "kp-142",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "接吻可以，但我不想再進一步。",
+        "ja-JP": "キスはいいですが、それ以上はしたくありません。"
+      },
+      "readings": {
+        "ja-Hira": "きすはいいですが、それいじょうはしたくありません。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "intimacy-limits",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-082"
+      ],
+      "followUpIds": [],
+      "usageNote": "只接受接吻；進一步行為仍不在同意範圍內。"
+    },
+    {
+      "id": "kp-143",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "我只想牽手。",
+        "ja-JP": "手をつなぐだけにしたいです。"
+      },
+      "readings": {
+        "ja-Hira": "てをつなぐだけにしたいです。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "intimacy-limits",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-083"
+      ],
+      "followUpIds": [],
+      "usageNote": "「だけ」表示範圍只到牽手。"
+    },
+    {
+      "id": "kp-144",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "我想慢慢來。",
+        "ja-JP": "ゆっくり進めたいです。"
+      },
+      "readings": {
+        "ja-Hira": "ゆっくりすすめたいです。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-144",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-081",
+        "kv-082"
+      ],
+      "followUpIds": [],
+      "usageNote": "提出放慢互動速度；仍需另外說明具體界限。"
+    },
+    {
+      "id": "kp-145",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "我改變心意了，想在這裡停止。",
+        "ja-JP": "気が変わったので、ここでやめたいです。"
+      },
+      "readings": {
+        "ja-Hira": "きがかわったので、ここでやめたいです。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-145",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-081",
+        "kv-082"
+      ],
+      "followUpIds": [
+        "kp-148"
+      ],
+      "usageNote": "已經答應過，也可以改變心意並要求停止。"
+    },
+    {
+      "id": "kp-146",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "如果不想繼續了，我們隨時都可以停。",
+        "ja-JP": "嫌になったら、いつでもやめましょう。"
+      },
+      "readings": {
+        "ja-Hira": "いやになったら、いつでもやめましょう。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-invite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-146",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-081",
+        "kv-082"
+      ],
+      "followUpIds": [],
+      "usageNote": "主動表達可以隨時停止，並尊重對方的回答。"
+    },
+    {
+      "id": "kp-147",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "今天我只想在你身邊聊聊天。",
+        "ja-JP": "今日は、そばで話すだけにしたいです。"
+      },
+      "readings": {
+        "ja-Hira": "きょうは、そばではなすだけにしたいです。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-147",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-081",
+        "kv-082"
+      ],
+      "followUpIds": [],
+      "usageNote": "表達願意陪伴聊天，但不願進行其他互動。"
+    },
+    {
+      "id": "kp-148",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "我知道了，不會再碰你。",
+        "ja-JP": "わかりました。もう触りません。"
+      },
+      "readings": {
+        "ja-Hira": "わかりました。もうさわりません。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-148",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-081",
+        "kv-082"
+      ],
+      "followUpIds": [],
+      "usageNote": "收到拒絕或停止要求時，清楚回應並停止接觸。"
+    },
+    {
+      "id": "kp-149",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "要不要發生性行為？（直接口語）",
+        "ja-JP": "エッチしない？"
+      },
+      "readings": {
+        "ja-Hira": "えっちしない？"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "可能聽到"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-149",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-091"
+      ],
+      "followUpIds": [
+        "kp-152",
+        "kp-153",
+        "kp-155",
+        "kp-159"
+      ],
+      "usageNote": "可能聽到的直接性邀約。「しない？」在這裡是邀請，不是在說「不做」。"
+    },
+    {
+      "id": "kp-150",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "今晚要不要留下過夜？",
+        "ja-JP": "今夜、泊まっていかない？"
+      },
+      "readings": {
+        "ja-Hira": "こんや、とまっていかない？"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "可能聽到"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-150",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-091",
+        "kv-092"
+      ],
+      "followUpIds": [
+        "kp-153",
+        "kp-130",
+        "kp-134"
+      ],
+      "usageNote": "可能聽到的邀約。有時只是住宿安排，有時帶性暗示；不能單憑這句斷定，應確認目的。"
+    },
+    {
+      "id": "kp-151",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "要不要一起睡？",
+        "ja-JP": "一緒に寝ない？"
+      },
+      "readings": {
+        "ja-Hira": "いっしょにねない？"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-151",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-091",
+        "kv-092"
+      ],
+      "followUpIds": [
+        "kp-153",
+        "kp-142",
+        "kp-155"
+      ],
+      "usageNote": "「寝る」字面是睡覺，在私下邀約也可能暗指性行為；先問清楚，不要把陪睡當成同意性行為。"
+    },
+    {
+      "id": "kp-152",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "你說的「エッチ」是指性行為嗎？",
+        "ja-JP": "「エッチ」というのは、性行為のことですか。"
+      },
+      "readings": {
+        "ja-Hira": "「えっち」というのは、せいこういのことですか。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-152",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-091"
+      ],
+      "followUpIds": [
+        "kp-154",
+        "kp-155",
+        "kp-159"
+      ],
+      "usageNote": "確認這個詞在當下的具體意思。"
+    },
+    {
+      "id": "kp-153",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "你的意思是在邀我發生性行為嗎？",
+        "ja-JP": "性行為に誘っているという意味ですか。"
+      },
+      "readings": {
+        "ja-Hira": "せいこういにさそっているといういみですか。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-153",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-091",
+        "kv-092"
+      ],
+      "followUpIds": [
+        "kp-155",
+        "kp-156",
+        "kp-159"
+      ],
+      "usageNote": "對曖昧邀約直接確認，避免誤解。"
+    },
+    {
+      "id": "kp-154",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我沒有那個意思。",
+        "ja-JP": "そのつもりはありません。"
+      },
+      "readings": {
+        "ja-Hira": "そのつもりはありません。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "sex-decline",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-091",
+        "kv-092"
+      ],
+      "followUpIds": [],
+      "usageNote": "在前文已清楚談到性邀約時使用；若怕模糊，可直接說不想發生性相關的事。"
+    },
+    {
+      "id": "kp-155",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我不想做性相關的事。",
+        "ja-JP": "性的なことはしたくありません。"
+      },
+      "readings": {
+        "ja-Hira": "せいてきなことはしたくありません。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "sex-decline",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-091",
+        "kv-092"
+      ],
+      "followUpIds": [],
+      "usageNote": "明確拒絕性邀約。"
+    },
+    {
+      "id": "kp-156",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我還沒辦法決定，所以現在不做。",
+        "ja-JP": "まだ決められないので、今はしません。"
+      },
+      "readings": {
+        "ja-Hira": "まだきめられないので、いまはしません。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "sex-decline",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-091",
+        "kv-092"
+      ],
+      "followUpIds": [],
+      "usageNote": "猶豫或尚未決定，這次就不進行；不需要勉強給出同意。"
+    },
+    {
+      "id": "kp-157",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我沒有同意，請停止。",
+        "ja-JP": "同意していません。やめてください。"
+      },
+      "readings": {
+        "ja-Hira": "どういしていません。やめてください。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-157",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-094"
+      ],
+      "followUpIds": [
+        "kp-160",
+        "kp-076"
+      ],
+      "usageNote": "需要時直接要求停止；也可使用「界限與協助」中的求助會話。"
+    },
+    {
+      "id": "kp-158",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "如果不使用保險套，我就不發生性行為。",
+        "ja-JP": "コンドームを使わないなら、性行為はしません。"
+      },
+      "readings": {
+        "ja-Hira": "こんどーむをつかわないなら、せいこういはしません。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-158",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-096"
+      ],
+      "followUpIds": [
+        "kp-155",
+        "kp-157"
+      ],
+      "usageNote": "表達自己的必要條件；這句不是對任何做法的風險或效果保證。"
+    },
+    {
+      "id": "kp-159",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我有興趣，但想先談清楚彼此能接受的範圍。",
+        "ja-JP": "興味はありますが、先にどこまでしたいか話し合いたいです。"
+      },
+      "readings": {
+        "ja-Hira": "きょうみはありますが、さきにどこまでしたいかはなしあいたいです。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-159",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-091",
+        "kv-092"
+      ],
+      "followUpIds": [
+        "kp-139",
+        "kp-158",
+        "kp-145"
+      ],
+      "usageNote": "表達興趣並提出先討論的條件；不是已同意所有行為。"
+    },
+    {
+      "id": "kp-160",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我已經拒絕了，請不要再邀我。",
+        "ja-JP": "断っているので、これ以上誘わないでください。"
+      },
+      "readings": {
+        "ja-Hira": "ことわっているので、これいじょうさそわないでください。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-negative"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-160",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-091",
+        "kv-092"
+      ],
+      "followUpIds": [
+        "kp-157",
+        "kp-076"
+      ],
+      "usageNote": "對已拒絕後仍持續糾纏的邀約，清楚要求停止。"
+    },
+    {
+      "id": "kv-001",
+      "kind": "word",
+      "categoryId": "greeting",
+      "texts": {
+        "zh-TW": "名字",
+        "ja-JP": "名前"
+      },
+      "readings": {
+        "ja-Hira": "なまえ"
+      },
+      "tags": [
+        "認識朋友",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-001",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-004"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-002",
+      "kind": "word",
+      "categoryId": "greeting",
+      "texts": {
+        "zh-TW": "出身地",
+        "ja-JP": "出身"
+      },
+      "readings": {
+        "ja-Hira": "しゅっしん"
+      },
+      "tags": [
+        "認識朋友",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-002",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-001",
+        "kp-002"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-003",
+      "kind": "word",
+      "categoryId": "greeting",
+      "texts": {
+        "zh-TW": "興趣",
+        "ja-JP": "趣味"
+      },
+      "readings": {
+        "ja-Hira": "しゅみ"
+      },
+      "tags": [
+        "認識朋友",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-003",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-001",
+        "kp-002"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-004",
+      "kind": "word",
+      "categoryId": "greeting",
+      "texts": {
+        "zh-TW": "第一次參加",
+        "ja-JP": "初参加"
+      },
+      "readings": {
+        "ja-Hira": "はつさんか"
+      },
+      "tags": [
+        "認識朋友",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-004",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-001",
+        "kp-002"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-005",
+      "kind": "word",
+      "categoryId": "greeting",
+      "texts": {
+        "zh-TW": "敬語",
+        "ja-JP": "敬語"
+      },
+      "readings": {
+        "ja-Hira": "けいご"
+      },
+      "tags": [
+        "認識朋友",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-005",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-001",
+        "kp-002"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-006",
+      "kind": "word",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "攝影",
+        "ja-JP": "撮影"
+      },
+      "readings": {
+        "ja-Hira": "さつえい"
+      },
+      "tags": [
+        "拍照交流",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-006",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-017"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-007",
+      "kind": "word",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "逆光",
+        "ja-JP": "逆光"
+      },
+      "readings": {
+        "ja-Hira": "ぎゃっこう"
+      },
+      "tags": [
+        "拍照交流",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-007",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-011",
+        "kp-012"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-008",
+      "kind": "word",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "直向",
+        "ja-JP": "縦向き"
+      },
+      "readings": {
+        "ja-Hira": "たてむき"
+      },
+      "tags": [
+        "拍照交流",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-008",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-011",
+        "kp-012"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-009",
+      "kind": "word",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "橫向",
+        "ja-JP": "横向き"
+      },
+      "readings": {
+        "ja-Hira": "よこむき"
+      },
+      "tags": [
+        "拍照交流",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-009",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-011",
+        "kp-012"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-010",
+      "kind": "word",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "刊登、發布",
+        "ja-JP": "掲載"
+      },
+      "readings": {
+        "ja-Hira": "けいさい"
+      },
+      "tags": [
+        "拍照交流",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-010",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-011",
+        "kp-012"
+      ],
+      "followUpIds": [],
+      "usageNote": "詢問能否拍攝，與能否公開刊登，是不同的確認。"
+    },
+    {
+      "id": "kv-011",
+      "kind": "word",
+      "categoryId": "suit",
+      "texts": {
+        "zh-TW": "獸裝",
+        "ja-JP": "着ぐるみ"
+      },
+      "readings": {
+        "ja-Hira": "きぐるみ"
+      },
+      "tags": [
+        "獸裝與角色",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-011",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-021",
+        "kp-025"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-012",
+      "kind": "word",
+      "categoryId": "suit",
+      "texts": {
+        "zh-TW": "肉球",
+        "ja-JP": "肉球"
+      },
+      "readings": {
+        "ja-Hira": "にくきゅう"
+      },
+      "tags": [
+        "獸裝與角色",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-012",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-021",
+        "kp-022"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-013",
+      "kind": "word",
+      "categoryId": "suit",
+      "texts": {
+        "zh-TW": "尾巴",
+        "ja-JP": "尻尾"
+      },
+      "readings": {
+        "ja-Hira": "しっぽ"
+      },
+      "tags": [
+        "獸裝與角色",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-013",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-021",
+        "kp-022"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-014",
+      "kind": "word",
+      "categoryId": "suit",
+      "texts": {
+        "zh-TW": "角色",
+        "ja-JP": "キャラクター"
+      },
+      "readings": {
+        "ja-Hira": "きゃらくたー"
+      },
+      "tags": [
+        "獸裝與角色",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-014",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-022",
+        "kp-023",
+        "kp-029"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-015",
+      "kind": "word",
+      "categoryId": "suit",
+      "texts": {
+        "zh-TW": "製作者",
+        "ja-JP": "製作者"
+      },
+      "readings": {
+        "ja-Hira": "せいさくしゃ"
+      },
+      "tags": [
+        "獸裝與角色",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-015",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-021",
+        "kp-022"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-016",
+      "kind": "word",
+      "categoryId": "venue",
+      "texts": {
+        "zh-TW": "報到處、接待處",
+        "ja-JP": "受付"
+      },
+      "readings": {
+        "ja-Hira": "うけつけ"
+      },
+      "tags": [
+        "會場與活動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-016",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-031"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-017",
+      "kind": "word",
+      "categoryId": "venue",
+      "texts": {
+        "zh-TW": "參加證",
+        "ja-JP": "参加証"
+      },
+      "readings": {
+        "ja-Hira": "さんかしょう"
+      },
+      "tags": [
+        "會場與活動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-017",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-039"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-018",
+      "kind": "word",
+      "categoryId": "venue",
+      "texts": {
+        "zh-TW": "休息室、準備室",
+        "ja-JP": "控室"
+      },
+      "readings": {
+        "ja-Hira": "ひかえしつ"
+      },
+      "tags": [
+        "會場與活動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-018",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-031",
+        "kp-032"
+      ],
+      "followUpIds": [],
+      "usageNote": "活動用的休息或準備空間；不一定是旅館房間。"
+    },
+    {
+      "id": "kv-019",
+      "kind": "word",
+      "categoryId": "venue",
+      "texts": {
+        "zh-TW": "隊伍最後面",
+        "ja-JP": "最後尾"
+      },
+      "readings": {
+        "ja-Hira": "さいこうび"
+      },
+      "tags": [
+        "會場與活動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-019",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-036"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-020",
+      "kind": "word",
+      "categoryId": "venue",
+      "texts": {
+        "zh-TW": "集合時間",
+        "ja-JP": "集合時間"
+      },
+      "readings": {
+        "ja-Hira": "しゅうごうじかん"
+      },
+      "tags": [
+        "會場與活動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-020",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-031",
+        "kp-032"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-021",
+      "kind": "word",
+      "categoryId": "shopping",
+      "texts": {
+        "zh-TW": "價格",
+        "ja-JP": "値段"
+      },
+      "readings": {
+        "ja-Hira": "ねだん"
+      },
+      "tags": [
+        "攤位購物",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-021",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-041",
+        "kp-042"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-022",
+      "kind": "word",
+      "categoryId": "shopping",
+      "texts": {
+        "zh-TW": "庫存",
+        "ja-JP": "在庫"
+      },
+      "readings": {
+        "ja-Hira": "ざいこ"
+      },
+      "tags": [
+        "攤位購物",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-022",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-047"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-023",
+      "kind": "word",
+      "categoryId": "shopping",
+      "texts": {
+        "zh-TW": "現金",
+        "ja-JP": "現金"
+      },
+      "readings": {
+        "ja-Hira": "げんきん"
+      },
+      "tags": [
+        "攤位購物",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-023",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-044"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-024",
+      "kind": "word",
+      "categoryId": "shopping",
+      "texts": {
+        "zh-TW": "找零",
+        "ja-JP": "お釣り"
+      },
+      "readings": {
+        "ja-Hira": "おつり"
+      },
+      "tags": [
+        "攤位購物",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-024",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-041",
+        "kp-042"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-025",
+      "kind": "word",
+      "categoryId": "shopping",
+      "texts": {
+        "zh-TW": "預留商品",
+        "ja-JP": "取り置き"
+      },
+      "readings": {
+        "ja-Hira": "とりおき"
+      },
+      "tags": [
+        "攤位購物",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-025",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-041",
+        "kp-042"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-026",
+      "kind": "word",
+      "categoryId": "food",
+      "texts": {
+        "zh-TW": "補水、供水",
+        "ja-JP": "給水"
+      },
+      "readings": {
+        "ja-Hira": "きゅうすい"
+      },
+      "tags": [
+        "吃飯休息",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-026",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-051",
+        "kp-052"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-027",
+      "kind": "word",
+      "categoryId": "food",
+      "texts": {
+        "zh-TW": "休息",
+        "ja-JP": "休憩"
+      },
+      "readings": {
+        "ja-Hira": "きゅうけい"
+      },
+      "tags": [
+        "吃飯休息",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-027",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-051",
+        "kp-052"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-028",
+      "kind": "word",
+      "categoryId": "food",
+      "texts": {
+        "zh-TW": "探班時送的慰勞品",
+        "ja-JP": "差し入れ"
+      },
+      "readings": {
+        "ja-Hira": "さしいれ"
+      },
+      "tags": [
+        "吃飯休息",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-028",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-051",
+        "kp-052"
+      ],
+      "followUpIds": [],
+      "usageNote": "常指送給活動參與者、工作人員或朋友的食物、飲料等慰勞品。"
+    },
+    {
+      "id": "kv-029",
+      "kind": "word",
+      "categoryId": "food",
+      "texts": {
+        "zh-TW": "過敏",
+        "ja-JP": "アレルギー"
+      },
+      "readings": {
+        "ja-Hira": "あれるぎー"
+      },
+      "tags": [
+        "吃飯休息",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-029",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-055"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-030",
+      "kind": "word",
+      "categoryId": "food",
+      "texts": {
+        "zh-TW": "便利商店",
+        "ja-JP": "コンビニ"
+      },
+      "readings": {
+        "ja-Hira": "こんびに"
+      },
+      "tags": [
+        "吃飯休息",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-030",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-058"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-031",
+      "kind": "word",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "社群媒體",
+        "ja-JP": "SNS"
+      },
+      "readings": {
+        "ja-Hira": "えすえぬえす"
+      },
+      "tags": [
+        "聯絡分享",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-031",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-061"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-032",
+      "kind": "word",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "互相追蹤",
+        "ja-JP": "相互フォロー"
+      },
+      "readings": {
+        "ja-Hira": "そうごふぉろー"
+      },
+      "tags": [
+        "聯絡分享",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-032",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-061",
+        "kp-062"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-033",
+      "kind": "word",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "名片",
+        "ja-JP": "名刺"
+      },
+      "readings": {
+        "ja-Hira": "めいし"
+      },
+      "tags": [
+        "聯絡分享",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-033",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-064"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-034",
+      "kind": "word",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "聯絡方式",
+        "ja-JP": "連絡先"
+      },
+      "readings": {
+        "ja-Hira": "れんらくさき"
+      },
+      "tags": [
+        "聯絡分享",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-034",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-061",
+        "kp-062"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-035",
+      "kind": "word",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "已讀",
+        "ja-JP": "既読"
+      },
+      "readings": {
+        "ja-Hira": "きどく"
+      },
+      "tags": [
+        "聯絡分享",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-035",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-061",
+        "kp-062"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-036",
+      "kind": "word",
+      "categoryId": "care",
+      "texts": {
+        "zh-TW": "身體狀況",
+        "ja-JP": "体調"
+      },
+      "readings": {
+        "ja-Hira": "たいちょう"
+      },
+      "tags": [
+        "界限與協助",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-036",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-071",
+        "kp-072"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-037",
+      "kind": "word",
+      "categoryId": "care",
+      "texts": {
+        "zh-TW": "彼此相處的距離感",
+        "ja-JP": "距離感"
+      },
+      "readings": {
+        "ja-Hira": "きょりかん"
+      },
+      "tags": [
+        "界限與協助",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-037",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-071",
+        "kp-072"
+      ],
+      "followUpIds": [],
+      "usageNote": "可以指實際距離，也可以指交往與互動的分寸。"
+    },
+    {
+      "id": "kv-038",
+      "kind": "word",
+      "categoryId": "care",
+      "texts": {
+        "zh-TW": "困擾、打擾",
+        "ja-JP": "迷惑"
+      },
+      "readings": {
+        "ja-Hira": "めいわく"
+      },
+      "tags": [
+        "界限與協助",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-038",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-071",
+        "kp-072"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-039",
+      "kind": "word",
+      "categoryId": "care",
+      "texts": {
+        "zh-TW": "幫助、救助",
+        "ja-JP": "助け"
+      },
+      "readings": {
+        "ja-Hira": "たすけ"
+      },
+      "tags": [
+        "界限與協助",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-039",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-071",
+        "kp-072"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-040",
+      "kind": "word",
+      "categoryId": "care",
+      "texts": {
+        "zh-TW": "工作人員",
+        "ja-JP": "スタッフ"
+      },
+      "readings": {
+        "ja-Hira": "すたっふ"
+      },
+      "tags": [
+        "界限與協助",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-040",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-076"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-041",
+      "kind": "word",
+      "categoryId": "travel",
+      "texts": {
+        "zh-TW": "轉乘",
+        "ja-JP": "乗り換え"
+      },
+      "readings": {
+        "ja-Hira": "のりかえ"
+      },
+      "tags": [
+        "交通住宿",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-041",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-081",
+        "kp-082"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-042",
+      "kind": "word",
+      "categoryId": "travel",
+      "texts": {
+        "zh-TW": "末班電車",
+        "ja-JP": "終電"
+      },
+      "readings": {
+        "ja-Hira": "しゅうでん"
+      },
+      "tags": [
+        "交通住宿",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-042",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-081",
+        "kp-082"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-043",
+      "kind": "word",
+      "categoryId": "travel",
+      "texts": {
+        "zh-TW": "住宿",
+        "ja-JP": "宿泊"
+      },
+      "readings": {
+        "ja-Hira": "しゅくはく"
+      },
+      "tags": [
+        "交通住宿",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-043",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-081",
+        "kp-082"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-044",
+      "kind": "word",
+      "categoryId": "travel",
+      "texts": {
+        "zh-TW": "辦理入住",
+        "ja-JP": "チェックイン"
+      },
+      "readings": {
+        "ja-Hira": "ちぇっくいん"
+      },
+      "tags": [
+        "交通住宿",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-044",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-081",
+        "kp-082"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-045",
+      "kind": "word",
+      "categoryId": "travel",
+      "texts": {
+        "zh-TW": "行李",
+        "ja-JP": "荷物"
+      },
+      "readings": {
+        "ja-Hira": "にもつ"
+      },
+      "tags": [
+        "交通住宿",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-045",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-087"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-046",
+      "kind": "word",
+      "categoryId": "farewell",
+      "texts": {
+        "zh-TW": "重逢",
+        "ja-JP": "再会"
+      },
+      "readings": {
+        "ja-Hira": "さいかい"
+      },
+      "tags": [
+        "感謝道別",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-046",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-091",
+        "kp-092"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-047",
+      "kind": "word",
+      "categoryId": "farewell",
+      "texts": {
+        "zh-TW": "伴手禮",
+        "ja-JP": "お土産"
+      },
+      "readings": {
+        "ja-Hira": "おみやげ"
+      },
+      "tags": [
+        "感謝道別",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-047",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-091",
+        "kp-092"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-048",
+      "kind": "word",
+      "categoryId": "farewell",
+      "texts": {
+        "zh-TW": "感謝",
+        "ja-JP": "感謝"
+      },
+      "readings": {
+        "ja-Hira": "かんしゃ"
+      },
+      "tags": [
+        "感謝道別",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-048",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-091",
+        "kp-092"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-049",
+      "kind": "word",
+      "categoryId": "farewell",
+      "texts": {
+        "zh-TW": "回憶",
+        "ja-JP": "思い出"
+      },
+      "readings": {
+        "ja-Hira": "おもいで"
+      },
+      "tags": [
+        "感謝道別",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-049",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-091",
+        "kp-092"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-050",
+      "kind": "word",
+      "categoryId": "farewell",
+      "texts": {
+        "zh-TW": "回家",
+        "ja-JP": "帰宅"
+      },
+      "readings": {
+        "ja-Hira": "きたく"
+      },
+      "tags": [
+        "感謝道別",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-050",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-091",
+        "kp-092"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-051",
+      "kind": "word",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "遊行",
+        "ja-JP": "パレード"
+      },
+      "readings": {
+        "ja-Hira": "ぱれーど"
+      },
+      "tags": [
+        "遊行",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-051",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-101",
+        "kp-103",
+        "kp-106"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-052",
+      "kind": "word",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "行進",
+        "ja-JP": "行進"
+      },
+      "readings": {
+        "ja-Hira": "こうしん"
+      },
+      "tags": [
+        "遊行",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-052",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-101",
+        "kp-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-053",
+      "kind": "word",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "整隊、排整齊",
+        "ja-JP": "整列"
+      },
+      "readings": {
+        "ja-Hira": "せいれつ"
+      },
+      "tags": [
+        "遊行",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-053",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-101",
+        "kp-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-054",
+      "kind": "word",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "順序",
+        "ja-JP": "順番"
+      },
+      "readings": {
+        "ja-Hira": "じゅんばん"
+      },
+      "tags": [
+        "遊行",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-054",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-101",
+        "kp-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-055",
+      "kind": "word",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "出發地點",
+        "ja-JP": "出発地点"
+      },
+      "readings": {
+        "ja-Hira": "しゅっぱつちてん"
+      },
+      "tags": [
+        "遊行",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-055",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-101",
+        "kp-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-056",
+      "kind": "word",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "終點",
+        "ja-JP": "ゴール"
+      },
+      "readings": {
+        "ja-Hira": "ごーる"
+      },
+      "tags": [
+        "遊行",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-056",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-101",
+        "kp-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-057",
+      "kind": "word",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "參觀、觀摩",
+        "ja-JP": "見学"
+      },
+      "readings": {
+        "ja-Hira": "けんがく"
+      },
+      "tags": [
+        "遊行",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-057",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-101",
+        "kp-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-058",
+      "kind": "word",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "道路兩旁",
+        "ja-JP": "沿道"
+      },
+      "readings": {
+        "ja-Hira": "えんどう"
+      },
+      "tags": [
+        "遊行",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-058",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-101",
+        "kp-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-059",
+      "kind": "word",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "引導",
+        "ja-JP": "誘導"
+      },
+      "readings": {
+        "ja-Hira": "ゆうどう"
+      },
+      "tags": [
+        "遊行",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-059",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-101",
+        "kp-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-060",
+      "kind": "word",
+      "categoryId": "parade",
+      "texts": {
+        "zh-TW": "陪同的人、陪同",
+        "ja-JP": "付き添い"
+      },
+      "readings": {
+        "ja-Hira": "つきそい"
+      },
+      "tags": [
+        "遊行",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-060",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-101",
+        "kp-102"
+      ],
+      "followUpIds": [],
+      "usageNote": "可以指陪行或協助的人；不一定特指獸裝助手。"
+    },
+    {
+      "id": "kv-061",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "只有兩個人",
+        "ja-JP": "二人きり"
+      },
+      "readings": {
+        "ja-Hira": "ふたりきり"
+      },
+      "tags": [
+        "私下邀約",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-061",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-115",
+        "kp-123"
+      ],
+      "followUpIds": [],
+      "usageNote": "只表示在場人數，不直接表示約會或性邀約。"
+    },
+    {
+      "id": "kv-062",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "邀約",
+        "ja-JP": "誘い"
+      },
+      "readings": {
+        "ja-Hira": "さそい"
+      },
+      "tags": [
+        "私下邀約",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-062",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-116"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-063",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "約好碰面",
+        "ja-JP": "待ち合わせ"
+      },
+      "readings": {
+        "ja-Hira": "まちあわせ"
+      },
+      "tags": [
+        "私下邀約",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-063",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-113",
+        "kp-114"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-064",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "空檔時間",
+        "ja-JP": "空き時間"
+      },
+      "readings": {
+        "ja-Hira": "あきじかん"
+      },
+      "tags": [
+        "私下邀約",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-064",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-113",
+        "kp-114"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-065",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "行程、計畫",
+        "ja-JP": "予定"
+      },
+      "readings": {
+        "ja-Hira": "よてい"
+      },
+      "tags": [
+        "私下邀約",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-065",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-122"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-066",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "時間或條件是否方便",
+        "ja-JP": "都合"
+      },
+      "readings": {
+        "ja-Hira": "つごう"
+      },
+      "tags": [
+        "私下邀約",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-066",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-113",
+        "kp-114"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-067",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "分開行動",
+        "ja-JP": "別行動"
+      },
+      "readings": {
+        "ja-Hira": "べつこうどう"
+      },
+      "tags": [
+        "私下邀約",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-067",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-113",
+        "kp-114"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-068",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "個別、分別",
+        "ja-JP": "個別"
+      },
+      "readings": {
+        "ja-Hira": "こべつ"
+      },
+      "tags": [
+        "私下邀約",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-068",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-113",
+        "kp-114"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-069",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "旁人的目光",
+        "ja-JP": "人目"
+      },
+      "readings": {
+        "ja-Hira": "ひとめ"
+      },
+      "tags": [
+        "私下邀約",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-069",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-113",
+        "kp-114"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-070",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "婉拒、謝絕",
+        "ja-JP": "断り"
+      },
+      "readings": {
+        "ja-Hira": "ことわり"
+      },
+      "tags": [
+        "私下邀約",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-070",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-113",
+        "kp-114"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-071",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "房間",
+        "ja-JP": "部屋"
+      },
+      "readings": {
+        "ja-Hira": "へや"
+      },
+      "tags": [
+        "回房間",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-071",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-125",
+        "kp-126",
+        "kp-127"
+      ],
+      "followUpIds": [],
+      "usageNote": "「部屋に来ない？」是邀你去房間，是否有親密意圖仍要確認。"
+    },
+    {
+      "id": "kv-072",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "共用房間",
+        "ja-JP": "相部屋"
+      },
+      "readings": {
+        "ja-Hira": "あいべや"
+      },
+      "tags": [
+        "回房間",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-072",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-125",
+        "kp-126"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-073",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "大廳",
+        "ja-JP": "ロビー"
+      },
+      "readings": {
+        "ja-Hira": "ろびー"
+      },
+      "tags": [
+        "回房間",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-073",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-132"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-074",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "鑰匙",
+        "ja-JP": "鍵"
+      },
+      "readings": {
+        "ja-Hira": "かぎ"
+      },
+      "tags": [
+        "回房間",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-074",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-125",
+        "kp-126"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-075",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "住宿旅客",
+        "ja-JP": "宿泊客"
+      },
+      "readings": {
+        "ja-Hira": "しゅくはくきゃく"
+      },
+      "tags": [
+        "回房間",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-075",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-125",
+        "kp-126"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-076",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "拜訪",
+        "ja-JP": "訪問"
+      },
+      "readings": {
+        "ja-Hira": "ほうもん"
+      },
+      "tags": [
+        "回房間",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-076",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-129"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-077",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "外出",
+        "ja-JP": "外出"
+      },
+      "readings": {
+        "ja-Hira": "がいしゅつ"
+      },
+      "tags": [
+        "回房間",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-077",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-125",
+        "kp-126"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-078",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "停留、逗留",
+        "ja-JP": "滞在"
+      },
+      "readings": {
+        "ja-Hira": "たいざい"
+      },
+      "tags": [
+        "回房間",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-078",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-125",
+        "kp-126"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-079",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "獨自、一個人",
+        "ja-JP": "一人で"
+      },
+      "readings": {
+        "ja-Hira": "ひとりで"
+      },
+      "tags": [
+        "回房間",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-079",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-136"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-080",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "離開房間、退場",
+        "ja-JP": "退出"
+      },
+      "readings": {
+        "ja-Hira": "たいしゅつ"
+      },
+      "tags": [
+        "回房間",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-080",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-125",
+        "kp-126"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-081",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "擁抱",
+        "ja-JP": "ハグ"
+      },
+      "readings": {
+        "ja-Hira": "はぐ"
+      },
+      "tags": [
+        "親密互動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-081",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-141"
+      ],
+      "followUpIds": [],
+      "usageNote": "擁抱的同意只針對擁抱，不自動延伸到親吻或其他接觸。"
+    },
+    {
+      "id": "kv-082",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "親吻",
+        "ja-JP": "キス"
+      },
+      "readings": {
+        "ja-Hira": "きす"
+      },
+      "tags": [
+        "親密互動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-082",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-138",
+        "kp-141",
+        "kp-142"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-083",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "牽手",
+        "ja-JP": "手をつなぐ"
+      },
+      "readings": {
+        "ja-Hira": "てをつなぐ"
+      },
+      "tags": [
+        "親密互動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-083",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-143"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-084",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "碰觸、接觸",
+        "ja-JP": "触れる"
+      },
+      "readings": {
+        "ja-Hira": "ふれる"
+      },
+      "tags": [
+        "親密互動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-084",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-137",
+        "kp-138"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-085",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "戀人",
+        "ja-JP": "恋人"
+      },
+      "readings": {
+        "ja-Hira": "こいびと"
+      },
+      "tags": [
+        "親密互動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-085",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-137",
+        "kp-138"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-086",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "好感",
+        "ja-JP": "好意"
+      },
+      "readings": {
+        "ja-Hira": "こうい"
+      },
+      "tags": [
+        "親密互動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-086",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-137",
+        "kp-138"
+      ],
+      "followUpIds": [],
+      "usageNote": "有好感不等於同意任何身體接觸。"
+    },
+    {
+      "id": "kv-087",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "安心",
+        "ja-JP": "安心"
+      },
+      "readings": {
+        "ja-Hira": "あんしん"
+      },
+      "tags": [
+        "親密互動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-087",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-137",
+        "kp-138"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-088",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "不知所措、困惑",
+        "ja-JP": "戸惑い"
+      },
+      "readings": {
+        "ja-Hira": "とまどい"
+      },
+      "tags": [
+        "親密互動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-088",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-137",
+        "kp-138"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-089",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "親近的肢體互動",
+        "ja-JP": "スキンシップ"
+      },
+      "readings": {
+        "ja-Hira": "すきんしっぷ"
+      },
+      "tags": [
+        "親密互動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-089",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-137",
+        "kp-138"
+      ],
+      "followUpIds": [],
+      "usageNote": "可指擁抱等接觸；不是固定等於性行為，也不能代替對具體動作的確認。"
+    },
+    {
+      "id": "kv-090",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "躺在旁邊陪睡",
+        "ja-JP": "添い寝"
+      },
+      "readings": {
+        "ja-Hira": "そいね"
+      },
+      "tags": [
+        "親密互動",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-090",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-137",
+        "kp-138"
+      ],
+      "followUpIds": [],
+      "usageNote": "字面是陪在旁邊睡；是否有更進一步的意思，需要直接確認。"
+    },
+    {
+      "id": "kv-091",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "色色、性相關的事（口語）",
+        "ja-JP": "エッチ"
+      },
+      "readings": {
+        "ja-Hira": "えっち"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "sex-activity",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-149",
+        "kp-152"
+      ],
+      "followUpIds": [],
+      "usageNote": "可作形容或指性行為；「エッチしない？」通常是直接的性邀約，不是一般遊玩邀約。"
+    },
+    {
+      "id": "kv-092",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "性行為",
+        "ja-JP": "セックス"
+      },
+      "readings": {
+        "ja-Hira": "せっくす"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "sex-activity",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-149",
+        "kp-150"
+      ],
+      "followUpIds": [],
+      "usageNote": "直接指性行為的外來語，不是一般的親密或擁抱。"
+    },
+    {
+      "id": "kv-093",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "黃腔、性相關玩笑",
+        "ja-JP": "下ネタ"
+      },
+      "readings": {
+        "ja-Hira": "しもねた"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-093",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-149",
+        "kp-150"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-094",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "同意",
+        "ja-JP": "同意"
+      },
+      "readings": {
+        "ja-Hira": "どうい"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-094",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-157"
+      ],
+      "followUpIds": [],
+      "usageNote": "同意要針對具體事情；可說明範圍，也可以改變心意。"
+    },
+    {
+      "id": "kv-095",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "拒絕",
+        "ja-JP": "拒否"
+      },
+      "readings": {
+        "ja-Hira": "きょひ"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-095",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-149",
+        "kp-150"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-096",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "保險套",
+        "ja-JP": "コンドーム"
+      },
+      "readings": {
+        "ja-Hira": "こんどーむ"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-096",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-158"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-097",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "避孕",
+        "ja-JP": "避妊"
+      },
+      "readings": {
+        "ja-Hira": "ひにん"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-097",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-149",
+        "kp-150"
+      ],
+      "followUpIds": [],
+      "usageNote": "此為詞義說明；不是醫療建議或方法效果的保證。"
+    },
+    {
+      "id": "kv-098",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "一夜情",
+        "ja-JP": "ワンナイト"
+      },
+      "readings": {
+        "ja-Hira": "わんないと"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-098",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-149",
+        "kp-150"
+      ],
+      "followUpIds": [],
+      "usageNote": "在戀愛或性邀約語境通常指一夜情；其他場合也可能只是「一晚」。"
+    },
+    {
+      "id": "kv-099",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "強迫、勉強別人",
+        "ja-JP": "無理強い"
+      },
+      "readings": {
+        "ja-Hira": "むりじい"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-099",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-149",
+        "kp-150"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-100",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "糾纏不休的",
+        "ja-JP": "しつこい"
+      },
+      "readings": {
+        "ja-Hira": "しつこい"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-100",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-149",
+        "kp-150"
+      ],
+      "followUpIds": [],
+      "usageNote": "形容對方在已拒絕後仍反覆追問或邀約等情況。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "福岡縣：性的同意溝通",
+      "url": "https://www.pref.fukuoka.lg.jp/contents/seitekidoui.html",
+      "note": "參考同意需具體確認、可以改變心意，以及進房／過夜不代表同意的原則。教材例句為自行編寫。"
+    },
+    {
+      "title": "數位大辭泉：ワンナイト",
+      "url": "https://kotobank.jp/word/わんないと-3109690",
+      "note": "參考語義；口語仍需依實際上下文確認。"
     }
   ]
 }

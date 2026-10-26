@@ -4,7 +4,7 @@ Kemono Phrasebook：手機優先的離線獸展日文會話工具。HTML/CSS/Van
 
 先開 [可直接使用的單一 HTML](outputs/Kemono-Phrasebook/Kemono-Phrasebook.html)。手機 PWA 與完整使用說明見 [交付資料夾 README](outputs/Kemono-Phrasebook/README.md)。
 
-- `src/`：主要來源與 100 句教材、11 個文法模組。
+- `src/`：主要來源與 160 句會話、100 個單字、11 個文法模組。
 - `scripts/build.py`：使用 Python 3 重建兩種格式。
 - `scripts/test-core.cjs`：資料、搜尋、選題、匯入與備份邏輯驗證（Node.js）。
 - `scripts/test-browser.cjs`：開發用 Playwright 驗收，可由 `PLAYWRIGHT_MODULE`、`CHROME_BIN`、`TEST_ORIGIN` 指定本機測試環境。
@@ -29,7 +29,7 @@ node scripts/test-browser.cjs
 
 已提供 `.github/workflows/pages.yml`，推送 `main` 或手動執行 workflow 時：
 
-1. 驗證 100 句教材、搜尋、抽題與資料匯入邏輯。
+1. 驗證全部教材、搜尋、抽題與資料匯入邏輯。
 2. 從 `src/` 建置 Standalone 與 PWA。
 3. 僅發布 `outputs/Kemono-Phrasebook/pwa/`，作為網站根目錄。
 
@@ -44,3 +44,9 @@ Repository：[daisuke1230/furrynihongo](https://github.com/daisuke1230/furryniho
 GitHub Pages 只負責提供網頁；現有 Web Speech API 的音質仍取決於裝置與瀏覽器。若要固定音質，可在之後改用預先產生的日文音檔，與教材一起離線快取。
 
 官方說明：[GitHub Pages 自訂 workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)、[自訂網域與專案網站](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)。
+
+## 本次教材擴充
+
+目前 260 筆教材，包含原有 100 句、60 句新增會話與 100 個單字。新增遊行、私下邀約、回房間、親密互動及性暗示與回應；曖昧邀約附語境說明與可點選的回應。所有用語統一使用「界限」。
+
+教材的 `kind`、`usageNote` 為可選欄位，舊版資料與使用者儲存不需重設。單字／會話種類篩選也會套用於配對選題。

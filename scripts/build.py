@@ -79,4 +79,4 @@ for f in ['index.html','style.css','core.js','app.js','data.json']:
 portable=(ROOT/'scripts'/'build.py').read_text().replace("OUT=ROOT/'outputs'/'Kemono-Phrasebook'", "OUT=ROOT.parent")
 (kit/'scripts'/'build.py').write_text(portable)
 (kit/'scripts'/'test-core.cjs').write_text((ROOT/'scripts'/'test-core.cjs').read_text())
-print(f'Built: {OUT}\n{len(data["phrases"])} phrases / {len(data["grammars"])} grammar modules / cache {version}')
+print(f'Built: {OUT}\n{len(data["phrases"])} entries / {len(data["grammars"])} grammar modules / cache {version}')
