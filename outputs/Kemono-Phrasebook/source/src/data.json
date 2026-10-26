@@ -3348,7 +3348,9 @@
         "kp-117",
         "kp-118",
         "kp-120",
-        "kp-121"
+        "kp-121",
+        "kp-217",
+        "kp-218"
       ],
       "usageNote": "可能聽到的邀約。單獨聊天不直接表示約會或性邀約，可先確認目的。"
     },
@@ -3559,7 +3561,7 @@
       ],
       "grammarIds": [],
       "difficulty": 2,
-      "semanticGroup": "meaning-120",
+      "semanticGroup": "chat-only-acceptance",
       "common": false,
       "audioUrl": null,
       "relatedIds": [
@@ -3701,7 +3703,7 @@
         "g-invite"
       ],
       "difficulty": 2,
-      "semanticGroup": "meaning-125",
+      "semanticGroup": "room-relax-invitation",
       "common": false,
       "audioUrl": null,
       "relatedIds": [
@@ -3882,7 +3884,7 @@
       ],
       "grammarIds": [],
       "difficulty": 2,
-      "semanticGroup": "meaning-131",
+      "semanticGroup": "chat-only-acceptance",
       "common": false,
       "audioUrl": null,
       "relatedIds": [
@@ -4710,7 +4712,7 @@
       ],
       "grammarIds": [],
       "difficulty": 2,
-      "semanticGroup": "meaning-158",
+      "semanticGroup": "condom-required",
       "common": false,
       "audioUrl": null,
       "relatedIds": [
@@ -4718,7 +4720,10 @@
       ],
       "followUpIds": [
         "kp-155",
-        "kp-157"
+        "kp-157",
+        "kp-205",
+        "kp-207",
+        "kp-209"
       ],
       "usageNote": "表達自己的必要條件；這句不是對任何做法的風險或效果保證。"
     },
@@ -4791,6 +4796,2119 @@
         "kp-076"
       ],
       "usageNote": "對已拒絕後仍持續糾纏的邀約，清楚要求停止。"
+    },
+    {
+      "id": "kp-161",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請把臉稍微轉向你自己的右邊。",
+        "ja-JP": "顔を少し右に向けてください。"
+      },
+      "readings": {
+        "ja-Hira": "かおをすこしみぎにむけてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "頭的方向",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-face-direction",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": [
+        "kp-168",
+        "kp-184"
+      ],
+      "usageNote": "左右以被攝者自己的方向為準；可同時用手指方向，避免鏡像誤會。"
+    },
+    {
+      "id": "kp-162",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請把臉稍微轉向你自己的左邊。",
+        "ja-JP": "顔を少し左に向けてください。"
+      },
+      "readings": {
+        "ja-Hira": "かおをすこしひだりにむけてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "頭的方向",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-face-direction",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": [
+        "kp-168",
+        "kp-184"
+      ],
+      "usageNote": "左右以被攝者自己的方向為準；可同時用手指方向，避免鏡像誤會。"
+    },
+    {
+      "id": "kp-163",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請把臉朝向正前方。",
+        "ja-JP": "顔を正面に向けてください。"
+      },
+      "readings": {
+        "ja-Hira": "かおをしょうめんにむけてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "頭的方向",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-face-direction",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-103"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-164",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請把下巴稍微收一點。",
+        "ja-JP": "顎を少し引いてください。"
+      },
+      "readings": {
+        "ja-Hira": "あごをすこしひいてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "頭的方向",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-chin-direction",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-105"
+      ],
+      "followUpIds": [
+        "kp-168",
+        "kp-184"
+      ],
+      "usageNote": "指稍微收下巴，不是把整個頭壓低；穿獸裝時依活動範圍調整。"
+    },
+    {
+      "id": "kp-165",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請把下巴稍微抬高一點。",
+        "ja-JP": "顎を少し上げてください。"
+      },
+      "readings": {
+        "ja-Hira": "あごをすこしあげてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "頭的方向",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-chin-direction",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-105"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-166",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請把頭稍微傾斜一點。",
+        "ja-JP": "頭を少し傾けてください。"
+      },
+      "readings": {
+        "ja-Hira": "あたまをすこしかたむけてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "頭的方向",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-direct-166",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-167",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "身體保持朝這邊，只把臉轉向側面。",
+        "ja-JP": "体はこちらに向けたまま、顔だけ横に向けてください。"
+      },
+      "readings": {
+        "ja-Hira": "からだはこちらにむけたまま、かおだけよこにむけてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "頭的方向",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-face-direction",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": [],
+      "usageNote": "分開說明身體和頭部的方向，可搭配示範。"
+    },
+    {
+      "id": "kp-168",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請保持這個姿勢，不要動。",
+        "ja-JP": "そのポーズのまま、動かないでください。"
+      },
+      "readings": {
+        "ja-Hira": "そのぽーずのまま、うごかないでください。"
+      },
+      "tags": [
+        "拍照交流",
+        "維持姿勢",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-hold-pose",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": [
+        "kp-169",
+        "kp-184"
+      ],
+      "usageNote": "適合短暫按快門前使用；拍完可接「姿勢可以放鬆了」。"
+    },
+    {
+      "id": "kp-169",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請再維持三秒鐘。",
+        "ja-JP": "あと三秒、そのままでお願いします。"
+      },
+      "readings": {
+        "ja-Hira": "あとさんびょう、そのままでおねがいします。"
+      },
+      "tags": [
+        "拍照交流",
+        "維持姿勢",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "photo-hold-pose",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-170",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請停在那個位置。",
+        "ja-JP": "その位置で止まってください。"
+      },
+      "readings": {
+        "ja-Hira": "そのいちでとまってください。"
+      },
+      "tags": [
+        "拍照交流",
+        "維持姿勢",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-hold-pose",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": [],
+      "usageNote": "指停在指定位置，與維持特定肢體姿勢不同。"
+    },
+    {
+      "id": "kp-171",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請稍微放鬆一點。",
+        "ja-JP": "少し力を抜いてください。"
+      },
+      "readings": {
+        "ja-Hira": "すこしちからをぬいてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "維持姿勢",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-direct-171",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": [],
+      "usageNote": "拍攝中的放鬆肌肉；不等於已結束拍攝。"
+    },
+    {
+      "id": "kp-172",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "準備好了請告訴我。",
+        "ja-JP": "準備ができたら教えてください。"
+      },
+      "readings": {
+        "ja-Hira": "じゅんびができたらおしえてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "維持姿勢",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-direct-172",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-173",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請看我的指尖。",
+        "ja-JP": "私の指先を見てください。"
+      },
+      "readings": {
+        "ja-Hira": "わたしのゆびさきをみてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "看指定位置",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-gaze-direction",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-107"
+      ],
+      "followUpIds": [
+        "kp-168",
+        "kp-184"
+      ],
+      "usageNote": "攝影者用手指標示視線位置；不要把手直接伸到對方臉前。"
+    },
+    {
+      "id": "kp-174",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請看右上方。",
+        "ja-JP": "右上を見てください。"
+      },
+      "readings": {
+        "ja-Hira": "みぎうえをみてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "看指定位置",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-gaze-direction",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": [],
+      "usageNote": "以被攝者的方向為準；可指向具體位置。"
+    },
+    {
+      "id": "kp-175",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請看左上方。",
+        "ja-JP": "左上を見てください。"
+      },
+      "readings": {
+        "ja-Hira": "ひだりうえをみてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "看指定位置",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-gaze-direction",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": [],
+      "usageNote": "以被攝者的方向為準；可指向具體位置。"
+    },
+    {
+      "id": "kp-176",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請稍微往上看。",
+        "ja-JP": "少し上を見てください。"
+      },
+      "readings": {
+        "ja-Hira": "すこしうえをみてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "看指定位置",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-gaze-direction",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-177",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "身體不要動，只把視線轉向這邊。",
+        "ja-JP": "体はそのままで、目線だけこちらに向けてください。"
+      },
+      "readings": {
+        "ja-Hira": "からだはそのままで、めせんだけこちらにむけてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "看指定位置",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-gaze-direction",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-106"
+      ],
+      "followUpIds": [],
+      "usageNote": "戴獸頭時若無法改變視線，可改用頭部方向溝通，不要求做不到的動作。"
+    },
+    {
+      "id": "kp-178",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請舉起右手。",
+        "ja-JP": "右手を上げてください。"
+      },
+      "readings": {
+        "ja-Hira": "みぎてをあげてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "手部動作",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-raised-hand",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": [
+        "kp-181",
+        "kp-182",
+        "kp-184"
+      ],
+      "usageNote": "左右以被攝者自己的手為準。"
+    },
+    {
+      "id": "kp-179",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請舉起左手。",
+        "ja-JP": "左手を上げてください。"
+      },
+      "readings": {
+        "ja-Hira": "ひだりてをあげてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "手部動作",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-raised-hand",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": [
+        "kp-181",
+        "kp-182",
+        "kp-184"
+      ],
+      "usageNote": "左右以被攝者自己的手為準。"
+    },
+    {
+      "id": "kp-180",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請把雙手舉起來。",
+        "ja-JP": "両手を上げてください。"
+      },
+      "readings": {
+        "ja-Hira": "りょうてをあげてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "手部動作",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-raised-hand",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-108"
+      ],
+      "followUpIds": [
+        "kp-181",
+        "kp-182",
+        "kp-184"
+      ]
+    },
+    {
+      "id": "kp-181",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請把手放到臉旁邊。",
+        "ja-JP": "手を顔の横に持ってきてください。"
+      },
+      "readings": {
+        "ja-Hira": "てをかおのよこにもってきてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "手部動作",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-direct-181",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-182",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請把手稍微放低一點。",
+        "ja-JP": "手を少し下げてください。"
+      },
+      "readings": {
+        "ja-Hira": "てをすこしさげてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "手部動作",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-direct-182",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kp-183",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "請再往後退半步。",
+        "ja-JP": "もう半歩、後ろに下がってください。"
+      },
+      "readings": {
+        "ja-Hira": "もうはんぽ、うしろにさがってください。"
+      },
+      "tags": [
+        "拍照交流",
+        "站位調整",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-direct-183",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-111"
+      ],
+      "followUpIds": [],
+      "usageNote": "先確認對方身後有空間，再指示移動。"
+    },
+    {
+      "id": "kp-184",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "好了，姿勢可以放鬆了。",
+        "ja-JP": "はい、楽にしてください。"
+      },
+      "readings": {
+        "ja-Hira": "はい、らくにしてください。"
+      },
+      "tags": [
+        "拍照交流",
+        "維持姿勢",
+        "攝影引導",
+        "會話"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "photo-direct-184",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-101",
+        "kv-102"
+      ],
+      "followUpIds": [],
+      "usageNote": "表示這個定格姿勢已結束，對方可以放鬆。"
+    },
+    {
+      "id": "kp-185",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "可以碰你的肩膀嗎？",
+        "ja-JP": "肩に触れてもいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "かたにふれてもいいですか。"
+      },
+      "tags": [
+        "親密互動",
+        "男性同士",
+        "會話",
+        "意願確認"
+      ],
+      "grammarIds": [
+        "g-permission"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-185",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-113",
+        "kv-114"
+      ],
+      "followUpIds": [
+        "kp-187",
+        "kp-188",
+        "kp-190"
+      ],
+      "usageNote": "只詢問碰肩膀這個動作；沒有包括其他部位或撫摸。"
+    },
+    {
+      "id": "kp-186",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "可以撫摸你的背嗎？",
+        "ja-JP": "背中をなでてもいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "せなかをなでてもいいですか。"
+      },
+      "tags": [
+        "親密互動",
+        "男性同士",
+        "會話",
+        "意願確認"
+      ],
+      "grammarIds": [
+        "g-permission"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-186",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-113",
+        "kv-114"
+      ],
+      "followUpIds": [
+        "kp-187",
+        "kp-188",
+        "kp-190"
+      ],
+      "usageNote": "說出具體部位和動作；先等對方回答。"
+    },
+    {
+      "id": "kp-187",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "請告訴我哪些地方可以碰。",
+        "ja-JP": "触ってもいい場所を教えてください。"
+      },
+      "readings": {
+        "ja-Hira": "さわってもいいばしょをおしえてください。"
+      },
+      "tags": [
+        "親密互動",
+        "男性同士",
+        "會話",
+        "意願確認"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-187",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-113",
+        "kv-114"
+      ],
+      "followUpIds": [
+        "kp-188",
+        "kp-189",
+        "kp-190"
+      ],
+      "usageNote": "請對方說出具體部位；沒有明確回答時不要自行推測。"
+    },
+    {
+      "id": "kp-188",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "隔著衣服碰觸是可以的。",
+        "ja-JP": "服の上からなら、触っても大丈夫です。"
+      },
+      "readings": {
+        "ja-Hira": "ふくのうえからなら、さわってもだいじょうぶです。"
+      },
+      "tags": [
+        "親密互動",
+        "男性同士",
+        "會話",
+        "意願確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-188",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-114"
+      ],
+      "followUpIds": [
+        "kp-189",
+        "kp-190"
+      ],
+      "usageNote": "只接受隔著衣服的碰觸；仍需說清楚可碰的部位。"
+    },
+    {
+      "id": "kp-189",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "請不要把手伸進內褲裡。",
+        "ja-JP": "下着の中には手を入れないでください。"
+      },
+      "readings": {
+        "ja-Hira": "したぎのなかにはてをいれないでください。"
+      },
+      "tags": [
+        "親密互動",
+        "男性同士",
+        "會話",
+        "意願確認"
+      ],
+      "grammarIds": [
+        "g-negative"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-189",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-115"
+      ],
+      "followUpIds": [
+        "kp-202"
+      ],
+      "usageNote": "在這個男性私下互動語境，直接說明衣物內側的界限。"
+    },
+    {
+      "id": "kp-190",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "我現在不想被碰。",
+        "ja-JP": "今は触られたくありません。"
+      },
+      "readings": {
+        "ja-Hira": "いまはさわられたくありません。"
+      },
+      "tags": [
+        "親密互動",
+        "男性同士",
+        "會話",
+        "意願確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-190",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-113",
+        "kv-114"
+      ],
+      "followUpIds": [
+        "kp-148",
+        "kp-202"
+      ],
+      "usageNote": "拒絕當下的接觸，不需要另外提出理由。"
+    },
+    {
+      "id": "kp-191",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "可以幫我口交嗎？（對方向你提出請求）",
+        "ja-JP": "フェラしてくれる？"
+      },
+      "readings": {
+        "ja-Hira": "ふぇらしてくれる？"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "意願確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-191",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-116",
+        "kv-117"
+      ],
+      "followUpIds": [
+        "kp-193",
+        "kp-194",
+        "kp-196",
+        "kp-198",
+        "kp-201"
+      ],
+      "usageNote": "可能聽到的男性間口語邀約。「フェラ」指口交；說這句的人希望接受，由聽這句的人進行。可先確認角色，再決定接受或拒絕。"
+    },
+    {
+      "id": "kp-192",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我可以幫你口交嗎？（對方向你詢問許可）",
+        "ja-JP": "フェラしてもいい？"
+      },
+      "readings": {
+        "ja-Hira": "ふぇらしてもいい？"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "意願確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-192",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-117"
+      ],
+      "followUpIds": [
+        "kp-193",
+        "kp-195",
+        "kp-197",
+        "kp-199",
+        "kp-200",
+        "kp-201"
+      ],
+      "usageNote": "可能聽到的男性間口語邀約。說這句的人想進行動作，聽這句的人是接受的一方；和「フェラしてくれる？」的方向相反。詢問不代表已得到同意。"
+    },
+    {
+      "id": "kp-193",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "你的意思是由誰做？",
+        "ja-JP": "どちらがするという意味ですか。"
+      },
+      "readings": {
+        "ja-Hira": "どちらがするといういみですか。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "意願確認"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-193",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-116",
+        "kv-117"
+      ],
+      "followUpIds": [
+        "kp-194",
+        "kp-195",
+        "kp-226"
+      ],
+      "usageNote": "先分清楚進行動作的人與接受的人，不依性別、外表或角色猜測。"
+    },
+    {
+      "id": "kp-194",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "你的意思是由我幫你口交嗎？",
+        "ja-JP": "私がするという意味ですか。"
+      },
+      "readings": {
+        "ja-Hira": "わたしがするといういみですか。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "意願確認"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-194",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-116",
+        "kv-117"
+      ],
+      "followUpIds": [
+        "kp-196",
+        "kp-198",
+        "kp-201"
+      ],
+      "usageNote": "只有在前文明確說到口交時，這句的「する」才指口交；用來確認自己是進行動作的一方。"
+    },
+    {
+      "id": "kp-195",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "你的意思是你幫我口交嗎？",
+        "ja-JP": "あなたがしてくれるという意味ですか。"
+      },
+      "readings": {
+        "ja-Hira": "あなたがしてくれるといういみですか。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "意願確認"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-195",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-116",
+        "kv-117"
+      ],
+      "followUpIds": [
+        "kp-197",
+        "kp-199",
+        "kp-200",
+        "kp-201"
+      ],
+      "usageNote": "前文已談到口交時，確認對方是進行動作的一方，自己是接受的一方。"
+    },
+    {
+      "id": "kp-196",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我不想幫對方口交。",
+        "ja-JP": "口ではしたくありません。"
+      },
+      "readings": {
+        "ja-Hira": "くちではしたくありません。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-196",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-116",
+        "kv-117"
+      ],
+      "followUpIds": [
+        "kp-202",
+        "kp-201"
+      ],
+      "usageNote": "「したくありません」是自己不想做；與不想被做的「されたくありません」不同。"
+    },
+    {
+      "id": "kp-197",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我不想接受口交。",
+        "ja-JP": "口でされるのは嫌です。"
+      },
+      "readings": {
+        "ja-Hira": "くちでされるのはいやです。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-197",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-118"
+      ],
+      "followUpIds": [
+        "kp-202",
+        "kp-201"
+      ],
+      "usageNote": "拒絕自己作為接受的一方；不要和自己不想幫對方做混淆。"
+    },
+    {
+      "id": "kp-198",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "幫對方口交可以，但我不想再進一步。",
+        "ja-JP": "口でするのは大丈夫ですが、それ以上はしたくありません。"
+      },
+      "readings": {
+        "ja-Hira": "くちでするのはだいじょうぶですが、それいじょうはしたくありません。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-198",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-117"
+      ],
+      "followUpIds": [
+        "kp-201",
+        "kp-145"
+      ],
+      "usageNote": "在前文已確認對象和動作後，表達自己願意做的範圍，不包含其他行為。"
+    },
+    {
+      "id": "kp-199",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "被撫摸可以，但我不想接受口交。",
+        "ja-JP": "触られるのは大丈夫ですが、口ではされたくありません。"
+      },
+      "readings": {
+        "ja-Hira": "さわられるのはだいじょうぶですが、くちではされたくありません。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-199",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-116",
+        "kv-117"
+      ],
+      "followUpIds": [
+        "kp-187",
+        "kp-202"
+      ],
+      "usageNote": "分別表達接受與拒絕；撫摸的部位與方式仍要另外確認。"
+    },
+    {
+      "id": "kp-200",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "接受口交可以，但做其他事之前請先問我。",
+        "ja-JP": "口でしてもらうのは大丈夫です。ただ、ほかのことをする前には聞いてください。"
+      },
+      "readings": {
+        "ja-Hira": "くちでしてもらうのはだいじょうぶです。ただ、ほかのことをするまえにはきいてください。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-200",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-116",
+        "kv-117"
+      ],
+      "followUpIds": [
+        "kp-201",
+        "kp-145"
+      ],
+      "usageNote": "自己是接受的一方；這個接受不延伸到其他動作，也可以隨時改變心意。"
+    },
+    {
+      "id": "kp-201",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "繼續之前，我想先暫停聊清楚。",
+        "ja-JP": "続ける前に、いったん止まって話したいです。"
+      },
+      "readings": {
+        "ja-Hira": "つづけるまえに、いったんとまってはなしたいです。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-201",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-116",
+        "kv-117"
+      ],
+      "followUpIds": [
+        "kp-202",
+        "kp-157"
+      ],
+      "usageNote": "先停止，再確認動作、對象與界限；不是讓對方邊繼續邊詢問。"
+    },
+    {
+      "id": "kp-202",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我知道了，那件事我不會做。",
+        "ja-JP": "わかりました。それはしません。"
+      },
+      "readings": {
+        "ja-Hira": "わかりました。それはしません。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "男性同士",
+        "會話",
+        "回應與界限"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "male-consent-202",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-116",
+        "kv-117"
+      ],
+      "followUpIds": [
+        "kp-145"
+      ],
+      "usageNote": "收到對方拒絕後表示理解，並停止被拒絕的行為。"
+    },
+    {
+      "id": "kp-203",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "無套也可以嗎？（對方詢問）",
+        "ja-JP": "生でもいい？"
+      },
+      "readings": {
+        "ja-Hira": "なまでもいい？"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "無套與條件"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "condomless-invitation",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-121"
+      ],
+      "followUpIds": [
+        "kp-205",
+        "kp-206",
+        "kp-209",
+        "kp-210"
+      ],
+      "usageNote": "可能聽到的性邀約。「生」在這個語境通常指不使用保險套；一般食物、啤酒或直播語境不是這個意思。先確認詞義與行為，不代表已同意。"
+    },
+    {
+      "id": "kp-204",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我想不戴保險套做。（對方表達希望）",
+        "ja-JP": "ゴムなしでしたい。"
+      },
+      "readings": {
+        "ja-Hira": "ごむなしでしたい。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "無套與條件"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "condomless-invitation",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-122",
+        "kv-123"
+      ],
+      "followUpIds": [
+        "kp-205",
+        "kp-206",
+        "kp-209",
+        "kp-210"
+      ],
+      "usageNote": "可能聽到的無套提議。「ゴム」在性語境是保險套；這句只表示對方的希望，不是雙方已達成同意。"
+    },
+    {
+      "id": "kp-205",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "你說的「生」是指不使用保險套嗎？",
+        "ja-JP": "「生」というのは、コンドームを使わないという意味ですか。"
+      },
+      "readings": {
+        "ja-Hira": "「なま」というのは、こんどーむをつかわないといういみですか。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "無套與條件"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-205",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-121"
+      ],
+      "followUpIds": [
+        "kp-206",
+        "kp-209",
+        "kp-210"
+      ],
+      "usageNote": "直接確認「生」在當下的意思，避免把一般用語誤解成性暗示。"
+    },
+    {
+      "id": "kp-206",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我的條件是一定要使用保險套。",
+        "ja-JP": "コンドームを使うことが条件です。"
+      },
+      "readings": {
+        "ja-Hira": "こんどーむをつかうことがじょうけんです。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "無套與條件"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "condom-required",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-207",
+        "kp-209",
+        "kp-210"
+      ],
+      "usageNote": "表達自己的必要條件；不是對任何做法的效果或風險保證。"
+    },
+    {
+      "id": "kp-207",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "請不要中途把保險套拿掉。",
+        "ja-JP": "途中でコンドームを外さないでください。"
+      },
+      "readings": {
+        "ja-Hira": "とちゅうでこんどーむをはずさないでください。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "無套與條件"
+      ],
+      "grammarIds": [
+        "g-negative"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-207",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-208",
+        "kp-201"
+      ],
+      "usageNote": "清楚說明原本同意的條件不能自行更改。"
+    },
+    {
+      "id": "kp-208",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "如果你把保險套拿掉，我就會停止。",
+        "ja-JP": "コンドームを外したなら、ここでやめます。"
+      },
+      "readings": {
+        "ja-Hira": "こんどーむをはずしたなら、ここでやめます。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "無套與條件"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-208",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-157",
+        "kp-160"
+      ],
+      "usageNote": "說明條件改變時自己會停止；先前的接受不涵蓋更改後的行為。"
+    },
+    {
+      "id": "kp-209",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "不使用保險套，我就不做。",
+        "ja-JP": "コンドームなしではしません。"
+      },
+      "readings": {
+        "ja-Hira": "こんどーむなしではしません。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "無套與條件"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "condom-required",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-210",
+        "kp-160"
+      ],
+      "usageNote": "直接拒絕無套，不需要另外解釋或繼續協商。"
+    },
+    {
+      "id": "kp-210",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "那樣的話，今天就先不要了。",
+        "ja-JP": "それなら、今日はやめておきます。"
+      },
+      "readings": {
+        "ja-Hira": "それなら、きょうはやめておきます。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "無套與條件"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-210",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-202"
+      ],
+      "usageNote": "用於前文已明確談到親密互動或性邀約時的婉拒；不必答應自己不願接受的條件。"
+    },
+    {
+      "id": "kp-211",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "這之後，要不要再一起待一下？",
+        "ja-JP": "この後、少し一緒にいませんか。"
+      },
+      "readings": {
+        "ja-Hira": "このあと、すこしいっしょにいませんか。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "男性同士",
+        "委婉邀約"
+      ],
+      "grammarIds": [
+        "g-invite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-211",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-217",
+        "kp-218",
+        "kp-118",
+        "kp-121"
+      ],
+      "usageNote": "可能聽到的委婉邀約。可以只是聊天或陪伴，也可能有其他意思；不直接等於性邀約。"
+    },
+    {
+      "id": "kp-212",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我想再和你單獨待一會兒。",
+        "ja-JP": "もう少し二人で過ごしたいです。"
+      },
+      "readings": {
+        "ja-Hira": "もうすこしふたりですごしたいです。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "男性同士",
+        "委婉邀約"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-212",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-217",
+        "kp-218",
+        "kp-123"
+      ],
+      "usageNote": "表達想獨處；接不接受見面與接不接受親密接觸，仍需分別確認。"
+    },
+    {
+      "id": "kp-213",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "要不要去可以只有我們兩人的地方？",
+        "ja-JP": "二人だけになれるところに行きませんか。"
+      },
+      "readings": {
+        "ja-Hira": "ふたりだけになれるところにいきませんか。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "男性同士",
+        "委婉邀約"
+      ],
+      "grammarIds": [
+        "g-invite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-213",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-217",
+        "kp-118",
+        "kp-123"
+      ],
+      "usageNote": "可能聽到的私下邀約；先確認地點和想做什麼，不自行推測目的。"
+    },
+    {
+      "id": "kp-214",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我可以再靠近你一點嗎？",
+        "ja-JP": "もう少し近くにいてもいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "もうすこしちかくにいてもいいですか。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "男性同士",
+        "委婉邀約"
+      ],
+      "grammarIds": [
+        "g-permission"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-214",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-140",
+        "kp-190"
+      ],
+      "usageNote": "詢問靠近的意願，不包含觸摸或親吻。"
+    },
+    {
+      "id": "kp-215",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "要不要到房間裡放鬆一下？",
+        "ja-JP": "部屋でゆっくりしませんか。"
+      },
+      "readings": {
+        "ja-Hira": "へやでゆっくりしませんか。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "男性同士",
+        "委婉邀約"
+      ],
+      "grammarIds": [
+        "g-invite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "room-relax-invitation",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-217",
+        "kp-218",
+        "kp-130",
+        "kp-132"
+      ],
+      "usageNote": "常見的委婉房間邀約。可能只是休息，也可能帶親密暗示；可先問「接下來想做什麼？」。"
+    },
+    {
+      "id": "kp-216",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "今晚我想和你待在一起。",
+        "ja-JP": "今夜は一緒にいたいです。"
+      },
+      "readings": {
+        "ja-Hira": "こんやはいっしょにいたいです。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "男性同士",
+        "委婉邀約"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-216",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-217",
+        "kp-218",
+        "kp-134"
+      ],
+      "usageNote": "可以表示陪伴或親近的願望，不能只憑這句認定是性邀約。"
+    },
+    {
+      "id": "kp-217",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "你的意思是，接下來想做什麼？",
+        "ja-JP": "この後、どうしたいという意味ですか。"
+      },
+      "readings": {
+        "ja-Hira": "このあと、どうしたいといういみですか。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "男性同士",
+        "委婉邀約"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-217",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-218",
+        "kp-130",
+        "kp-155"
+      ],
+      "usageNote": "把委婉邀約轉成具體確認；可接著說自己接受的範圍。"
+    },
+    {
+      "id": "kp-218",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "如果只是聊一下，是可以的。",
+        "ja-JP": "少し話すだけなら大丈夫です。"
+      },
+      "readings": {
+        "ja-Hira": "すこしはなすだけならだいじょうぶです。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "男性同士",
+        "委婉邀約"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "chat-only-acceptance",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-130",
+        "kp-140"
+      ],
+      "usageNote": "接受的範圍只有聊天，不包含其他互動。"
+    },
+    {
+      "id": "kp-219",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "你是タチ還是ネコ？（直接口語）",
+        "ja-JP": "タチ？ネコ？"
+      },
+      "readings": {
+        "ja-Hira": "たち？ねこ？"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "角色確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "role-preference-question",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-125",
+        "kv-126"
+      ],
+      "followUpIds": [
+        "kp-221",
+        "kp-222",
+        "kp-223",
+        "kp-225",
+        "kp-226"
+      ],
+      "usageNote": "可能聽到的男性間角色問法。タチ通常指插入的一方，ネコ通常指接受的一方；這是私密偏好，可選擇不回答，也不能從外表推斷。"
+    },
+    {
+      "id": "kp-220",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "你偏好什麼樣的角色？",
+        "ja-JP": "どんなポジションが好きですか。"
+      },
+      "readings": {
+        "ja-Hira": "どんなぽじしょんがすきですか。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "角色確認"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "role-preference-question",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-129"
+      ],
+      "followUpIds": [
+        "kp-221",
+        "kp-222",
+        "kp-223",
+        "kp-225"
+      ],
+      "usageNote": "只有在前文明確談到性角色時才這樣理解；角色偏好不是對任何行為的同意。"
+    },
+    {
+      "id": "kp-221",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "你是指插入的那一方嗎？",
+        "ja-JP": "挿入する側という意味ですか。"
+      },
+      "readings": {
+        "ja-Hira": "そうにゅうするがわといういみですか。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "角色確認"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-221",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-223",
+        "kp-224",
+        "kp-225"
+      ],
+      "usageNote": "確認角色詞的具體意思，不依外表、性格或獸設猜測。"
+    },
+    {
+      "id": "kp-222",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "你是指接受的那一方嗎？",
+        "ja-JP": "受け入れる側という意味ですか。"
+      },
+      "readings": {
+        "ja-Hira": "うけいれるがわといういみですか。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "角色確認"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-222",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-223",
+        "kp-224",
+        "kp-225"
+      ],
+      "usageNote": "前文明確談到性角色時，確認對方所指的方向；不是一律接受所有互動。"
+    },
+    {
+      "id": "kp-223",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我是リバ，但不表示今天哪個角色都可以。",
+        "ja-JP": "私はリバですが、今日はどちらでもいいという意味ではありません。"
+      },
+      "readings": {
+        "ja-Hira": "わたしはりばですが、きょうはどちらでもいいといういみではありません。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "角色確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-223",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-128"
+      ],
+      "followUpIds": [
+        "kp-224",
+        "kp-226",
+        "kp-225"
+      ],
+      "usageNote": "リバ表示兩種角色都可能接受，仍要看當下意願；不是無條件接受。"
+    },
+    {
+      "id": "kp-224",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "我希望不要先替彼此定角色，每次都確認。",
+        "ja-JP": "役割は決めつけず、その都度確認したいです。"
+      },
+      "readings": {
+        "ja-Hira": "やくわりはきめつけず、そのつどかくにんしたいです。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "角色確認"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-224",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-193",
+        "kp-226"
+      ],
+      "usageNote": "不把固定標籤或過去偏好當成這次已同意的事情。"
+    },
+    {
+      "id": "kp-225",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "這件事我現在還不想回答。",
+        "ja-JP": "そのことは、まだ答えたくありません。"
+      },
+      "readings": {
+        "ja-Hira": "そのことは、まだこたえたくありません。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "角色確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-225",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [],
+      "followUpIds": [
+        "kp-202"
+      ],
+      "usageNote": "可以保留私密偏好，不需要為了繼續聊天而回答。"
+    },
+    {
+      "id": "kp-226",
+      "kind": "phrase",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "角色偏好和要不要口交，我想分開確認。",
+        "ja-JP": "ポジションの話と、口でするかどうかは別に確認したいです。"
+      },
+      "readings": {
+        "ja-Hira": "ぽじしょんのはなしと、くちでするかどうかはべつにかくにんしたいです。"
+      },
+      "tags": [
+        "性暗示與回應",
+        "會話",
+        "男性同士",
+        "角色確認"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "meaning-226",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-129"
+      ],
+      "followUpIds": [
+        "kp-193",
+        "kp-194",
+        "kp-195"
+      ],
+      "usageNote": "タチ／ネコ等角色不直接決定口交時誰做、誰接受；不同動作要另外確認。"
     },
     {
       "id": "kv-001",
@@ -7276,7 +9394,7 @@
       ],
       "grammarIds": [],
       "difficulty": 2,
-      "semanticGroup": "word-096",
+      "semanticGroup": "condom-terms",
       "common": false,
       "audioUrl": null,
       "relatedIds": [
@@ -7391,1357 +9509,6 @@
       ],
       "followUpIds": [],
       "usageNote": "形容對方在已拒絕後仍反覆追問或邀約等情況。"
-    },
-    {
-      "id": "kp-161",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請把臉稍微轉向你自己的右邊。",
-        "ja-JP": "顔を少し右に向けてください。"
-      },
-      "readings": {
-        "ja-Hira": "かおをすこしみぎにむけてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "頭的方向",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-face-direction",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": [
-        "kp-168",
-        "kp-184"
-      ],
-      "usageNote": "左右以被攝者自己的方向為準；可同時用手指方向，避免鏡像誤會。"
-    },
-    {
-      "id": "kp-162",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請把臉稍微轉向你自己的左邊。",
-        "ja-JP": "顔を少し左に向けてください。"
-      },
-      "readings": {
-        "ja-Hira": "かおをすこしひだりにむけてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "頭的方向",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-face-direction",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": [
-        "kp-168",
-        "kp-184"
-      ],
-      "usageNote": "左右以被攝者自己的方向為準；可同時用手指方向，避免鏡像誤會。"
-    },
-    {
-      "id": "kp-163",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請把臉朝向正前方。",
-        "ja-JP": "顔を正面に向けてください。"
-      },
-      "readings": {
-        "ja-Hira": "かおをしょうめんにむけてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "頭的方向",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-face-direction",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-103"
-      ],
-      "followUpIds": []
-    },
-    {
-      "id": "kp-164",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請把下巴稍微收一點。",
-        "ja-JP": "顎を少し引いてください。"
-      },
-      "readings": {
-        "ja-Hira": "あごをすこしひいてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "頭的方向",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-chin-direction",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-105"
-      ],
-      "followUpIds": [
-        "kp-168",
-        "kp-184"
-      ],
-      "usageNote": "指稍微收下巴，不是把整個頭壓低；穿獸裝時依活動範圍調整。"
-    },
-    {
-      "id": "kp-165",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請把下巴稍微抬高一點。",
-        "ja-JP": "顎を少し上げてください。"
-      },
-      "readings": {
-        "ja-Hira": "あごをすこしあげてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "頭的方向",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-chin-direction",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-105"
-      ],
-      "followUpIds": []
-    },
-    {
-      "id": "kp-166",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請把頭稍微傾斜一點。",
-        "ja-JP": "頭を少し傾けてください。"
-      },
-      "readings": {
-        "ja-Hira": "あたまをすこしかたむけてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "頭的方向",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-direct-166",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": []
-    },
-    {
-      "id": "kp-167",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "身體保持朝這邊，只把臉轉向側面。",
-        "ja-JP": "体はこちらに向けたまま、顔だけ横に向けてください。"
-      },
-      "readings": {
-        "ja-Hira": "からだはこちらにむけたまま、かおだけよこにむけてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "頭的方向",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-face-direction",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": [],
-      "usageNote": "分開說明身體和頭部的方向，可搭配示範。"
-    },
-    {
-      "id": "kp-168",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請保持這個姿勢，不要動。",
-        "ja-JP": "そのポーズのまま、動かないでください。"
-      },
-      "readings": {
-        "ja-Hira": "そのぽーずのまま、うごかないでください。"
-      },
-      "tags": [
-        "拍照交流",
-        "維持姿勢",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-hold-pose",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": [
-        "kp-169",
-        "kp-184"
-      ],
-      "usageNote": "適合短暫按快門前使用；拍完可接「姿勢可以放鬆了」。"
-    },
-    {
-      "id": "kp-169",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請再維持三秒鐘。",
-        "ja-JP": "あと三秒、そのままでお願いします。"
-      },
-      "readings": {
-        "ja-Hira": "あとさんびょう、そのままでおねがいします。"
-      },
-      "tags": [
-        "拍照交流",
-        "維持姿勢",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [],
-      "difficulty": 2,
-      "semanticGroup": "photo-hold-pose",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": []
-    },
-    {
-      "id": "kp-170",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請停在那個位置。",
-        "ja-JP": "その位置で止まってください。"
-      },
-      "readings": {
-        "ja-Hira": "そのいちでとまってください。"
-      },
-      "tags": [
-        "拍照交流",
-        "維持姿勢",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-hold-pose",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": [],
-      "usageNote": "指停在指定位置，與維持特定肢體姿勢不同。"
-    },
-    {
-      "id": "kp-171",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請稍微放鬆一點。",
-        "ja-JP": "少し力を抜いてください。"
-      },
-      "readings": {
-        "ja-Hira": "すこしちからをぬいてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "維持姿勢",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-direct-171",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": [],
-      "usageNote": "拍攝中的放鬆肌肉；不等於已結束拍攝。"
-    },
-    {
-      "id": "kp-172",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "準備好了請告訴我。",
-        "ja-JP": "準備ができたら教えてください。"
-      },
-      "readings": {
-        "ja-Hira": "じゅんびができたらおしえてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "維持姿勢",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-direct-172",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": []
-    },
-    {
-      "id": "kp-173",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請看我的指尖。",
-        "ja-JP": "私の指先を見てください。"
-      },
-      "readings": {
-        "ja-Hira": "わたしのゆびさきをみてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "看指定位置",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-gaze-direction",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-107"
-      ],
-      "followUpIds": [
-        "kp-168",
-        "kp-184"
-      ],
-      "usageNote": "攝影者用手指標示視線位置；不要把手直接伸到對方臉前。"
-    },
-    {
-      "id": "kp-174",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請看右上方。",
-        "ja-JP": "右上を見てください。"
-      },
-      "readings": {
-        "ja-Hira": "みぎうえをみてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "看指定位置",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-gaze-direction",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": [],
-      "usageNote": "以被攝者的方向為準；可指向具體位置。"
-    },
-    {
-      "id": "kp-175",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請看左上方。",
-        "ja-JP": "左上を見てください。"
-      },
-      "readings": {
-        "ja-Hira": "ひだりうえをみてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "看指定位置",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-gaze-direction",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": [],
-      "usageNote": "以被攝者的方向為準；可指向具體位置。"
-    },
-    {
-      "id": "kp-176",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請稍微往上看。",
-        "ja-JP": "少し上を見てください。"
-      },
-      "readings": {
-        "ja-Hira": "すこしうえをみてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "看指定位置",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-gaze-direction",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": []
-    },
-    {
-      "id": "kp-177",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "身體不要動，只把視線轉向這邊。",
-        "ja-JP": "体はそのままで、目線だけこちらに向けてください。"
-      },
-      "readings": {
-        "ja-Hira": "からだはそのままで、めせんだけこちらにむけてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "看指定位置",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-gaze-direction",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-106"
-      ],
-      "followUpIds": [],
-      "usageNote": "戴獸頭時若無法改變視線，可改用頭部方向溝通，不要求做不到的動作。"
-    },
-    {
-      "id": "kp-178",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請舉起右手。",
-        "ja-JP": "右手を上げてください。"
-      },
-      "readings": {
-        "ja-Hira": "みぎてをあげてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "手部動作",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-raised-hand",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": [
-        "kp-181",
-        "kp-182",
-        "kp-184"
-      ],
-      "usageNote": "左右以被攝者自己的手為準。"
-    },
-    {
-      "id": "kp-179",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請舉起左手。",
-        "ja-JP": "左手を上げてください。"
-      },
-      "readings": {
-        "ja-Hira": "ひだりてをあげてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "手部動作",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-raised-hand",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": [
-        "kp-181",
-        "kp-182",
-        "kp-184"
-      ],
-      "usageNote": "左右以被攝者自己的手為準。"
-    },
-    {
-      "id": "kp-180",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請把雙手舉起來。",
-        "ja-JP": "両手を上げてください。"
-      },
-      "readings": {
-        "ja-Hira": "りょうてをあげてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "手部動作",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-raised-hand",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-108"
-      ],
-      "followUpIds": [
-        "kp-181",
-        "kp-182",
-        "kp-184"
-      ]
-    },
-    {
-      "id": "kp-181",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請把手放到臉旁邊。",
-        "ja-JP": "手を顔の横に持ってきてください。"
-      },
-      "readings": {
-        "ja-Hira": "てをかおのよこにもってきてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "手部動作",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-direct-181",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": []
-    },
-    {
-      "id": "kp-182",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請把手稍微放低一點。",
-        "ja-JP": "手を少し下げてください。"
-      },
-      "readings": {
-        "ja-Hira": "てをすこしさげてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "手部動作",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-direct-182",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": []
-    },
-    {
-      "id": "kp-183",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "請再往後退半步。",
-        "ja-JP": "もう半歩、後ろに下がってください。"
-      },
-      "readings": {
-        "ja-Hira": "もうはんぽ、うしろにさがってください。"
-      },
-      "tags": [
-        "拍照交流",
-        "站位調整",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-direct-183",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-111"
-      ],
-      "followUpIds": [],
-      "usageNote": "先確認對方身後有空間，再指示移動。"
-    },
-    {
-      "id": "kp-184",
-      "kind": "phrase",
-      "categoryId": "photo",
-      "texts": {
-        "zh-TW": "好了，姿勢可以放鬆了。",
-        "ja-JP": "はい、楽にしてください。"
-      },
-      "readings": {
-        "ja-Hira": "はい、らくにしてください。"
-      },
-      "tags": [
-        "拍照交流",
-        "維持姿勢",
-        "攝影引導",
-        "會話"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "photo-direct-184",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-101",
-        "kv-102"
-      ],
-      "followUpIds": [],
-      "usageNote": "表示這個定格姿勢已結束，對方可以放鬆。"
-    },
-    {
-      "id": "kp-185",
-      "kind": "phrase",
-      "categoryId": "intimacy",
-      "texts": {
-        "zh-TW": "可以碰你的肩膀嗎？",
-        "ja-JP": "肩に触れてもいいですか。"
-      },
-      "readings": {
-        "ja-Hira": "かたにふれてもいいですか。"
-      },
-      "tags": [
-        "親密互動",
-        "男性同士",
-        "會話",
-        "意願確認"
-      ],
-      "grammarIds": [
-        "g-permission"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-185",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-113",
-        "kv-114"
-      ],
-      "followUpIds": [
-        "kp-187",
-        "kp-188",
-        "kp-190"
-      ],
-      "usageNote": "只詢問碰肩膀這個動作；沒有包括其他部位或撫摸。"
-    },
-    {
-      "id": "kp-186",
-      "kind": "phrase",
-      "categoryId": "intimacy",
-      "texts": {
-        "zh-TW": "可以撫摸你的背嗎？",
-        "ja-JP": "背中をなでてもいいですか。"
-      },
-      "readings": {
-        "ja-Hira": "せなかをなでてもいいですか。"
-      },
-      "tags": [
-        "親密互動",
-        "男性同士",
-        "會話",
-        "意願確認"
-      ],
-      "grammarIds": [
-        "g-permission"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-186",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-113",
-        "kv-114"
-      ],
-      "followUpIds": [
-        "kp-187",
-        "kp-188",
-        "kp-190"
-      ],
-      "usageNote": "說出具體部位和動作；先等對方回答。"
-    },
-    {
-      "id": "kp-187",
-      "kind": "phrase",
-      "categoryId": "intimacy",
-      "texts": {
-        "zh-TW": "請告訴我哪些地方可以碰。",
-        "ja-JP": "触ってもいい場所を教えてください。"
-      },
-      "readings": {
-        "ja-Hira": "さわってもいいばしょをおしえてください。"
-      },
-      "tags": [
-        "親密互動",
-        "男性同士",
-        "會話",
-        "意願確認"
-      ],
-      "grammarIds": [
-        "g-request"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-187",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-113",
-        "kv-114"
-      ],
-      "followUpIds": [
-        "kp-188",
-        "kp-189",
-        "kp-190"
-      ],
-      "usageNote": "請對方說出具體部位；沒有明確回答時不要自行推測。"
-    },
-    {
-      "id": "kp-188",
-      "kind": "phrase",
-      "categoryId": "intimacy",
-      "texts": {
-        "zh-TW": "隔著衣服碰觸是可以的。",
-        "ja-JP": "服の上からなら、触っても大丈夫です。"
-      },
-      "readings": {
-        "ja-Hira": "ふくのうえからなら、さわってもだいじょうぶです。"
-      },
-      "tags": [
-        "親密互動",
-        "男性同士",
-        "會話",
-        "意願確認"
-      ],
-      "grammarIds": [],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-188",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-114"
-      ],
-      "followUpIds": [
-        "kp-189",
-        "kp-190"
-      ],
-      "usageNote": "只接受隔著衣服的碰觸；仍需說清楚可碰的部位。"
-    },
-    {
-      "id": "kp-189",
-      "kind": "phrase",
-      "categoryId": "intimacy",
-      "texts": {
-        "zh-TW": "請不要把手伸進內褲裡。",
-        "ja-JP": "下着の中には手を入れないでください。"
-      },
-      "readings": {
-        "ja-Hira": "したぎのなかにはてをいれないでください。"
-      },
-      "tags": [
-        "親密互動",
-        "男性同士",
-        "會話",
-        "意願確認"
-      ],
-      "grammarIds": [
-        "g-negative"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-189",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-115"
-      ],
-      "followUpIds": [
-        "kp-202"
-      ],
-      "usageNote": "在這個男性私下互動語境，直接說明衣物內側的界限。"
-    },
-    {
-      "id": "kp-190",
-      "kind": "phrase",
-      "categoryId": "intimacy",
-      "texts": {
-        "zh-TW": "我現在不想被碰。",
-        "ja-JP": "今は触られたくありません。"
-      },
-      "readings": {
-        "ja-Hira": "いまはさわられたくありません。"
-      },
-      "tags": [
-        "親密互動",
-        "男性同士",
-        "會話",
-        "意願確認"
-      ],
-      "grammarIds": [],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-190",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-113",
-        "kv-114"
-      ],
-      "followUpIds": [
-        "kp-148",
-        "kp-202"
-      ],
-      "usageNote": "拒絕當下的接觸，不需要另外提出理由。"
-    },
-    {
-      "id": "kp-191",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "可以幫我口交嗎？（對方向你提出請求）",
-        "ja-JP": "フェラしてくれる？"
-      },
-      "readings": {
-        "ja-Hira": "ふぇらしてくれる？"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "意願確認"
-      ],
-      "grammarIds": [],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-191",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-116",
-        "kv-117"
-      ],
-      "followUpIds": [
-        "kp-193",
-        "kp-194",
-        "kp-196",
-        "kp-198",
-        "kp-201"
-      ],
-      "usageNote": "可能聽到的男性間口語邀約。「フェラ」指口交；說這句的人希望接受，由聽這句的人進行。可先確認角色，再決定接受或拒絕。"
-    },
-    {
-      "id": "kp-192",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "我可以幫你口交嗎？（對方向你詢問許可）",
-        "ja-JP": "フェラしてもいい？"
-      },
-      "readings": {
-        "ja-Hira": "ふぇらしてもいい？"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "意願確認"
-      ],
-      "grammarIds": [],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-192",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-117"
-      ],
-      "followUpIds": [
-        "kp-193",
-        "kp-195",
-        "kp-197",
-        "kp-199",
-        "kp-200",
-        "kp-201"
-      ],
-      "usageNote": "可能聽到的男性間口語邀約。說這句的人想進行動作，聽這句的人是接受的一方；和「フェラしてくれる？」的方向相反。詢問不代表已得到同意。"
-    },
-    {
-      "id": "kp-193",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "你的意思是由誰做？",
-        "ja-JP": "どちらがするという意味ですか。"
-      },
-      "readings": {
-        "ja-Hira": "どちらがするといういみですか。"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "意願確認"
-      ],
-      "grammarIds": [
-        "g-question"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-193",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-116",
-        "kv-117"
-      ],
-      "followUpIds": [
-        "kp-194",
-        "kp-195"
-      ],
-      "usageNote": "先分清楚進行動作的人與接受的人，不依性別、外表或角色猜測。"
-    },
-    {
-      "id": "kp-194",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "你的意思是由我幫你口交嗎？",
-        "ja-JP": "私がするという意味ですか。"
-      },
-      "readings": {
-        "ja-Hira": "わたしがするといういみですか。"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "意願確認"
-      ],
-      "grammarIds": [
-        "g-question"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-194",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-116",
-        "kv-117"
-      ],
-      "followUpIds": [
-        "kp-196",
-        "kp-198",
-        "kp-201"
-      ],
-      "usageNote": "只有在前文明確說到口交時，這句的「する」才指口交；用來確認自己是進行動作的一方。"
-    },
-    {
-      "id": "kp-195",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "你的意思是你幫我口交嗎？",
-        "ja-JP": "あなたがしてくれるという意味ですか。"
-      },
-      "readings": {
-        "ja-Hira": "あなたがしてくれるといういみですか。"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "意願確認"
-      ],
-      "grammarIds": [
-        "g-question"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-195",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-116",
-        "kv-117"
-      ],
-      "followUpIds": [
-        "kp-197",
-        "kp-199",
-        "kp-200",
-        "kp-201"
-      ],
-      "usageNote": "前文已談到口交時，確認對方是進行動作的一方，自己是接受的一方。"
-    },
-    {
-      "id": "kp-196",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "我不想幫對方口交。",
-        "ja-JP": "口ではしたくありません。"
-      },
-      "readings": {
-        "ja-Hira": "くちではしたくありません。"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "回應與界限"
-      ],
-      "grammarIds": [],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-196",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-116",
-        "kv-117"
-      ],
-      "followUpIds": [
-        "kp-202",
-        "kp-201"
-      ],
-      "usageNote": "「したくありません」是自己不想做；與不想被做的「されたくありません」不同。"
-    },
-    {
-      "id": "kp-197",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "我不想接受口交。",
-        "ja-JP": "口でされるのは嫌です。"
-      },
-      "readings": {
-        "ja-Hira": "くちでされるのはいやです。"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "回應與界限"
-      ],
-      "grammarIds": [],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-197",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-118"
-      ],
-      "followUpIds": [
-        "kp-202",
-        "kp-201"
-      ],
-      "usageNote": "拒絕自己作為接受的一方；不要和自己不想幫對方做混淆。"
-    },
-    {
-      "id": "kp-198",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "幫對方口交可以，但我不想再進一步。",
-        "ja-JP": "口でするのは大丈夫ですが、それ以上はしたくありません。"
-      },
-      "readings": {
-        "ja-Hira": "くちでするのはだいじょうぶですが、それいじょうはしたくありません。"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "回應與界限"
-      ],
-      "grammarIds": [],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-198",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-117"
-      ],
-      "followUpIds": [
-        "kp-201",
-        "kp-145"
-      ],
-      "usageNote": "在前文已確認對象和動作後，表達自己願意做的範圍，不包含其他行為。"
-    },
-    {
-      "id": "kp-199",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "被撫摸可以，但我不想接受口交。",
-        "ja-JP": "触られるのは大丈夫ですが、口ではされたくありません。"
-      },
-      "readings": {
-        "ja-Hira": "さわられるのはだいじょうぶですが、くちではされたくありません。"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "回應與界限"
-      ],
-      "grammarIds": [],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-199",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-116",
-        "kv-117"
-      ],
-      "followUpIds": [
-        "kp-187",
-        "kp-202"
-      ],
-      "usageNote": "分別表達接受與拒絕；撫摸的部位與方式仍要另外確認。"
-    },
-    {
-      "id": "kp-200",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "接受口交可以，但做其他事之前請先問我。",
-        "ja-JP": "口でしてもらうのは大丈夫です。ただ、ほかのことをする前には聞いてください。"
-      },
-      "readings": {
-        "ja-Hira": "くちでしてもらうのはだいじょうぶです。ただ、ほかのことをするまえにはきいてください。"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "回應與界限"
-      ],
-      "grammarIds": [],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-200",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-116",
-        "kv-117"
-      ],
-      "followUpIds": [
-        "kp-201",
-        "kp-145"
-      ],
-      "usageNote": "自己是接受的一方；這個接受不延伸到其他動作，也可以隨時改變心意。"
-    },
-    {
-      "id": "kp-201",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "繼續之前，我想先暫停聊清楚。",
-        "ja-JP": "続ける前に、いったん止まって話したいです。"
-      },
-      "readings": {
-        "ja-Hira": "つづけるまえに、いったんとまってはなしたいです。"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "回應與界限"
-      ],
-      "grammarIds": [
-        "g-want"
-      ],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-201",
-      "common": true,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-116",
-        "kv-117"
-      ],
-      "followUpIds": [
-        "kp-202",
-        "kp-157"
-      ],
-      "usageNote": "先停止，再確認動作、對象與界限；不是讓對方邊繼續邊詢問。"
-    },
-    {
-      "id": "kp-202",
-      "kind": "phrase",
-      "categoryId": "sexual",
-      "texts": {
-        "zh-TW": "我知道了，那件事我不會做。",
-        "ja-JP": "わかりました。それはしません。"
-      },
-      "readings": {
-        "ja-Hira": "わかりました。それはしません。"
-      },
-      "tags": [
-        "性暗示與回應",
-        "男性同士",
-        "會話",
-        "回應與界限"
-      ],
-      "grammarIds": [],
-      "difficulty": 2,
-      "semanticGroup": "male-consent-202",
-      "common": false,
-      "audioUrl": null,
-      "relatedIds": [
-        "kv-116",
-        "kv-117"
-      ],
-      "followUpIds": [
-        "kp-145"
-      ],
-      "usageNote": "收到對方拒絕後表示理解，並停止被拒絕的行為。"
     },
     {
       "id": "kv-101",
@@ -9285,6 +10052,282 @@
       ],
       "followUpIds": [],
       "usageNote": "可以在互動中提出停止，先前的接受不會取消改變心意的權利。"
+    },
+    {
+      "id": "kv-121",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "無套（性語境）",
+        "ja-JP": "生"
+      },
+      "readings": {
+        "ja-Hira": "なま"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字",
+        "無套與條件"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "condomless-terms",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-203",
+        "kp-205"
+      ],
+      "followUpIds": [],
+      "usageNote": "性邀約中的「生」通常表示不用保險套；也有生食、生啤酒、現場直播等一般意思，要依上下文確認。"
+    },
+    {
+      "id": "kv-122",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "保險套（性語境的口語）",
+        "ja-JP": "ゴム"
+      },
+      "readings": {
+        "ja-Hira": "ごむ"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字",
+        "無套與條件"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "condom-terms",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-204"
+      ],
+      "followUpIds": [],
+      "usageNote": "本來是橡膠；在性語境常指保險套，與コンドーム同義。"
+    },
+    {
+      "id": "kv-123",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "不用保險套",
+        "ja-JP": "ゴムなし"
+      },
+      "readings": {
+        "ja-Hira": "ごむなし"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字",
+        "無套與條件",
+        "ノーゴム"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "condomless-terms",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-204"
+      ],
+      "followUpIds": [],
+      "usageNote": "也可能寫作「ノーゴム」；先確認意思，對方的提議不是自己必須接受的條件。"
+    },
+    {
+      "id": "kv-124",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "使用保險套",
+        "ja-JP": "ゴムあり"
+      },
+      "readings": {
+        "ja-Hira": "ごむあり"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字",
+        "無套與條件"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-124",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-219",
+        "kp-226"
+      ],
+      "followUpIds": [],
+      "usageNote": "表示有使用保險套的條件；其他活動與範圍仍需分別確認。"
+    },
+    {
+      "id": "kv-125",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "插入的一方（男性間性角色）",
+        "ja-JP": "タチ"
+      },
+      "readings": {
+        "ja-Hira": "たち"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字",
+        "角色確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-125",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-219"
+      ],
+      "followUpIds": [],
+      "usageNote": "描述性語境的角色偏好，不代表外表、個性或性別角色，也不直接決定口交的動作方向。"
+    },
+    {
+      "id": "kv-126",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "接受的一方（男性間性角色）",
+        "ja-JP": "ネコ"
+      },
+      "readings": {
+        "ja-Hira": "ねこ"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字",
+        "角色確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "bottom-role-terms",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-219"
+      ],
+      "followUpIds": [],
+      "usageNote": "性語境中通常指接受插入的一方；一般「貓」的意思不應自動當成性暗示。"
+    },
+    {
+      "id": "kv-127",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "接受方（男性間性語境，同ネコ）",
+        "ja-JP": "ウケ"
+      },
+      "readings": {
+        "ja-Hira": "うけ"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字",
+        "角色確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "bottom-role-terms",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-219",
+        "kp-226"
+      ],
+      "followUpIds": [],
+      "usageNote": "在男性性角色語境，通常與ネコ相近；要依對方的實際用法確認，不能直接推定當下意願。"
+    },
+    {
+      "id": "kv-128",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "兩種角色都可能接受",
+        "ja-JP": "リバ"
+      },
+      "readings": {
+        "ja-Hira": "りば"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字",
+        "角色確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-128",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-223"
+      ],
+      "followUpIds": [],
+      "usageNote": "タチ和ネコ兩種角色都可能接受；偏好不等於今天一定願意，也不代表接受所有動作。"
+    },
+    {
+      "id": "kv-129",
+      "kind": "word",
+      "categoryId": "sexual",
+      "texts": {
+        "zh-TW": "偏好的性角色（性語境）",
+        "ja-JP": "ポジション"
+      },
+      "readings": {
+        "ja-Hira": "ぽじしょん"
+      },
+      "tags": [
+        "性暗示與回應",
+        "單字",
+        "角色確認"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-129",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-220",
+        "kp-226"
+      ],
+      "followUpIds": [],
+      "usageNote": "一般是位置或職位，在明確性語境才可能指角色；可詢問具體所指。"
+    },
+    {
+      "id": "kv-130",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "帶對方回家／回房（私下邀約的說法）",
+        "ja-JP": "お持ち帰り"
+      },
+      "readings": {
+        "ja-Hira": "おもちかえり"
+      },
+      "tags": [
+        "回房間",
+        "單字",
+        "委婉邀約"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "word-130",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-217",
+        "kp-218"
+      ],
+      "followUpIds": [],
+      "usageNote": "本來可指外帶；搭訕或私下邀約時可能指帶對方回家／旅館，也可能讓人覺得不尊重。用於理解，不直接視為對方已同意性行為。"
     }
   ],
   "sources": [
@@ -9302,6 +10345,16 @@
       "title": "小學館《數位大辭泉》：フェラチオ",
       "url": "https://kotobank.jp/word/ふえらちお-3217507",
       "note": "參考口語縮稱的詞義；會話與意願確認例句自行編寫，不提供性行為操作指導。"
+    },
+    {
+      "title": "g-lad xx：男性角色用語",
+      "url": "https://gladxx.jp/extra/terms/terms_ta/121.html",
+      "note": "參考タチ／ネコ／リバ的語義，不沿用外表或性格的刻板印象。"
+    },
+    {
+      "title": "厚生勞動科研成果：生在男性性語境中的用法",
+      "url": "https://mhlw-grants.niph.go.jp/system/files/2013/133101/201319006B/201319006B0003.pdf",
+      "note": "僅參考「生」在此語境表示不使用保險套的詞義；不提供個人醫療建議。"
     }
   ]
 }

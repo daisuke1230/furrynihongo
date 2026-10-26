@@ -9,3 +9,5 @@
 .brand-mark{flex-shrink:0}.brand{min-width:0}.header-actions{flex-shrink:0}.header-actions button{white-space:nowrap}
 @media(max-width:360px){.header-actions .status{display:none}.app-header{gap:8px}.brand{gap:9px}.brand strong{font-size:.8rem}.brand small{font-size:.56rem}}
 .usage-note{font-size:.82rem;line-height:1.75;background:var(--soft);color:var(--ink);padding:10px 12px;border-radius:10px;margin:0 0 16px;overflow-wrap:anywhere}.kind-tabs{border-bottom:1px solid var(--line);padding-bottom:12px}.kind-tabs .chip{font-weight:600}
+
+.material-section{margin:22px 0 30px}.material-section>.section-line h3{margin:0;font-size:1.05rem}.group-count{font-size:.8rem}
