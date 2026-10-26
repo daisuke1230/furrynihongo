@@ -15,11 +15,12 @@ template=(SRC/'index.html').read_text()
 css=(SRC/'style.css').read_text()
 core=(SRC/'core.js').read_text()
 app=(SRC/'app.js').read_text()
-standalone=template.replace('<!-- PWA_HEAD -->','').replace('<!-- STYLE -->','<style>\n'+css+'</style>').replace('<!-- DATA -->','<script type="application/json" id="教材資料">'+compact+'</script>').replace('<!-- CORE -->','<script>\n'+core+'</script>').replace('<!-- APP -->','<script>\n'+app+'</script>')
+i18n=(SRC/'i18n.js').read_text()
+standalone=template.replace('<!-- PWA_HEAD -->','').replace('<!-- STYLE -->','<style>\n'+css+'</style>').replace('<!-- DATA -->','<script type="application/json" id="教材資料">'+compact+'</script>').replace('<!-- CORE -->','<script>\n'+core+'</script>').replace('<!-- I18N -->','<script>\n'+i18n+'</script>').replace('<!-- APP -->','<script>\n'+app+'</script>')
 (OUT/'Kemono-Phrasebook.html').write_text(standalone)
-pwa=template.replace('<html lang="zh-Hant">','<html lang="zh-Hant" data-build="pwa">').replace('<!-- PWA_HEAD -->','<link rel="manifest" href="./manifest.webmanifest">\n<link rel="apple-touch-icon" href="./icon-192.png">').replace('<!-- STYLE -->','<link rel="stylesheet" href="./style.css">').replace('<!-- DATA -->','<script id="教材資料" type="application/json"></script>\n<script src="./data.js"></script>').replace('<!-- CORE -->','<script src="./core.js"></script>').replace('<!-- APP -->','<script src="./app.js"></script>')
+pwa=template.replace('<html lang="zh-Hant">','<html lang="zh-Hant" data-build="pwa">').replace('<!-- PWA_HEAD -->','<link rel="manifest" href="./manifest.webmanifest">\n<link rel="apple-touch-icon" href="./icon-192.png">').replace('<!-- STYLE -->','<link rel="stylesheet" href="./style.css">').replace('<!-- DATA -->','<script id="教材資料" type="application/json"></script>\n<script src="./data.js"></script>').replace('<!-- CORE -->','<script src="./core.js"></script>').replace('<!-- I18N -->','<script src="./i18n.js"></script>').replace('<!-- APP -->','<script src="./app.js"></script>')
 (PWA/'index.html').write_text(pwa)
-for f in ['style.css','core.js','app.js']:(PWA/f).write_text((SRC/f).read_text())
+for f in ['style.css','core.js','i18n.js','app.js']:(PWA/f).write_text((SRC/f).read_text())
 (PWA/'data.js').write_text("document.getElementById('教材資料').textContent="+json.dumps(compact,ensure_ascii=False)+";\n")
 manifest={'id':'./','name':'Kemono Phrasebook 獸展會話手帖','short_name':'Kemono 手帖','description':'離線獸展日文會話、文法與配對練習','lang':'zh-TW','start_url':'./','scope':'./','display':'standalone','background_color':'#f6f5ef','theme_color':'#245d52','icons':[{'src':'./icon-192.png','sizes':'192x192','type':'image/png','purpose':'any'},{'src':'./icon-512.png','sizes':'512x512','type':'image/png','purpose':'any'},{'src':'./icon-maskable.png','sizes':'512x512','type':'image/png','purpose':'maskable'}]}
 (PWA/'manifest.webmanifest').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
@@ -37,7 +38,7 @@ def icon(size):
     def chunk(kind,blob):return struct.pack('!I',len(blob))+kind+blob+struct.pack('!I',zlib.crc32(kind+blob)&0xffffffff)
     return b'\x89PNG\r\n\x1a\n'+chunk(b'IHDR',struct.pack('!2I5B',size,size,8,2,0,0,0))+chunk(b'IDAT',zlib.compress(b''.join(rows)))+chunk(b'IEND',b'')
 for name,size in [('icon-192.png',192),('icon-512.png',512),('icon-maskable.png',512)]:(PWA/name).write_bytes(icon(size))
-assets=['./','./index.html','./style.css','./core.js','./app.js','./data.js','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-maskable.png']
+assets=['./','./index.html','./style.css','./core.js','./i18n.js','./app.js','./data.js','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-maskable.png']
 h=hashlib.sha256()
 for name in assets[1:]:h.update((PWA/name[2:]).read_bytes())
 version=h.hexdigest()[:12]
@@ -74,7 +75,7 @@ self.addEventListener('fetch',event=>{
 kit=OUT/'source'
 (kit/'src').mkdir(parents=True,exist_ok=True)
 (kit/'scripts').mkdir(parents=True,exist_ok=True)
-for f in ['index.html','style.css','core.js','app.js','data.json']:
+for f in ['index.html','style.css','core.js','i18n.js','app.js','data.json']:
     (kit/'src'/f).write_text((SRC/f).read_text())
 portable=(ROOT/'scripts'/'build.py').read_text().replace("OUT=ROOT.parent", "OUT=ROOT.parent")
 (kit/'scripts'/'build.py').write_text(portable)

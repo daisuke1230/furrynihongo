@@ -5,14 +5,14 @@ const SCHEMA=1, own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
 const plain=o=>o!==null&&typeof o==='object'&&!Array.isArray(o)&&[Object.prototype,null].includes(Object.getPrototypeOf(o));
 const norm=s=>String(s||'').normalize('NFKC').toLocaleLowerCase().replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-0x60)).replace(/\s+/g,' ').trim();
 const key=s=>norm(s).replace(/[\s。、，！？!?.,・「」『』]/g,'');
-const defaults=()=>({schemaVersion:SCHEMA,custom:{phrases:[],categories:[],grammars:[]},overrides:[],favorites:[],recent:[],records:[],settings:{theme:'light',fontSize:1,hira:true,zh:true,en:false,rate:1,voiceURI:''}});
+const defaults=()=>({schemaVersion:SCHEMA,custom:{phrases:[],categories:[],grammars:[]},overrides:[],favorites:[],recent:[],records:[],settings:{uiLanguage:'zh-TW',displayJapanese:true,theme:'light',fontSize:1,hira:true,zh:true,en:false,rate:1,voiceURI:''}});
 function allData(base,state){
  const patches=new Map(state.overrides.map(p=>[p.id,p]));
  return {...base,phrases:[...base.phrases.map(p=>patches.get(p.id)||p),...state.custom.phrases],categories:[...base.categories,...state.custom.categories.filter(x=>!base.categories.some(b=>b.id===x.id))],grammars:[...base.grammars,...state.custom.grammars.filter(x=>!base.grammars.some(b=>b.id===x.id))]};
 }
 function search(data,filters,state){
  const q=norm(filters.q||''), fav=new Set(state.favorites),recent=new Map(state.recent.map((r,i)=>[r.id,i]));
- const result=data.phrases.filter(p=>p.hidden!==true&&(!filters.kind||(p.kind||'phrase')===filters.kind)&&(!filters.category||p.categoryId===filters.category)&&(!filters.grammar||p.grammarIds.includes(filters.grammar))&&(!filters.difficulty||p.difficulty===Number(filters.difficulty))&&(filters.scope!=='favorites'||fav.has(p.id))&&(filters.scope!=='common'||p.common)&&(filters.scope!=='recent'||recent.has(p.id))&&(!q||norm([...Object.values(p.texts),...Object.values(p.readings),...p.tags,p.usageNote||'',data.categories.find(c=>c.id===p.categoryId)?.name||''].join(' ')).includes(q)));
+ const result=data.phrases.filter(p=>p.hidden!==true&&(!filters.kind||(p.kind||'phrase')===filters.kind)&&(!filters.category||p.categoryId===filters.category)&&(!filters.grammar||p.grammarIds.includes(filters.grammar))&&(!filters.difficulty||p.difficulty===Number(filters.difficulty))&&(filters.scope!=='favorites'||fav.has(p.id))&&(filters.scope!=='common'||p.common)&&(filters.scope!=='recent'||recent.has(p.id))&&(!q||norm([...Object.values(p.texts),...Object.values(p.readings),...p.tags,p.usageNote||'',...data.categories.filter(c=>c.id===p.categoryId).flatMap(c=>[c.name,...Object.values(c.localizations||{}).map(l=>l.name||'')])].join(' ')).includes(q)));
  if(filters.scope==='recent')result.sort((a,b)=>recent.get(a.id)-recent.get(b.id));
  result.sort((a,b)=>Number(a.kind==='word')-Number(b.kind==='word'));
  return result;
@@ -31,6 +31,19 @@ function validateBundle(raw,base){
  const categories=raw.categories||[],grammars=raw.grammars||[];
  const catIds=new Set(base.categories.map(x=>x.id)),gIds=new Set(base.grammars.map(x=>x.id));
  for(const [items,kind] of [[categories,'分類'],[grammars,'文法']]){const seen=new Set();items.forEach((x,i)=>{const prefix=`${kind}第 ${i+1} 筆：`;if(!plain(x)||!idValid(x.id)){errors.push(prefix+'需要有效 ID。');return;}if(seen.has(x.id))errors.push(prefix+'ID 重複。');seen.add(x.id);if(kind==='分類'){if(!textValid(x.name,80))errors.push(prefix+'name 不可空白，最多 80 字。');if(x.description!==undefined&&typeof x.description!=='string')errors.push(prefix+'description 必須是文字。');catIds.add(x.id);}else{for(const k of ['title','group','pattern','explanation'])if(!textValid(x[k]))errors.push(prefix+k+' 不可空白，最多 1,000 字。');for(const k of ['conjugations','words','exampleIds'])if(!Array.isArray(x[k])||x[k].length>100||x[k].some(s=>!textValid(s,500)))errors.push(prefix+k+' 必須是文字陣列，最多 100 筆。');gIds.add(x.id);}});}
+ // Optional locale metadata is validated before the UI reads translated fields.
+ for(const item of [...categories,...grammars]){
+  if(!plain(item)||item.localizations===undefined)continue;
+  const fail=()=>errors.push('localizations 格式無效：'+String(item.id));
+  if(!plain(item.localizations)||Object.keys(item.localizations).length>20){fail();continue;}
+  for(const [locale,fields] of Object.entries(item.localizations)){
+   if(!/^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$/.test(locale)||!plain(fields)){fail();continue;}
+   for(const [field,value] of Object.entries(fields)){
+    if(field==='words'){if(!Array.isArray(value)||value.length>100||value.some(x=>!textValid(x,500)))fail();}
+    else if(!['name','description','title','group','pattern','explanation'].includes(field)||typeof value!=='string'||value.length>1000)fail();
+   }
+  }
+ }
  const ids=new Set(),refIds=new Set(base.phrases.map(x=>x.id));raw.phrases.forEach(p=>{if(plain(p)&&idValid(p.id))refIds.add(p.id);});
  raw.phrases.forEach((p,i)=>{const pre=`句子第 ${i+1} 筆：`;if(!plain(p)||!idValid(p.id)){errors.push(pre+'需要有效 ID（英數字、連字號、底線或句點）。');return;}if(ids.has(p.id))errors.push(pre+'ID 重複：'+p.id);ids.add(p.id);
   if(!plain(p.texts)||!textValid(p.texts['zh-TW'])||!textValid(p.texts['ja-JP']))errors.push(pre+'中文與日文不可空白，最多 1,000 字。');
@@ -52,7 +65,7 @@ function validateBundle(raw,base){
  if(!errors.length){const dup=duplicates(raw.phrases);for(const pair of dup)warnings.push('日文原句重複：'+pair.join(' / '));}
  return {errors:errors.slice(0,40),warnings:warnings.slice(0,40),bundle:raw};
 }
-function cleanSettings(raw={}){return {theme:['light','dark','system'].includes(raw.theme)?raw.theme:'light',fontSize:[.9,1,1.15,1.3].includes(raw.fontSize)?raw.fontSize:1,hira:raw.hira!==false,zh:raw.zh!==false,en:raw.en===true,rate:[.75,1,1.25].includes(raw.rate)?raw.rate:1,voiceURI:typeof raw.voiceURI==='string'?raw.voiceURI.slice(0,500):''};}
+function cleanSettings(raw={}){return {uiLanguage:raw.uiLanguage==='ja-JP'?'ja-JP':'zh-TW',displayJapanese:raw.displayJapanese!==false,theme:['light','dark','system'].includes(raw.theme)?raw.theme:'light',fontSize:[.9,1,1.15,1.3].includes(raw.fontSize)?raw.fontSize:1,hira:raw.hira!==false,zh:raw.zh!==false,en:raw.en===true,rate:[.75,1,1.25].includes(raw.rate)?raw.rate:1,voiceURI:typeof raw.voiceURI==='string'?raw.voiceURI.slice(0,500):''};}
 function cleanUser(raw={}){return {favorites:[...new Set((Array.isArray(raw.favorites)?raw.favorites:[]).filter(idValid))].slice(0,10000),recent:(Array.isArray(raw.recent)?raw.recent:[]).filter(r=>plain(r)&&idValid(r.id)&&Number.isFinite(r.at)).slice(0,50),records:(Array.isArray(raw.records)?raw.records:[]).filter(r=>plain(r)&&idValid(r.id)&&Number.isFinite(r.at)&&Number.isInteger(r.total)&&r.total>=1&&r.total<=8&&Number.isInteger(r.mistakes)&&r.mistakes>=0&&Array.isArray(r.wrongIds)&&r.wrongIds.every(idValid)&&Array.isArray(r.phraseIds)&&r.phraseIds.every(idValid)).slice(0,100),settings:cleanSettings(raw.settings)};}
 function parseImport(raw,current,base){
  if(raw?.kind!=='kemono-backup')return {...validateBundle(raw,allData(base,current)),kind:'material'};

@@ -53,3 +53,19 @@ for(const [heard,response] of [['kp-203','kp-209'],['kp-215','kp-217'],['kp-219'
 const byId=Object.fromEntries(base.phrases.map(p=>[p.id,p]));
 for(const pair of [['kv-096','kv-122'],['kv-121','kv-123'],['kv-126','kv-127']])assert.equal(C.sample(pair.map(id=>byId[id]),2).length,1);
 console.log('PASS grouping and additions: sentences before words, recent order within groups, condom slang/conditions, indirect invitation and role-confirmation response links, synonym exclusion.');
+
+assert.equal(C.defaults().settings.uiLanguage,'zh-TW');
+assert.equal(C.cleanSettings({uiLanguage:'ja-JP',displayJapanese:false}).uiLanguage,'ja-JP');
+assert.equal(C.cleanSettings({uiLanguage:'en-US'}).uiLanguage,'zh-TW');
+assert.equal(C.cleanSettings({}).displayJapanese,true);
+assert.equal(C.cleanSettings({displayJapanese:false}).displayJapanese,false);
+assert.equal(C.search(base,{q:'写真撮影'},C.defaults()).length,51);
+const jaBackup={...backup,user:{...backup.user,settings:{...backup.user.settings,uiLanguage:'ja-JP',displayJapanese:false}}};
+const jaRestore=C.mergeImport(C.defaults(),C.parseImport(jaBackup,C.defaults(),base),base,true);
+assert.equal(jaRestore.settings.uiLanguage,'ja-JP');assert.equal(jaRestore.settings.displayJapanese,false);
+assert.equal(C.mergeImport(C.defaults(),C.parseImport(jaBackup,C.defaults(),base),base,false).settings.uiLanguage,'zh-TW');
+assert.equal(migrated.settings.uiLanguage,'zh-TW');
+console.log('PASS locales: Japanese metadata search, UI preferences and reverse-display backup, invalid locale fallback and legacy settings.');
+
+for(const localizations of [{'ja-JP':{words:'not-array'}},{'ja-JP':{title:5}},{'ja-JP':null}])assert.ok(C.validateBundle({...bundle,grammars:[{...base.grammars[0],localizations}]},base).errors.length);
+console.log('PASS localized metadata validation: reject malformed translated fields before rendering.');

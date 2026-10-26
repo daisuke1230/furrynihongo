@@ -1,8 +1,8 @@
 /* Atomic offline precache; content hash changes on each source update. */
 'use strict';
 const PREFIX='kemono-static-'+encodeURIComponent(new URL(self.registration.scope).pathname)+'-';
-const CACHE=PREFIX+'099cd06a0cc5';
-const ASSETS=["./", "./index.html", "./style.css", "./core.js", "./app.js", "./data.js", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-maskable.png"];
+const CACHE=PREFIX+'9638d8f5e84a';
+const ASSETS=["./", "./index.html", "./style.css", "./core.js", "./i18n.js", "./app.js", "./data.js", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-maskable.png"];
 self.addEventListener('install',event=>event.waitUntil((async()=>{
  const cache=await caches.open(CACHE);
  try{await cache.addAll(ASSETS);}catch(error){await caches.delete(CACHE);throw error;}
