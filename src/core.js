@@ -12,12 +12,12 @@ function allData(base,state){
 }
 function search(data,filters,state){
  const q=norm(filters.q||''), fav=new Set(state.favorites),recent=new Map(state.recent.map((r,i)=>[r.id,i]));
- const result=data.phrases.filter(p=>(!filters.kind||(p.kind||'phrase')===filters.kind)&&(!filters.category||p.categoryId===filters.category)&&(!filters.grammar||p.grammarIds.includes(filters.grammar))&&(!filters.difficulty||p.difficulty===Number(filters.difficulty))&&(filters.scope!=='favorites'||fav.has(p.id))&&(filters.scope!=='common'||p.common)&&(filters.scope!=='recent'||recent.has(p.id))&&(!q||norm([...Object.values(p.texts),...Object.values(p.readings),...p.tags,p.usageNote||'',data.categories.find(c=>c.id===p.categoryId)?.name||''].join(' ')).includes(q)));
+ const result=data.phrases.filter(p=>p.hidden!==true&&(!filters.kind||(p.kind||'phrase')===filters.kind)&&(!filters.category||p.categoryId===filters.category)&&(!filters.grammar||p.grammarIds.includes(filters.grammar))&&(!filters.difficulty||p.difficulty===Number(filters.difficulty))&&(filters.scope!=='favorites'||fav.has(p.id))&&(filters.scope!=='common'||p.common)&&(filters.scope!=='recent'||recent.has(p.id))&&(!q||norm([...Object.values(p.texts),...Object.values(p.readings),...p.tags,p.usageNote||'',data.categories.find(c=>c.id===p.categoryId)?.name||''].join(' ')).includes(q)));
  if(filters.scope==='recent')result.sort((a,b)=>recent.get(a.id)-recent.get(b.id));
  return result;
 }
 function shuffle(a,rng=Math.random){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
-function sample(pool,n,rng=Math.random){const groups=new Set(),ja=new Set(),zh=new Set(),ids=new Set(),out=[];for(const p of shuffle(pool,rng)){const g=p.semanticGroup||key(p.texts['ja-JP']),j=key(p.texts['ja-JP']),z=key(p.texts['zh-TW']);if(groups.has(g)||ja.has(j)||zh.has(z)||ids.has(p.id))continue;groups.add(g);ja.add(j);zh.add(z);ids.add(p.id);out.push(p);if(out.length===n)break;}return out;}
+function sample(pool,n,rng=Math.random){const groups=new Set(),ja=new Set(),zh=new Set(),ids=new Set(),out=[];for(const p of shuffle(pool,rng)){if(p.hidden===true)continue;const g=p.semanticGroup||key(p.texts['ja-JP']),j=key(p.texts['ja-JP']),z=key(p.texts['zh-TW']);if(groups.has(g)||ja.has(j)||zh.has(z)||ids.has(p.id))continue;groups.add(g);ja.add(j);zh.add(z);ids.add(p.id);out.push(p);if(out.length===n)break;}return out;}
 function duplicates(phrases){const seen=new Map(),out=[];for(const p of phrases){const k=key(p.texts?.['ja-JP']);if(seen.has(k))out.push([seen.get(k),p.id]);else seen.set(k,p.id);}return out;}
 const idValid=x=>typeof x==='string'&&/^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,79}$/.test(x)&&!['__proto__','constructor','prototype'].includes(x);
 const textValid=(s,max=1000)=>typeof s==='string'&&s.trim().length>0&&s.length<=max;
@@ -40,6 +40,7 @@ function validateBundle(raw,base){
   if(Array.isArray(p.grammarIds)&&p.grammarIds.some(g=>!gIds.has(g)))errors.push(pre+'有不存在的文法 ID。');
   for(const k of ['relatedIds','followUpIds'])if(Array.isArray(p[k])&&p[k].some(x=>!refIds.has(x)))errors.push(pre+k+' 有不存在的句子 ID。');
   if(![1,2,3].includes(p.difficulty))errors.push(pre+'difficulty 必須是 1、2 或 3。');
+  if(p.hidden!==undefined&&typeof p.hidden!=='boolean')errors.push(pre+'hidden 必須是 true 或 false。');
   if(p.kind!==undefined&&!['phrase','word'].includes(p.kind))errors.push(pre+'kind 必須是 phrase 或 word。');
   if(p.usageNote!==undefined&&(typeof p.usageNote!=='string'||p.usageNote.length>1000))errors.push(pre+'usageNote 必須是文字，最多 1,000 字。');
   if(typeof p.common!=='boolean')errors.push(pre+'common 必須是 true 或 false。');
