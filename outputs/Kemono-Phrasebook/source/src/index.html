@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#245d52">
+<meta name="description" content="帶著一句日文，認識一位新朋友。離線獸展會話與配對練習工具。">
+<title>Kemono Phrasebook｜獸展日文會話</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2716%27 fill=%27%23245d52%27/%3E%3Ctext x=%2732%27 y=%2746%27 text-anchor=%27middle%27 font-size=%2742%27 fill=%27%23f6f5ef%27%3Eけ%3C/text%3E%3C/svg%3E">
+<!-- PWA_HEAD -->
+<!-- STYLE -->
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="app-header">
+  <div class="brand"><span class="brand-mark" aria-hidden="true">け</span><div><strong>Kemono <span>Phrasebook</span></strong><small>獸展日文會話手帖</small></div></div>
+  <div class="header-actions"><span id="offlineStatus" class="status">教材已內建</span><button data-action="settings" class="quiet" aria-label="開啟設定">設定</button></div>
+</header>
+<main id="main" tabindex="-1"></main>
+<nav class="main-nav" aria-label="主要模式">
+  <button data-nav="phrases" aria-current="page"><span aria-hidden="true">話</span>會話</button>
+  <button data-nav="learn"><span aria-hidden="true">習</span>配對練習</button>
+  <button data-nav="grammar"><span aria-hidden="true">文</span>文法</button>
+  <button data-nav="manage"><span aria-hidden="true">庫</span>教材管理</button>
+</nav>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="detailDialog" class="detail-dialog" aria-label="句子詳細內容"></dialog>
+<dialog id="settingsDialog" aria-label="偏好設定"></dialog>
+<dialog id="editDialog" aria-label="編輯教材"></dialog>
+<dialog id="importDialog" aria-label="匯入資料預覽"></dialog>
+<dialog id="confirmDialog" aria-label="確認刪除"></dialog>
+<dialog id="displayDialog" class="display-dialog" aria-label="日文展示模式"></dialog>
+<input type="file" id="importFile" accept=".json,application/json" hidden>
+<!-- DATA -->
+<!-- CORE -->
+<!-- APP -->
+</body>
+</html>
