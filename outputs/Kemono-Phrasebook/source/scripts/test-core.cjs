@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),C=require('../src/core.js'),base=JSON.parse(fs.readFileSync(path.join(root,'src/data.json'),'utf8')),s=C.defaults();
-assert.equal(base.phrases.length,356);assert.equal(new Set(base.phrases.map(p=>p.id)).size,356);assert.equal(base.phrases.filter(p=>p.kind==='word'&&!p.hidden).length,129);assert.equal(base.phrases.filter(p=>p.kind!=='word'&&!p.hidden).length,226);assert.deepEqual(C.validateBundle(base,base).errors,[]);assert.deepEqual(C.duplicates(base.phrases),[]);
+assert.equal(base.phrases.length,388);assert.equal(new Set(base.phrases.map(p=>p.id)).size,388);assert.equal(base.phrases.filter(p=>p.kind==='word'&&!p.hidden).length,137);assert.equal(base.phrases.filter(p=>p.kind!=='word'&&!p.hidden).length,250);assert.deepEqual(C.validateBundle(base,base).errors,[]);assert.deepEqual(C.duplicates(base.phrases),[]);
 assert.equal(C.search(base,{q:'コンビニ',kind:'phrase'},s)[0].id,'kp-058');assert.equal(C.search(base,{q:'こんびに',kind:'phrase'},s)[0].id,'kp-058');assert.equal(C.search(base,{q:'ｺﾝﾋﾞﾆ',kind:'phrase'},s)[0].id,'kp-058');assert.equal(C.search(base,{category:'photo',kind:'phrase'},s).length,34);
 s.favorites=['kp-012'];assert.deepEqual(C.search(base,{scope:'favorites'},s).map(p=>p.id),['kp-012']);
 for(const n of [4,6,8])for(let i=0;i<100;i++){const items=C.sample(base.phrases,n);assert.equal(items.length,n);for(const k of ['id','semanticGroup'])assert.equal(new Set(items.map(p=>p[k])).size,n);assert.equal(new Set(items.map(p=>C.key(p.texts['zh-TW']))).size,n);}
@@ -11,11 +11,11 @@ const modified=structuredClone(custom);modified.texts['zh-TW']='第一次參加�
 for(const [field,value] of [['id','__proto__'],['categoryId','missing'],['difficulty',9],['readings',{'ja-Hira':'漢字'}],['texts',{'ja-JP':'','zh-TW':'不完整'}],['audioUrl','javascript:alert(1)'],['grammarIds',['missing']],['relatedIds',['missing']]])assert.ok(C.validateBundle({...bundle,phrases:[{...custom,[field]:value}]},base).errors.length,field);
 const backup={kind:'kemono-backup',schemaVersion:1,custom:imported.custom,overrides:[],user:{...imported,favorites:['custom-test'],settings:{...imported.settings,theme:'dark',rate:.75}}};const restored=C.mergeImport(C.defaults(),C.parseImport(backup,C.defaults(),base),base,true);assert.equal(restored.settings.theme,'dark');assert.equal(restored.settings.rate,.75);assert.deepEqual(restored.favorites,['custom-test']);assert.equal(restored.custom.phrases.length,1);
 assert.equal(C.cleanSettings({theme:'evil',rate:200,fontSize:20}).rate,1);
-console.log('PASS core: 226 phrases + 129 active words, references/readings, kana search, filters, 300 non-ambiguous samples, imports/conflicts/backup, invalid data rejection.');
+console.log('PASS core: 250 phrases + 137 active words, references/readings, kana search, filters, 300 non-ambiguous samples, imports/conflicts/backup, invalid data rejection.');
 
-assert.equal(C.search(base,{kind:'word'},s).length,129);
-assert.equal(C.search(base,{kind:'phrase'},s).length,226);
-for(const [cat,words,phrases] of [['parade',10,12],['private',10,16],['room',11,16],['intimacy',13,18],['sexual',23,40]]){
+assert.equal(C.search(base,{kind:'word'},s).length,137);
+assert.equal(C.search(base,{kind:'phrase'},s).length,250);
+for(const [cat,words,phrases] of [['parade',10,12],['private',13,23],['room',14,26],['intimacy',15,25],['sexual',23,40]]){
  assert.equal(C.search(base,{kind:'word',category:cat},s).length,words);
  assert.equal(C.search(base,{kind:'phrase',category:cat},s).length,phrases);
  assert.equal(C.sample(C.search(base,{kind:'phrase',category:cat},s),8).length,8);
@@ -27,10 +27,10 @@ assert.equal(C.search(base,{kind:'word',q:'わんないと'},s)[0].id,'kv-098');
 for(const field of [{kind:'unknown'},{usageNote:23},{usageNote:'x'.repeat(1001)}])assert.ok(C.validateBundle({...bundle,phrases:[{...custom,...field}]},base).errors.length);
 const legacy={kind:'kemono-backup',schemaVersion:1,custom:{phrases:[],categories:[],grammars:[]},overrides:[],user:{favorites:['kp-012'],recent:[{id:'kp-012',at:Date.now()}],records:[],settings:{rate:.75}}};
 const parsedLegacy=C.parseImport(legacy,C.defaults(),base);assert.deepEqual(parsedLegacy.errors,[]);
-const migrated=C.mergeImport(C.defaults(),parsedLegacy,base,true);assert.deepEqual(migrated.favorites,['kp-012']);assert.equal(C.allData(base,migrated).phrases.length,356);
+const migrated=C.mergeImport(C.defaults(),parsedLegacy,base,true);assert.deepEqual(migrated.favorites,['kp-012']);assert.equal(C.allData(base,migrated).phrases.length,388);
 console.log('PASS expansion: kind filters, 5 new scenarios, heard-to-response links, optional-field validation, legacy backup compatibility.');
 
-assert.equal(C.search(base,{},s).length,355);
+assert.equal(C.search(base,{},s).length,387);
 assert.equal(C.search(base,{q:'避妊'},s).length,0);
 assert.equal(C.sample([base.phrases.find(p=>p.id==='kv-097')],1).length,0);
 const legacyHidden={...legacy,overrides:[{...base.phrases.find(p=>p.id==='kv-097'),hidden:undefined,usageNote:'既有使用者修改'}]};
@@ -45,7 +45,7 @@ console.log('PASS new content: photography directions/poses/gaze/hands, male con
 assert.match(base.phrases.find(p=>p.id==='kp-191').texts['ja-JP'],/してくれる/);assert.match(base.phrases.find(p=>p.id==='kp-192').texts['ja-JP'],/してもいい/);assert.ok(base.phrases.find(p=>p.id==='kp-191').followUpIds.includes('kp-196'));assert.ok(base.phrases.find(p=>p.id==='kp-192').followUpIds.includes('kp-197'));
 
 const separated=C.search(base,{},C.defaults()),wordStart=separated.findIndex(p=>p.kind==='word');
-assert.equal(wordStart,226);assert.ok(separated.slice(wordStart).every(p=>p.kind==='word'));
+assert.equal(wordStart,250);assert.ok(separated.slice(wordStart).every(p=>p.kind==='word'));
 const recentState={...C.defaults(),recent:[{id:'kv-121',at:4},{id:'kp-203',at:3},{id:'kp-001',at:2}]};
 assert.deepEqual(C.search(base,{scope:'recent'},recentState).map(p=>p.id),['kp-203','kp-001','kv-121']);
 assert.equal(C.search(base,{q:'ノーゴム',kind:'word'},s)[0].id,'kv-123');
@@ -69,3 +69,12 @@ console.log('PASS locales: Japanese metadata search, UI preferences and reverse-
 
 for(const localizations of [{'ja-JP':{words:'not-array'}},{'ja-JP':{title:5}},{'ja-JP':null}])assert.ok(C.validateBundle({...bundle,grammars:[{...base.grammars[0],localizations}]},base).errors.length);
 console.log('PASS localized metadata validation: reject malformed translated fields before rendering.');
+
+const newRoomPhrases=base.phrases.filter(p=>/^kp-(22[7-9]|2[3-4][0-9]|250)$/.test(p.id));
+assert.equal(newRoomPhrases.length,24);
+for(const q of ['房號','貼貼','收下東西','暫放物品'])assert.ok(C.search(base,{q},C.defaults()).length>0,q);
+for(const [source,reply] of [['kp-227','kp-228'],['kp-230','kp-233'],['kp-230','kp-234'],['kp-237','kp-240'],['kp-244','kp-248'],['kp-242','kp-243']])assert.ok(byId[source].followUpIds.includes(reply));
+assert.match(byId['kp-228'].usageNote,/範例房號/);assert.match(byId['kp-228'].texts['ja-JP'],/503/);
+assert.match(byId['kp-242'].texts['ja-JP'],/預か/);assert.match(byId['kp-238'].texts['ja-JP'],/受け取/);
+assert.equal(C.sample([byId['kp-237'],byId['kp-238']],2).length,1);
+console.log('PASS room/cuddling/items: 24 phrases and 8 words, editable example room number, visit acceptance/refusal, closeness boundaries, gift versus temporary custody, similar-question exclusion.');

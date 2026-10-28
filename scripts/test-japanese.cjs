@@ -11,10 +11,14 @@ const STORE='kemono-phrasebook.v1';
  await p.locator('[data-action=language]').click();assert.equal(await p.locator('html').getAttribute('lang'),'ja');
  assert.match(await p.locator('h1').innerText(),/友達/);assert.equal(await p.locator('[data-action=language]').innerText(),'繁體中文');
  assert.equal(await p.locator('#filterCategory option[value=photo]').innerText(),'写真撮影');
- assert.match(await p.locator('#results .count').innerText(),/355件/);
+ assert.match(await p.locator('#results .count').innerText(),/387件/);
  assert.equal(await p.locator('.phrase-card').first().locator('.jp').innerText(),base.phrases[0].texts['ja-JP']);
  assert.equal(await p.locator('.phrase-card').first().locator('.translation').innerText(),base.phrases[0].texts['zh-TW']);
  await p.locator('#search').fill('写真撮影');assert.match(await p.locator('#results .count').innerText(),/51件/);await p.locator('[data-action=reset-filters]').click();
+ await p.locator('#search').fill('隣に座るのは大丈夫');await p.locator('[data-action=display][data-id=kp-248]').click();
+ assert.equal(await p.locator('.display-primary').innerText(),base.phrases.find(x=>x.id==='kp-248').texts['zh-TW']);
+ for(const viewport of [{width:390,height:844},{width:320,height:568},{width:844,height:390}]){await p.setViewportSize(viewport);await p.waitForTimeout(60);assert.ok(await p.locator('#displayDialog').evaluate(d=>d.scrollWidth<=d.clientWidth+1&&d.scrollHeight<=d.clientHeight+1));}
+ await p.screenshot({path:path.join(root,'work/room-cuddle-display.png')});await p.locator('[data-action=close-display]').click();await p.setViewportSize({width:390,height:844});await p.locator('[data-action=reset-filters]').click();
  await p.locator('[data-action=display][data-id=kp-008]').click();
  assert.equal(await p.locator('.display-primary').innerText(),base.phrases.find(x=>x.id==='kp-008').texts['zh-TW']);
  assert.equal(await p.locator('.display-primary').getAttribute('lang'),'zh-Hant');

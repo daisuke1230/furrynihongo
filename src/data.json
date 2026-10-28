@@ -7135,6 +7135,825 @@
       "usageNote": "タチ／ネコ等角色不直接決定口交時誰做、誰接受；不同動作要另外確認。"
     },
     {
+      "id": "kp-227",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "你的房間是幾號？",
+        "ja-JP": "お部屋は何号室ですか。"
+      },
+      "readings": {
+        "ja-Hira": "おへやはなんごうしつですか。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "房號",
+        "詢問房號"
+      ],
+      "grammarIds": [
+        "g-question"
+      ],
+      "difficulty": 1,
+      "semanticGroup": "room-number-question",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-131",
+        "kv-132",
+        "kv-133"
+      ],
+      "followUpIds": [
+        "kp-228",
+        "kp-229",
+        "kp-234"
+      ],
+      "usageNote": "只詢問房號，不表示已獲准拜訪；要過去之前，請另外詢問是否方便。"
+    },
+    {
+      "id": "kp-228",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我的房間是503號房。",
+        "ja-JP": "私の部屋は503号室です。"
+      },
+      "readings": {
+        "ja-Hira": "わたしのへやは、ごーまるさんごうしつです。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "房號",
+        "我的房號",
+        "五〇三"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "room-number-answer",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-131",
+        "kv-132",
+        "kv-133"
+      ],
+      "followUpIds": [
+        "kp-230",
+        "kp-235"
+      ],
+      "usageNote": "503 是範例房號。使用前可在教材管理把中文、日文與讀音一起改成實際房號；此例讀作「ごー・まる・さん」。告知房號不等於邀請對方進房。"
+    },
+    {
+      "id": "kp-229",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "可以把房號寫給我看嗎？",
+        "ja-JP": "部屋番号を書いて見せてもらえますか。"
+      },
+      "readings": {
+        "ja-Hira": "へやばんごうをかいてみせてもらえますか。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "房號",
+        "寫下房號"
+      ],
+      "grammarIds": [
+        "g-polite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "room-number-write",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-131",
+        "kv-132",
+        "kv-133"
+      ],
+      "followUpIds": [],
+      "usageNote": "沒聽清楚號碼時，請對方寫下或在手機上顯示，避免走錯房間。"
+    },
+    {
+      "id": "kp-230",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我現在方便去你的房間嗎？",
+        "ja-JP": "今、そちらのお部屋に行ってもいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "いま、そちらのおへやにいってもいいですか。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "去你房間",
+        "方便過去",
+        "拜訪"
+      ],
+      "grammarIds": [
+        "g-permission"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "visit-your-room-permission",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-131",
+        "kv-132",
+        "kv-133"
+      ],
+      "followUpIds": [
+        "kp-232",
+        "kp-233",
+        "kp-234",
+        "kp-236"
+      ],
+      "usageNote": "「そちらのお部屋」是對方的房間。先等對方確認方便，再前往；答應拜訪不代表答應其他互動。"
+    },
+    {
+      "id": "kp-231",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "如果方便，要不要來我的房間？",
+        "ja-JP": "よかったら、私の部屋に来ませんか。"
+      },
+      "readings": {
+        "ja-Hira": "よかったら、わたしのへやにきませんか。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "來我房間",
+        "房間邀約"
+      ],
+      "grammarIds": [
+        "g-invite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "visit-my-room-invitation",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-131",
+        "kv-132",
+        "kv-133"
+      ],
+      "followUpIds": [
+        "kp-227",
+        "kp-128",
+        "kp-131",
+        "kp-132"
+      ],
+      "usageNote": "主動邀請對方來自己的房間；可接著說清楚是聊天、休息或交東西，也需確認室友是否方便。"
+    },
+    {
+      "id": "kp-232",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "可以，現在可以過來。",
+        "ja-JP": "はい、今なら来ても大丈夫です。"
+      },
+      "readings": {
+        "ja-Hira": "はい、いまならきてもだいじょうぶです。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "回房間",
+        "接受拜訪"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "visit-room-yes",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-131",
+        "kv-132",
+        "kv-133"
+      ],
+      "followUpIds": [
+        "kp-235",
+        "kp-236"
+      ],
+      "usageNote": "這句只接受對方現在過來；進房後的活動、接觸與停留時間仍需另外確認。"
+    },
+    {
+      "id": "kp-233",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我先問一下室友，請等我回覆。",
+        "ja-JP": "同室の人に確認するので、返事を待ってください。"
+      },
+      "readings": {
+        "ja-Hira": "どうしつのひとにかくにんするので、へんじをまってください。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "室友",
+        "等候回覆"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "roommate-check-first",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-131",
+        "kv-132",
+        "kv-133"
+      ],
+      "followUpIds": [
+        "kp-232",
+        "kp-234"
+      ],
+      "usageNote": "還在確認，尚未答應拜訪。請等收到回覆後再前往，不要直接到房門口。"
+    },
+    {
+      "id": "kp-234",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "現在不太方便，我們在大廳見吧。",
+        "ja-JP": "今はちょっと都合が悪いので、ロビーで会いましょう。"
+      },
+      "readings": {
+        "ja-Hira": "いまはちょっとつごうがわるいので、ろびーであいましょう。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "婉拒拜訪",
+        "大廳見"
+      ],
+      "grammarIds": [
+        "g-invite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "room-unavailable-lobby",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-131",
+        "kv-132",
+        "kv-133"
+      ],
+      "followUpIds": [
+        "kp-124"
+      ],
+      "usageNote": "婉拒當下到房間，並提出在大廳見面的替代方式。"
+    },
+    {
+      "id": "kp-235",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "到房門口時，請先傳訊息給我。",
+        "ja-JP": "部屋の前に着いたら、先にメッセージをください。"
+      },
+      "readings": {
+        "ja-Hira": "へやのまえについたら、さきにめっせーじをください。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "房門口",
+        "傳訊息"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "message-on-arrival",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-131",
+        "kv-132",
+        "kv-133"
+      ],
+      "followUpIds": [
+        "kp-236"
+      ],
+      "usageNote": "用於已經約好拜訪之後，請對方抵達時先聯絡。不要把這句當作自行前往的許可。"
+    },
+    {
+      "id": "kp-236",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我只是在門口交東西，不進房間。",
+        "ja-JP": "ドアの前で物を渡すだけで、部屋には入りません。"
+      },
+      "readings": {
+        "ja-Hira": "どあのまえでものをわたすだけで、へやにははいりません。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "交東西",
+        "房門口",
+        "不進房間"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "doorstep-delivery-only",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-131",
+        "kv-132",
+        "kv-133"
+      ],
+      "followUpIds": [
+        "kp-238",
+        "kp-239"
+      ],
+      "usageNote": "說明見面的範圍只有交付物品，不包含進房或留下來。"
+    },
+    {
+      "id": "kp-237",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我有份小禮物，你方便收下嗎？",
+        "ja-JP": "ちょっとしたプレゼントがあるのですが、受け取ってもらえますか。"
+      },
+      "readings": {
+        "ja-Hira": "ちょっとしたぷれぜんとがあるのですが、うけとってもらえますか。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "收下東西",
+        "收禮物",
+        "小禮物"
+      ],
+      "grammarIds": [
+        "g-polite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "item-receive-request",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-134",
+        "kv-135",
+        "kv-136"
+      ],
+      "followUpIds": [
+        "kp-239",
+        "kp-240",
+        "kp-241"
+      ],
+      "usageNote": "用來詢問是否願意收下小禮物；不是要求對方幫忙保管，也不表示對方欠你回禮或其他回應。"
+    },
+    {
+      "id": "kp-238",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我有東西想交給你，你現在方便收嗎？",
+        "ja-JP": "今、渡したい物があるのですが、受け取れますか。"
+      },
+      "readings": {
+        "ja-Hira": "いま、わたしたいものがあるのですが、うけとれますか。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "收下東西",
+        "接收物品",
+        "交東西"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "item-receive-request",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-134",
+        "kv-135",
+        "kv-136"
+      ],
+      "followUpIds": [
+        "kp-239",
+        "kp-240",
+        "kp-236"
+      ],
+      "usageNote": "中性地詢問現在能否接收物品；建議接著說明是什麼東西，讓對方決定是否接受。"
+    },
+    {
+      "id": "kp-239",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "可以，我可以收下。",
+        "ja-JP": "はい、受け取れます。"
+      },
+      "readings": {
+        "ja-Hira": "はい、うけとれます。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "收下東西",
+        "接受物品"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "item-receive-yes",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-134",
+        "kv-135",
+        "kv-136"
+      ],
+      "followUpIds": [
+        "kp-094"
+      ],
+      "usageNote": "表示可以接收剛才提到的物品，不代表同意其他事情。"
+    },
+    {
+      "id": "kp-240",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "謝謝你的心意，不過我沒辦法收下。",
+        "ja-JP": "お気持ちはうれしいのですが、受け取れません。"
+      },
+      "readings": {
+        "ja-Hira": "おきもちはうれしいのですが、うけとれません。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "收下東西",
+        "婉拒禮物"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "item-receive-no",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-134",
+        "kv-135",
+        "kv-136"
+      ],
+      "followUpIds": [],
+      "usageNote": "有禮貌地婉拒禮物或物品；不必勉強收下，也不必另外說明理由。"
+    },
+    {
+      "id": "kp-241",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "這是送你的，不用回禮。",
+        "ja-JP": "これはプレゼントなので、お返しは要りません。"
+      },
+      "readings": {
+        "ja-Hira": "これはぷれぜんとなので、おかえしはいりません。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "收禮物",
+        "不用回禮"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "gift-no-return-needed",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-134",
+        "kv-135",
+        "kv-136"
+      ],
+      "followUpIds": [
+        "kp-094"
+      ],
+      "usageNote": "說明這是贈送的禮物，不要求回禮；是否收下仍由對方決定。"
+    },
+    {
+      "id": "kp-242",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "可以請你幫我暫時保管這個嗎？",
+        "ja-JP": "これを少しの間、預かってもらえますか。"
+      },
+      "readings": {
+        "ja-Hira": "これをすこしのあいだ、あずかってもらえますか。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "收下東西",
+        "暫放物品",
+        "暫時保管"
+      ],
+      "grammarIds": [
+        "g-polite"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "item-temporary-custody",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-134",
+        "kv-135",
+        "kv-136"
+      ],
+      "followUpIds": [
+        "kp-243",
+        "kp-240"
+      ],
+      "usageNote": "「預かる」表示替對方暫時保管，不是把東西收為己有。請另外約好何時取回。"
+    },
+    {
+      "id": "kp-243",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我只是幫你保管，晚點會還給你。",
+        "ja-JP": "預かるだけなので、後でお返しします。"
+      },
+      "readings": {
+        "ja-Hira": "あずかるだけなので、あとでおかえしします。"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "暫放物品",
+        "暫時保管",
+        "歸還"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "item-custody-not-gift",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-134",
+        "kv-135",
+        "kv-136"
+      ],
+      "followUpIds": [],
+      "usageNote": "清楚區分暫時保管與收下禮物；可以再約定歸還的時間與地點。"
+    },
+    {
+      "id": "kp-244",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "可以貼貼、靠著你一下嗎？",
+        "ja-JP": "少しくっついてもいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "すこしくっついてもいいですか。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "貼貼",
+        "靠在一起"
+      ],
+      "grammarIds": [
+        "g-permission"
+      ],
+      "difficulty": 1,
+      "semanticGroup": "cuddle-permission",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-137",
+        "kv-138"
+      ],
+      "followUpIds": [
+        "kp-247",
+        "kp-248",
+        "kp-249",
+        "kp-250"
+      ],
+      "usageNote": "「くっつく」在這個情境是身體靠在一起，接近「貼貼」，不一定是擁抱。具體姿勢與能接受的範圍仍可再確認。"
+    },
+    {
+      "id": "kp-245",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "可以靠在你的肩膀上嗎？",
+        "ja-JP": "肩に寄りかかってもいいですか。"
+      },
+      "readings": {
+        "ja-Hira": "かたによりかかってもいいですか。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "貼貼",
+        "靠肩膀"
+      ],
+      "grammarIds": [
+        "g-permission"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "lean-on-shoulder-permission",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-137",
+        "kv-138"
+      ],
+      "followUpIds": [
+        "kp-247",
+        "kp-248",
+        "kp-249",
+        "kp-250"
+      ],
+      "usageNote": "具體詢問靠在肩膀上；先等對方回答，並留意姿勢是否讓對方不舒服。"
+    },
+    {
+      "id": "kp-246",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "我想跟你依偎一下。",
+        "ja-JP": "少し寄り添っていたいです。"
+      },
+      "readings": {
+        "ja-Hira": "すこしよりそっていたいです。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "貼貼",
+        "依偎"
+      ],
+      "grammarIds": [
+        "g-want"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "cuddle-desire",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-137",
+        "kv-138"
+      ],
+      "followUpIds": [
+        "kp-244",
+        "kp-247",
+        "kp-249"
+      ],
+      "usageNote": "表達想依偎的願望，還需要對方願意，不能把自己的願望當作許可。"
+    },
+    {
+      "id": "kp-247",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "可以，貼在一起沒關係。",
+        "ja-JP": "いいですよ。くっついても大丈夫です。"
+      },
+      "readings": {
+        "ja-Hira": "いいですよ。くっついてもだいじょうぶです。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "貼貼",
+        "接受靠近"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "cuddle-yes",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-137",
+        "kv-138"
+      ],
+      "followUpIds": [
+        "kp-250",
+        "kp-145"
+      ],
+      "usageNote": "只接受剛才確認的靠在一起，不包含親吻、撫摸或其他進一步行為；隨時可以改變心意。"
+    },
+    {
+      "id": "kp-248",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "可以坐旁邊，但先不要身體接觸。",
+        "ja-JP": "隣に座るのは大丈夫ですが、まだ体はくっつけないでください。"
+      },
+      "readings": {
+        "ja-Hira": "となりにすわるのはだいじょうぶですが、まだからだはくっつけないでください。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "貼貼",
+        "坐旁邊",
+        "不接觸"
+      ],
+      "grammarIds": [
+        "g-negative"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "sit-near-without-contact",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-137",
+        "kv-138"
+      ],
+      "followUpIds": [
+        "kp-148"
+      ],
+      "usageNote": "願意坐在旁邊，但還沒有同意身體靠在一起。"
+    },
+    {
+      "id": "kp-249",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "我現在不想貼貼，不過可以一起聊天。",
+        "ja-JP": "今はくっつきたくありませんが、一緒に話すのは大丈夫です。"
+      },
+      "readings": {
+        "ja-Hira": "いまはくっつきたくありませんが、いっしょにはなすのはだいじょうぶです。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "貼貼",
+        "婉拒靠近",
+        "一起聊天"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "cuddle-no-chat-yes",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-137",
+        "kv-138"
+      ],
+      "followUpIds": [
+        "kp-148",
+        "kp-147"
+      ],
+      "usageNote": "拒絕當下的貼貼，願意繼續聊天；請尊重這個範圍。"
+    },
+    {
+      "id": "kp-250",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "不舒服的話，請馬上告訴我。",
+        "ja-JP": "嫌だったら、すぐに教えてください。"
+      },
+      "readings": {
+        "ja-Hira": "いやだったら、すぐにおしえてください。"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "貼貼",
+        "確認意願",
+        "舒服程度"
+      ],
+      "grammarIds": [
+        "g-request"
+      ],
+      "difficulty": 2,
+      "semanticGroup": "tell-me-if-uncomfortable",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-137",
+        "kv-138"
+      ],
+      "followUpIds": [
+        "kp-145",
+        "kp-190"
+      ],
+      "usageNote": "主動讓對方知道可以提出不舒服；收到拒絕或停止要求時，應立即停止接觸。"
+    },
+    {
       "id": "kv-001",
       "kind": "word",
       "categoryId": "greeting",
@@ -10552,6 +11371,206 @@
       ],
       "followUpIds": [],
       "usageNote": "本來可指外帶；搭訕或私下邀約時可能指帶對方回家／旅館，也可能讓人覺得不尊重。用於理解，不直接視為對方已同意性行為。"
+    },
+    {
+      "id": "kv-131",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "房號",
+        "ja-JP": "部屋番号"
+      },
+      "readings": {
+        "ja-Hira": "へやばんごう"
+      },
+      "tags": [
+        "單字",
+        "房號"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-131",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-227"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-132",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "〜號房",
+        "ja-JP": "〜号室"
+      },
+      "readings": {
+        "ja-Hira": "〜ごうしつ"
+      },
+      "tags": [
+        "單字",
+        "房號"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-132",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-228"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-133",
+      "kind": "word",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "房門口",
+        "ja-JP": "部屋の前"
+      },
+      "readings": {
+        "ja-Hira": "へやのまえ"
+      },
+      "tags": [
+        "單字",
+        "房門口"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-133",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-235"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-134",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "收下、接收",
+        "ja-JP": "受け取る"
+      },
+      "readings": {
+        "ja-Hira": "うけとる"
+      },
+      "tags": [
+        "單字",
+        "收下東西"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-134",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-238"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-135",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "交給對方、遞交",
+        "ja-JP": "渡す"
+      },
+      "readings": {
+        "ja-Hira": "わたす"
+      },
+      "tags": [
+        "單字",
+        "交東西"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-135",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-236"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-136",
+      "kind": "word",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "暫時保管",
+        "ja-JP": "預かる"
+      },
+      "readings": {
+        "ja-Hira": "あずかる"
+      },
+      "tags": [
+        "單字",
+        "暫放物品"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-136",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-242"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-137",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "貼在一起、貼貼",
+        "ja-JP": "くっつく"
+      },
+      "readings": {
+        "ja-Hira": "くっつく"
+      },
+      "tags": [
+        "單字",
+        "貼貼"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-137",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-244"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-138",
+      "kind": "word",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "依偎、靠在身旁",
+        "ja-JP": "寄り添う"
+      },
+      "readings": {
+        "ja-Hira": "よりそう"
+      },
+      "tags": [
+        "單字",
+        "貼貼"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-138",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-246"
+      ],
+      "followUpIds": []
     }
   ],
   "sources": [
