@@ -12,7 +12,7 @@ function allData(base,state){
 }
 function search(data,filters,state){
  const q=norm(filters.q||''), fav=new Set(state.favorites),recent=new Map(state.recent.map((r,i)=>[r.id,i]));
- const result=data.phrases.filter(p=>p.hidden!==true&&(!filters.kind||(p.kind||'phrase')===filters.kind)&&(!filters.category||p.categoryId===filters.category)&&(!filters.grammar||p.grammarIds.includes(filters.grammar))&&(!filters.difficulty||p.difficulty===Number(filters.difficulty))&&(filters.scope!=='favorites'||fav.has(p.id))&&(filters.scope!=='common'||p.common)&&(filters.scope!=='recent'||recent.has(p.id))&&(!q||norm([...Object.values(p.texts),...Object.values(p.readings),...p.tags,p.usageNote||'',...data.categories.filter(c=>c.id===p.categoryId).flatMap(c=>[c.name,...Object.values(c.localizations||{}).map(l=>l.name||'')])].join(' ')).includes(q)));
+ const result=data.phrases.filter(p=>p.hidden!==true&&(!filters.kind||(p.kind||'phrase')===filters.kind)&&(!filters.category||p.categoryId===filters.category)&&(!filters.grammar||p.grammarIds.includes(filters.grammar))&&(!filters.difficulty||p.difficulty===Number(filters.difficulty))&&(filters.scope!=='favorites'||fav.has(p.id))&&(filters.scope!=='common'||p.common)&&(filters.scope!=='casual'||p.tags.includes('朋友口語'))&&(filters.scope!=='recent'||recent.has(p.id))&&(!q||norm([...Object.values(p.texts),...Object.values(p.readings),...p.tags,p.usageNote||'',...data.categories.filter(c=>c.id===p.categoryId).flatMap(c=>[c.name,...Object.values(c.localizations||{}).map(l=>l.name||'')])].join(' ')).includes(q)));
  if(filters.scope==='recent')result.sort((a,b)=>recent.get(a.id)-recent.get(b.id));
  result.sort((a,b)=>Number(a.kind==='word')-Number(b.kind==='word'));
  return result;

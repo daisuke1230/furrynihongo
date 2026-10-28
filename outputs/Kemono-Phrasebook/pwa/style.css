@@ -17,3 +17,5 @@
 
 .display-tools button,.display-footer button{font-size:14px;min-height:44px;padding:.5em .7em}.display-options{font-size:14px}.display-options label{font-size:14px}.display-options input{flex-shrink:0}
 @media(max-width:650px){.display-options{width:100%;gap:8px}.display-tools{gap:8px}.display-footer{gap:8px}}
+/* Tone labels may wrap; keep the favorite action readable at large phone text sizes. */
+.fav{flex-shrink:0;white-space:nowrap}.card-top .pill{min-width:0;overflow-wrap:anywhere}

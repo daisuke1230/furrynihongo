@@ -622,7 +622,8 @@
         "ja-Hira": "たいわんからきました。"
       },
       "tags": [
-        "認識朋友"
+        "認識朋友",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-past"
@@ -633,7 +634,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-004",
-        "kp-005"
+        "kp-005",
+        "kp-251"
       ],
       "followUpIds": []
     },
@@ -752,7 +754,8 @@
         "ja-Hira": "もうすこしゆっくりはなしてもらえますか。"
       },
       "tags": [
-        "認識朋友"
+        "認識朋友",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-polite"
@@ -763,7 +766,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-009",
-        "kp-010"
+        "kp-010",
+        "kp-252"
       ],
       "followUpIds": []
     },
@@ -778,7 +782,8 @@
         "ja-Hira": "もういちどいってください。"
       },
       "tags": [
-        "認識朋友"
+        "認識朋友",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-request"
@@ -789,7 +794,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-010",
-        "kp-001"
+        "kp-001",
+        "kp-253"
       ],
       "followUpIds": []
     },
@@ -830,7 +836,8 @@
         "ja-Hira": "しゃしんをとってもいいですか。"
       },
       "tags": [
-        "拍照交流"
+        "拍照交流",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-permission"
@@ -841,7 +848,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-012",
-        "kp-013"
+        "kp-013",
+        "kp-254"
       ],
       "followUpIds": [
         "kp-012",
@@ -859,7 +867,8 @@
         "ja-Hira": "いっしょにしゃしんをとってもいいですか。"
       },
       "tags": [
-        "拍照交流"
+        "拍照交流",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-permission"
@@ -870,7 +879,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-013",
-        "kp-014"
+        "kp-014",
+        "kp-255"
       ],
       "followUpIds": [
         "kp-019",
@@ -1106,7 +1116,8 @@
         "ja-Hira": "きぐるみがとてもかわいいです。"
       },
       "tags": [
-        "獸裝與角色"
+        "獸裝與角色",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-basic"
@@ -1117,7 +1128,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-022",
-        "kp-023"
+        "kp-023",
+        "kp-256"
       ],
       "followUpIds": []
     },
@@ -1894,7 +1906,8 @@
         "ja-Hira": "いっしょにごはんをたべませんか。"
       },
       "tags": [
-        "吃飯休息"
+        "吃飯休息",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-invite"
@@ -1905,7 +1918,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-052",
-        "kp-053"
+        "kp-053",
+        "kp-257"
       ],
       "followUpIds": [
         "kp-059",
@@ -2157,7 +2171,8 @@
         "ja-Hira": "えすえぬえすをふぉろーしてもいいですか。"
       },
       "tags": [
-        "聯絡分享"
+        "聯絡分享",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-permission"
@@ -2168,7 +2183,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-062",
-        "kp-063"
+        "kp-063",
+        "kp-258"
       ],
       "followUpIds": [
         "kp-062",
@@ -2186,7 +2202,8 @@
         "ja-Hira": "これがわたしのあかうんとです。"
       },
       "tags": [
-        "聯絡分享"
+        "聯絡分享",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-basic"
@@ -2197,7 +2214,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-063",
-        "kp-064"
+        "kp-064",
+        "kp-259"
       ],
       "followUpIds": []
     },
@@ -2264,7 +2282,8 @@
         "ja-Hira": "あとでめっせーじをおくります。"
       },
       "tags": [
-        "聯絡分享"
+        "聯絡分享",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-basic"
@@ -2275,7 +2294,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-066",
-        "kp-067"
+        "kp-067",
+        "kp-260"
       ],
       "followUpIds": []
     },
@@ -2342,7 +2362,8 @@
         "ja-Hira": "とうこうするときにたぐづけしてもいいですか。"
       },
       "tags": [
-        "聯絡分享"
+        "聯絡分享",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-permission"
@@ -2353,7 +2374,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-069",
-        "kp-070"
+        "kp-070",
+        "kp-261"
       ],
       "followUpIds": []
     },
@@ -2420,7 +2442,8 @@
         "ja-Hira": "はぐしてもいいですか。"
       },
       "tags": [
-        "界限與協助"
+        "界限與協助",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-permission"
@@ -2431,7 +2454,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-072",
-        "kp-073"
+        "kp-073",
+        "kp-262"
       ],
       "followUpIds": [
         "kp-072",
@@ -2975,7 +2999,8 @@
         "ja-Hira": "おあいできてうれしいです。"
       },
       "tags": [
-        "感謝道別"
+        "感謝道別",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-basic"
@@ -2986,7 +3011,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-093",
-        "kp-094"
+        "kp-094",
+        "kp-263"
       ],
       "followUpIds": []
     },
@@ -7149,7 +7175,8 @@
         "回房間",
         "會話",
         "房號",
-        "詢問房號"
+        "詢問房號",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-question"
@@ -7161,7 +7188,8 @@
       "relatedIds": [
         "kv-131",
         "kv-132",
-        "kv-133"
+        "kv-133",
+        "kp-264"
       ],
       "followUpIds": [
         "kp-228",
@@ -7186,7 +7214,8 @@
         "會話",
         "房號",
         "我的房號",
-        "五〇三"
+        "五〇三",
+        "禮貌說法"
       ],
       "grammarIds": [],
       "difficulty": 1,
@@ -7196,7 +7225,8 @@
       "relatedIds": [
         "kv-131",
         "kv-132",
-        "kv-133"
+        "kv-133",
+        "kp-265"
       ],
       "followUpIds": [
         "kp-230",
@@ -7252,7 +7282,8 @@
         "會話",
         "去你房間",
         "方便過去",
-        "拜訪"
+        "拜訪",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-permission"
@@ -7264,7 +7295,8 @@
       "relatedIds": [
         "kv-131",
         "kv-132",
-        "kv-133"
+        "kv-133",
+        "kp-266"
       ],
       "followUpIds": [
         "kp-232",
@@ -7289,7 +7321,8 @@
         "回房間",
         "會話",
         "來我房間",
-        "房間邀約"
+        "房間邀約",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-invite"
@@ -7301,7 +7334,8 @@
       "relatedIds": [
         "kv-131",
         "kv-132",
-        "kv-133"
+        "kv-133",
+        "kp-267"
       ],
       "followUpIds": [
         "kp-227",
@@ -7532,7 +7566,8 @@
         "會話",
         "收下東西",
         "接收物品",
-        "交東西"
+        "交東西",
+        "禮貌說法"
       ],
       "grammarIds": [],
       "difficulty": 2,
@@ -7542,7 +7577,8 @@
       "relatedIds": [
         "kv-134",
         "kv-135",
-        "kv-136"
+        "kv-136",
+        "kp-268"
       ],
       "followUpIds": [
         "kp-239",
@@ -7727,7 +7763,8 @@
         "親密互動",
         "會話",
         "貼貼",
-        "靠在一起"
+        "靠在一起",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-permission"
@@ -7738,7 +7775,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kv-137",
-        "kv-138"
+        "kv-138",
+        "kp-269"
       ],
       "followUpIds": [
         "kp-247",
@@ -7763,7 +7801,8 @@
         "親密互動",
         "會話",
         "貼貼",
-        "靠肩膀"
+        "靠肩膀",
+        "禮貌說法"
       ],
       "grammarIds": [
         "g-permission"
@@ -7774,7 +7813,8 @@
       "audioUrl": null,
       "relatedIds": [
         "kv-137",
-        "kv-138"
+        "kv-138",
+        "kp-270"
       ],
       "followUpIds": [
         "kp-247",
@@ -7952,6 +7992,1244 @@
         "kp-190"
       ],
       "usageNote": "主動讓對方知道可以提出不舒服；收到拒絕或停止要求時，應立即停止接觸。"
+    },
+    {
+      "id": "kp-251",
+      "kind": "phrase",
+      "categoryId": "greeting",
+      "texts": {
+        "zh-TW": "我是從台灣來的。",
+        "ja-JP": "台湾から来たよ。"
+      },
+      "readings": {
+        "ja-Hira": "たいわんからきたよ。"
+      },
+      "tags": [
+        "認識朋友",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-3",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-003"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-252",
+      "kind": "phrase",
+      "categoryId": "greeting",
+      "texts": {
+        "zh-TW": "可以請你說慢一點嗎？",
+        "ja-JP": "もう少しゆっくり話してくれる？"
+      },
+      "readings": {
+        "ja-Hira": "もうすこしゆっくりはなしてくれる？"
+      },
+      "tags": [
+        "認識朋友",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-8",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-008"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-253",
+      "kind": "phrase",
+      "categoryId": "greeting",
+      "texts": {
+        "zh-TW": "請再說一次。",
+        "ja-JP": "もう一回言ってくれる？"
+      },
+      "readings": {
+        "ja-Hira": "もういっかいいってくれる？"
+      },
+      "tags": [
+        "認識朋友",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-9",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-009"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-254",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "可以拍張照嗎？",
+        "ja-JP": "写真撮ってもいい？"
+      },
+      "readings": {
+        "ja-Hira": "しゃしんとってもいい？"
+      },
+      "tags": [
+        "拍照交流",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "photo-permit",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-011"
+      ],
+      "followUpIds": [
+        "kp-012",
+        "kp-019"
+      ],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-255",
+      "kind": "phrase",
+      "categoryId": "photo",
+      "texts": {
+        "zh-TW": "可以一起合照嗎？",
+        "ja-JP": "一緒に写真撮ってもいい？"
+      },
+      "readings": {
+        "ja-Hira": "いっしょにしゃしんとってもいい？"
+      },
+      "tags": [
+        "拍照交流",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "photo-permit",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-012"
+      ],
+      "followUpIds": [
+        "kp-019",
+        "kp-066"
+      ],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-256",
+      "kind": "phrase",
+      "categoryId": "suit",
+      "texts": {
+        "zh-TW": "你的獸裝很可愛。",
+        "ja-JP": "着ぐるみ、すごくかわいいね！"
+      },
+      "readings": {
+        "ja-Hira": "きぐるみ、すごくかわいいね！"
+      },
+      "tags": [
+        "獸裝與角色",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "meaning-21",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-021"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-257",
+      "kind": "phrase",
+      "categoryId": "food",
+      "texts": {
+        "zh-TW": "要一起吃飯嗎？",
+        "ja-JP": "一緒にご飯食べない？"
+      },
+      "readings": {
+        "ja-Hira": "いっしょにごはんたべない？"
+      },
+      "tags": [
+        "吃飯休息",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-51",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-051"
+      ],
+      "followUpIds": [
+        "kp-059",
+        "kp-058"
+      ],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-258",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "可以追蹤你的社群帳號嗎？",
+        "ja-JP": "SNS、フォローしてもいい？"
+      },
+      "readings": {
+        "ja-Hira": "えすえぬえす、ふぉろーしてもいい？"
+      },
+      "tags": [
+        "聯絡分享",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-61",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-061"
+      ],
+      "followUpIds": [
+        "kp-062",
+        "kp-063"
+      ],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-259",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "這是我的帳號。",
+        "ja-JP": "これ、私のアカウントだよ。"
+      },
+      "readings": {
+        "ja-Hira": "これ、わたしのあかうんとだよ。"
+      },
+      "tags": [
+        "聯絡分享",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "meaning-62",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-062"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-260",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "我之後會傳訊息給你。",
+        "ja-JP": "後でメッセージ送るね。"
+      },
+      "readings": {
+        "ja-Hira": "あとでめっせーじおくるね。"
+      },
+      "tags": [
+        "聯絡分享",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "meaning-65",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-065"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-261",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "發文時可以標記你嗎？",
+        "ja-JP": "投稿するとき、タグ付けしてもいい？"
+      },
+      "readings": {
+        "ja-Hira": "とうこうするとき、たぐづけしてもいい？"
+      },
+      "tags": [
+        "聯絡分享",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-68",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-068"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-262",
+      "kind": "phrase",
+      "categoryId": "care",
+      "texts": {
+        "zh-TW": "可以抱抱嗎？",
+        "ja-JP": "ハグしてもいい？"
+      },
+      "readings": {
+        "ja-Hira": "はぐしてもいい？"
+      },
+      "tags": [
+        "界限與協助",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "meaning-71",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-071"
+      ],
+      "followUpIds": [
+        "kp-072",
+        "kp-073"
+      ],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-263",
+      "kind": "phrase",
+      "categoryId": "farewell",
+      "texts": {
+        "zh-TW": "很高興見到你。",
+        "ja-JP": "会えてうれしい！"
+      },
+      "readings": {
+        "ja-Hira": "あえてうれしい！"
+      },
+      "tags": [
+        "感謝道別",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "meaning-92",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-092"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；適合已經聊開、彼此接受輕鬆語氣的朋友。可從下方對照切回禮貌說法。"
+    },
+    {
+      "id": "kp-264",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "你的房間是幾號？",
+        "ja-JP": "部屋、何号室？"
+      },
+      "readings": {
+        "ja-Hira": "へや、なんごうしつ？"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "房號",
+        "詢問房號",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "room-number-question",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-227"
+      ],
+      "followUpIds": [
+        "kp-228",
+        "kp-229",
+        "kp-234"
+      ],
+      "usageNote": "朋友口語；語氣較輕鬆，仍要等對方回答，再進行拜訪、交付物品或接觸。只詢問房號，不表示已獲准拜訪；要過去之前，請另外詢問是否方便。"
+    },
+    {
+      "id": "kp-265",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我的房間是503號房。",
+        "ja-JP": "503号室だよ。"
+      },
+      "readings": {
+        "ja-Hira": "ごーまるさんごうしつだよ。"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "房號",
+        "我的房號",
+        "五〇三",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "room-number-answer",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-228"
+      ],
+      "followUpIds": [
+        "kp-230",
+        "kp-235"
+      ],
+      "usageNote": "朋友口語；語氣較輕鬆，仍要等對方回答，再進行拜訪、交付物品或接觸。503 是範例房號。使用前可在教材管理把中文、日文與讀音一起改成實際房號；此例讀作「ごー・まる・さん」。告知房號不等於邀請對方進房。"
+    },
+    {
+      "id": "kp-266",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "我現在方便去你的房間嗎？",
+        "ja-JP": "今、そっちの部屋に行ってもいい？"
+      },
+      "readings": {
+        "ja-Hira": "いま、そっちのへやにいってもいい？"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "去你房間",
+        "方便過去",
+        "拜訪",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "visit-your-room-permission",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-230"
+      ],
+      "followUpIds": [
+        "kp-232",
+        "kp-233",
+        "kp-234",
+        "kp-236"
+      ],
+      "usageNote": "朋友口語；語氣較輕鬆，仍要等對方回答，再進行拜訪、交付物品或接觸。「そちらのお部屋」是對方的房間。先等對方確認方便，再前往；答應拜訪不代表答應其他互動。"
+    },
+    {
+      "id": "kp-267",
+      "kind": "phrase",
+      "categoryId": "room",
+      "texts": {
+        "zh-TW": "如果方便，要不要來我的房間？",
+        "ja-JP": "よかったら、私の部屋に来ない？"
+      },
+      "readings": {
+        "ja-Hira": "よかったら、わたしのへやにこない？"
+      },
+      "tags": [
+        "回房間",
+        "會話",
+        "來我房間",
+        "房間邀約",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "visit-my-room-invitation",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-231"
+      ],
+      "followUpIds": [
+        "kp-227",
+        "kp-128",
+        "kp-131",
+        "kp-132"
+      ],
+      "usageNote": "朋友口語；語氣較輕鬆，仍要等對方回答，再進行拜訪、交付物品或接觸。主動邀請對方來自己的房間；可接著說清楚是聊天、休息或交東西，也需確認室友是否方便。"
+    },
+    {
+      "id": "kp-268",
+      "kind": "phrase",
+      "categoryId": "private",
+      "texts": {
+        "zh-TW": "我有東西想交給你，你現在方便收嗎？",
+        "ja-JP": "渡したい物があるんだけど、今、受け取れる？"
+      },
+      "readings": {
+        "ja-Hira": "わたしたいものがあるんだけど、いま、うけとれる？"
+      },
+      "tags": [
+        "私下邀約",
+        "會話",
+        "收下東西",
+        "接收物品",
+        "交東西",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "item-receive-request",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-238"
+      ],
+      "followUpIds": [
+        "kp-239",
+        "kp-240",
+        "kp-236"
+      ],
+      "usageNote": "朋友口語；語氣較輕鬆，仍要等對方回答，再進行拜訪、交付物品或接觸。中性地詢問現在能否接收物品；建議接著說明是什麼東西，讓對方決定是否接受。"
+    },
+    {
+      "id": "kp-269",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "可以貼貼、靠著你一下嗎？",
+        "ja-JP": "ちょっとくっついてもいい？"
+      },
+      "readings": {
+        "ja-Hira": "ちょっとくっついてもいい？"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "貼貼",
+        "靠在一起",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "cuddle-permission",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-244"
+      ],
+      "followUpIds": [
+        "kp-247",
+        "kp-248",
+        "kp-249",
+        "kp-250"
+      ],
+      "usageNote": "朋友口語；語氣較輕鬆，仍要等對方回答，再進行拜訪、交付物品或接觸。「くっつく」在這個情境是身體靠在一起，接近「貼貼」，不一定是擁抱。具體姿勢與能接受的範圍仍可再確認。"
+    },
+    {
+      "id": "kp-270",
+      "kind": "phrase",
+      "categoryId": "intimacy",
+      "texts": {
+        "zh-TW": "可以靠在你的肩膀上嗎？",
+        "ja-JP": "肩に寄りかかってもいい？"
+      },
+      "readings": {
+        "ja-Hira": "かたによりかかってもいい？"
+      },
+      "tags": [
+        "親密互動",
+        "會話",
+        "貼貼",
+        "靠肩膀",
+        "朋友口語",
+        "口語",
+        "カジュアル"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "lean-on-shoulder-permission",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-245"
+      ],
+      "followUpIds": [
+        "kp-247",
+        "kp-248",
+        "kp-249",
+        "kp-250"
+      ],
+      "usageNote": "朋友口語；語氣較輕鬆，仍要等對方回答，再進行拜訪、交付物品或接觸。具體詢問靠在肩膀上；先等對方回答，並留意姿勢是否讓對方不舒服。"
+    },
+    {
+      "id": "kp-271",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "要不要交換聯絡方式？",
+        "ja-JP": "連絡先、交換しない？"
+      },
+      "readings": {
+        "ja-Hira": "れんらくさき、こうかんしない？"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "contact-exchange-invitation",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [
+        "kp-259",
+        "kp-272",
+        "kp-273",
+        "kp-284"
+      ],
+      "usageNote": "朋友口語；「〜しない？」是輕鬆的邀請，不是否定或拒絕。先確認對方願意，再交換。"
+    },
+    {
+      "id": "kp-272",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "你比較常用哪個社群平台？",
+        "ja-JP": "普段、どのSNSをよく使ってる？"
+      },
+      "readings": {
+        "ja-Hira": "ふだん、どのえすえぬえすをよくつかってる？"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "社群平台"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "preferred-social-platform",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [
+        "kp-273",
+        "kp-281"
+      ],
+      "usageNote": "朋友口語；「使ってる」是「使っている」的常見口語縮略。SNS 可依情境換成具體的平台名稱。"
+    },
+    {
+      "id": "kp-273",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "你有用LINE嗎？",
+        "ja-JP": "LINE使ってる？"
+      },
+      "readings": {
+        "ja-Hira": "らいんつかってる？"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "LINE",
+        "加好友"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "uses-line",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [
+        "kp-274",
+        "kp-285",
+        "kp-284"
+      ],
+      "usageNote": "朋友口語；先問有沒有使用，再詢問能否加好友，不直接要求交換私人帳號。"
+    },
+    {
+      "id": "kp-274",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "可以加你的LINE嗎？",
+        "ja-JP": "LINE、追加していい？"
+      },
+      "readings": {
+        "ja-Hira": "らいん、ついかしていい？"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "LINE",
+        "加好友"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "line-add-permission",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [
+        "kp-277",
+        "kp-278",
+        "kp-284"
+      ],
+      "usageNote": "朋友口語；「〜ていい？」是在口語中省略「も」的問法，仍在詢問對方是否願意加好友。"
+    },
+    {
+      "id": "kp-275",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "我們加Discord好友吧。",
+        "ja-JP": "Discordでフレンドになろう。"
+      },
+      "readings": {
+        "ja-Hira": "でぃすこーどでふれんどになろう。"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "Discord",
+        "加好友"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "discord-friend-invitation",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [
+        "kp-276",
+        "kp-278",
+        "kp-284"
+      ],
+      "usageNote": "朋友口語；「〜になろう」是一起成為好友的提議；對方仍可以拒絕。"
+    },
+    {
+      "id": "kp-276",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "你的帳號名稱是什麼？",
+        "ja-JP": "ユーザー名は何？"
+      },
+      "readings": {
+        "ja-Hira": "ゆーざーめいはなに？"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "帳號名稱",
+        "用戶名"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "username-question",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [
+        "kp-259",
+        "kp-277"
+      ],
+      "usageNote": "朋友口語；詢問的是平台上的用戶名，不是密碼或登入驗證碼；也可請對方直接在手機上顯示。"
+    },
+    {
+      "id": "kp-277",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "可以讓我看一下QR Code嗎？",
+        "ja-JP": "QRコード、見せてくれる？"
+      },
+      "readings": {
+        "ja-Hira": "きゅーあーるこーど、みせてくれる？"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "QR Code",
+        "二維碼"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "show-your-qr-request",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [
+        "kp-063"
+      ],
+      "usageNote": "朋友口語；請對方展示 QR Code，與請對方掃描自己的 QR Code 是不同方向。"
+    },
+    {
+      "id": "kp-278",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "我剛剛傳好友邀請給你了。",
+        "ja-JP": "さっきフレンド申請を送ったよ。"
+      },
+      "readings": {
+        "ja-Hira": "さっきふれんどしんせいをおくったよ。"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "加好友",
+        "好友邀請"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "friend-request-sent",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；「さっき」是剛剛；「〜たよ」用來告訴對方已經完成的事。"
+    },
+    {
+      "id": "kp-279",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "我也追蹤你了。",
+        "ja-JP": "こっちもフォローしたよ。"
+      },
+      "readings": {
+        "ja-Hira": "こっちもふぉろーしたよ。"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "追蹤",
+        "回追"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "followed-you-back",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；對方先追蹤自己時，可用來說明自己也追蹤了對方。不是要求對方一定要回追。"
+    },
+    {
+      "id": "kp-280",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "可以傳私訊給你嗎？",
+        "ja-JP": "DMしてもいい？"
+      },
+      "readings": {
+        "ja-Hira": "でぃーえむしてもいい？"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "私訊",
+        "DM"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "dm-permission",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [
+        "kp-282",
+        "kp-283",
+        "kp-284"
+      ],
+      "usageNote": "朋友口語；DM 指社群平台的私人訊息；先確認對方是否接受私訊。"
+    },
+    {
+      "id": "kp-281",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "用哪裡聯絡你比較方便？",
+        "ja-JP": "どこで連絡するのがいい？"
+      },
+      "readings": {
+        "ja-Hira": "どこでれんらくするのがいい？"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "聯絡平台"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "preferred-contact-channel",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [
+        "kp-282",
+        "kp-283"
+      ],
+      "usageNote": "朋友口語；在已經願意保持聯絡的情況下，確認用哪個平台比較合適。"
+    },
+    {
+      "id": "kp-282",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "沒問題，傳私訊給我就好。",
+        "ja-JP": "いいよ。DMで連絡してね。"
+      },
+      "readings": {
+        "ja-Hira": "いいよ。でぃーえむでれんらくしてね。"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "私訊",
+        "DM"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "dm-contact-yes",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [
+        "kp-260"
+      ],
+      "usageNote": "朋友口語；同意以私訊聯絡，不表示必須即時回覆或接受任何內容。"
+    },
+    {
+      "id": "kp-283",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "我不太看私訊，回覆可能會比較慢。",
+        "ja-JP": "DMはあまり見ないから、返信が遅くなるかも。"
+      },
+      "readings": {
+        "ja-Hira": "でぃーえむはあまりみないから、へんしんがおそくなるかも。"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "私訊",
+        "回覆速度"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "slow-dm-replies",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；「かも」是「かもしれない」的口語縮略，表示可能。"
+    },
+    {
+      "id": "kp-284",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "不好意思，我不交換私人的聯絡方式。",
+        "ja-JP": "ごめん、個人の連絡先は交換してないんだ。"
+      },
+      "readings": {
+        "ja-Hira": "ごめん、こじんのれんらくさきはこうかんしてないんだ。"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "婉拒加好友"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "private-contact-no",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；以朋友間的語氣婉拒交換私人聯絡方式，不必勉強提供。"
+    },
+    {
+      "id": "kp-285",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "我沒用LINE，不過有用Discord。",
+        "ja-JP": "LINEは使ってないけど、Discordなら使ってるよ。"
+      },
+      "readings": {
+        "ja-Hira": "らいんはつかってないけど、でぃすこーどならつかってるよ。"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "LINE",
+        "Discord"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "discord-instead-of-line",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [
+        "kp-275",
+        "kp-276"
+      ],
+      "usageNote": "朋友口語；說明自己沒有用 LINE，並提供可以使用的其他聯絡方式。"
+    },
+    {
+      "id": "kp-286",
+      "kind": "phrase",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "下次活動前，我再傳訊息給你。",
+        "ja-JP": "次のイベントの前に、また連絡するね。"
+      },
+      "readings": {
+        "ja-Hira": "つぎのいべんとのまえに、またれんらくするね。"
+      },
+      "tags": [
+        "聯絡分享",
+        "會話",
+        "朋友口語",
+        "口語",
+        "カジュアル",
+        "交換聯絡方式",
+        "保持聯絡",
+        "下次活動"
+      ],
+      "grammarIds": [],
+      "difficulty": 2,
+      "semanticGroup": "contact-before-next-event",
+      "common": true,
+      "audioUrl": null,
+      "relatedIds": [
+        "kv-034",
+        "kv-139",
+        "kv-140",
+        "kv-141",
+        "kv-144"
+      ],
+      "followUpIds": [],
+      "usageNote": "朋友口語；具體說明下次聯絡的時機；只在自己確實打算聯絡時使用。"
     },
     {
       "id": "kv-001",
@@ -11569,6 +12847,162 @@
       "audioUrl": null,
       "relatedIds": [
         "kp-246"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-139",
+      "kind": "word",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "私訊",
+        "ja-JP": "DM"
+      },
+      "readings": {
+        "ja-Hira": "でぃーえむ"
+      },
+      "tags": [
+        "聯絡分享",
+        "單字",
+        "交換聯絡方式"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-139",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-280"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-140",
+      "kind": "word",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "帳號名稱、用戶名",
+        "ja-JP": "ユーザー名"
+      },
+      "readings": {
+        "ja-Hira": "ゆーざーめい"
+      },
+      "tags": [
+        "聯絡分享",
+        "單字",
+        "交換聯絡方式"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-140",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-276"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-141",
+      "kind": "word",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "加為好友",
+        "ja-JP": "友だち追加"
+      },
+      "readings": {
+        "ja-Hira": "ともだちついか"
+      },
+      "tags": [
+        "聯絡分享",
+        "單字",
+        "交換聯絡方式"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-141",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-274"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-142",
+      "kind": "word",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "回追",
+        "ja-JP": "フォローバック"
+      },
+      "readings": {
+        "ja-Hira": "ふぉろーばっく"
+      },
+      "tags": [
+        "聯絡分享",
+        "單字",
+        "交換聯絡方式"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-032",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-279"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-143",
+      "kind": "word",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "好友邀請",
+        "ja-JP": "フレンド申請"
+      },
+      "readings": {
+        "ja-Hira": "ふれんどしんせい"
+      },
+      "tags": [
+        "聯絡分享",
+        "單字",
+        "交換聯絡方式"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-143",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-278"
+      ],
+      "followUpIds": []
+    },
+    {
+      "id": "kv-144",
+      "kind": "word",
+      "categoryId": "social",
+      "texts": {
+        "zh-TW": "二維碼、QR Code",
+        "ja-JP": "QRコード"
+      },
+      "readings": {
+        "ja-Hira": "きゅーあーるこーど"
+      },
+      "tags": [
+        "聯絡分享",
+        "單字",
+        "交換聯絡方式"
+      ],
+      "grammarIds": [],
+      "difficulty": 1,
+      "semanticGroup": "word-144",
+      "common": false,
+      "audioUrl": null,
+      "relatedIds": [
+        "kp-277"
       ],
       "followUpIds": []
     }
